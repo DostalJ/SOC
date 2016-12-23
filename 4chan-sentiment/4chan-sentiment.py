@@ -17,5 +17,8 @@ for i in range(10):
             num_of_threads += 1
             for post in thread.posts:
                 sentiment = (sentiment + TextBlob(post.text_comment).sentiment.polarity)/2
-    print('Sentiment at step {}: {:.5f}'.format(i, sentiment))    
+    print('Step:', i)
+    print('Threads:', num_of_threads)
+    print('Sentiment: {:.5f}'.format(sentiment))
+    print('-'*40)
     sleep(60)
