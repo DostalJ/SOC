@@ -1,5 +1,6 @@
 from slistener import SListener
 import time, tweepy, sys
+import keys
 
 # authentication
 consumer_key = keys.consumer_key
