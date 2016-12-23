@@ -5,7 +5,7 @@ from time import sleep
 
 keywords = ['islam', 'isis', 'islamic state', 'muslim', 'muslims', 'terrorist', 'refugee', 'refugees']
 
-for i in range(10):
+for i in range(12):
     sentiment = 0
     num_of_threads = 0
 
@@ -21,4 +21,4 @@ for i in range(10):
     print('Threads:', num_of_threads)
     print('Sentiment: {:.5f}'.format(sentiment))
     print('-'*40)
-    sleep(60)
+    sleep(30*60)
