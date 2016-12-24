@@ -33,7 +33,18 @@ class VoteClassifier(ClassifierI):
 class Classify:
     """
     Class for sentiment classification of the text.
-    To predict sentiment use method 'sentiment'
+
+    Example:
+    ..............................................................................
+        from sentimen_classify import Classify
+
+        SCT = Classify('twitter') # sentiment classificator trained on twitter data
+        SCR = Classify('short_reviews') # sentiment classificator trained on short reviews data
+
+        # return: 'pos'/'neg', confidence
+        SCT.sentiment('I hate all people on this planet')
+        SCR.sentiment('I hate all people on this planet')
+    ..............................................................................
     """
     def __init__(self, dataset='twitter'):
         """
