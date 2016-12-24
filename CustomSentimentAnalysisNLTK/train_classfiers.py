@@ -30,6 +30,7 @@ class VoteClassifier(ClassifierI):
         choice_votes = votes.count(mode(votes)) # kolik classirieru zvolilo tuto label
         conf = choice_votes / len(votes)
 
+# files we use to train our classifier
 short_pos = open('data/twitter/positive.txt', 'r').read()
 short_neg = open('data/twitter/negative.txt', 'r').read()
 
