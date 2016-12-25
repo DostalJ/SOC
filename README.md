@@ -1,5 +1,5 @@
 # Sentiment analysis
-Repository for everything we use to win [SOČ](http://www.soc.cz) in 2017. Our work is focusing on sentiment analysis of public opinion on big world problems, like terrorism and migration. We are using social networks ([Twitter](https://twitter.com)) and well known discussion forums ([Reddit](https://www.reddit.com), [4chan](http://www.4chan.org)).
+Repository for everything we use to win [SOČ](http://www.soc.cz) in 2017.<!--- Our work is focusing on sentiment analysis of public opinion on big world problems, like terrorism and migration. We are using social networks ([Twitter](https://twitter.com)) and well known discussion forums ([Reddit](https://www.reddit.com), [4chan](http://www.4chan.org)).--->
 ## Technicals
 All code is written in [python3.5.2](https://www.python.org/downloads/release/python-352/).
 #### Twitter
