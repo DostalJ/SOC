@@ -3,6 +3,9 @@ from textblob import TextBlob
 from time import sleep
 import keys
 
+from sentiment_classifier import Classify
+
+
 """
 Trying different classifiers
 """
@@ -14,11 +17,12 @@ reddit = praw.Reddit(client_id=keys.client_id,
                      username=keys.username,
                      user_agent=keys.user_agent)
 
+
+
 keywords = ['islam', 'isis', 'islamic state', 'muslim', 'muslims', 'terrorist', 'refugee', 'refugees']
 
 subreddit = reddit.subreddit('news')
 
-from sentiment_classifier import Classify
 RC = Classify('short_reviews')
 TC = Classify('twitter')
 for comment in subreddit.comments():

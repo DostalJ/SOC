@@ -38,23 +38,27 @@ class Classify:
     ..............................................................................
         from sentimen_classify import Classify
 
-        SCT = Classify('twitter') # sentiment classificator trained on twitter data
-        SCR = Classify('short_reviews') # sentiment classificator trained on short reviews data
+        SCT = Classify('twitter-J') # sentiment classificator trained on adjectives from twitter data
+        SCR = Classify('short_reviews-JRV') # sentiment classificator trained on adjectives, adverbs and verbs from short reviews data
 
         # return: 'pos'/'neg', confidence
         SCT.sentiment('I hate all people on this planet')
         SCR.sentiment('I hate all people on this planet')
     ..............................................................................
     """
-    def __init__(self, dataset='twitter'):
+    def __init__(self, dataset='twitter-J'):
         """
         Initial parameters:
-            dataset: datates used to train classifier ('twitter'/'short_reviews')
+            dataset: datate used to train classifier
         """
-        if dataset == 'twitter':
-            path = 'pickled_algos/twitter/'
-        elif dataset == 'short_reviews':
-            path = 'pickled_algos/short_reviews/'
+        if dataset == 'twitter-J':
+            path = 'pickled_algos/twitter/J/'
+        elif dataset == 'twitter-JRV':
+            path = 'pickled_algos/twitter/JRV/'
+        elif dataset == 'short_reviews-J':
+            path = 'pickled_algos/short_reviews/J/'
+        elif dataset == 'short_reviews-JRV':
+            path = 'pickled_algos/short_reviews/JRV/'
         else:
             print('#'*60)
             print('#'*60)

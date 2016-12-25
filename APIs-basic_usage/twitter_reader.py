@@ -1,6 +1,7 @@
 from tweepy import StreamListener
 import tweepy
 import keys
+from time import sleep
 # http://docs.tweepy.org/en/v3.5.0/streaming_how_to.html
 
 
@@ -10,6 +11,7 @@ class MyStreamListener(StreamListener):
 
         print(status.text)
         print('-'*40)
+        # sleep(5)
 
     def on_error(self, status_code):
         print('Error: ' + str(status_code) + '\n')
@@ -28,4 +30,4 @@ api = tweepy.API(auth)
 myStreamListener = MyStreamListener
 myStream = tweepy.Stream(auth = api.auth, listener=myStreamListener())
 
-myStream.filter(track=['Zeman'],)
+myStream.filter(track=['Trump'],)
