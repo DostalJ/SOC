@@ -1,5 +1,7 @@
 %%%%% Single page layout:
 \documentclass[12pt, a4paper]{article}
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
 \setlength\textwidth{145mm}
 \setlength\textheight{247mm}
 \setlength\oddsidemargin{15mm}
@@ -17,57 +19,59 @@
 \usepackage{graphicx}
 \usepackage{psfrag}
 \usepackage{fancyvrb}
-\usepackage[round]{natbib}
 \usepackage{bbding}
 \usepackage{dcolumn}
 \usepackage{booktabs}
 \usepackage{paralist}
 \usepackage{indentfirst}
 \usepackage[nottoc]{tocbibind}
-
-\usepackage{physics}	%nice, standing differentials
 \usepackage[unicode]{hyperref}
+\usepackage{subfig} 	%subfloats.
 
-
-
-%%% -------------------------------------
-% \newcommand{\FIGDIR}{/home/jakub/MEGA/T.Fürst/Epidemiology/SOČ/EN-OLD/Pics/}    %%% directory containing figures
-
-
-%\bibliographystyle{plainnat}     %% Author (year) style
-%\bibliographystyle{unsrt}        %% [number] style
-
+%%% \subref*
+\captionsetup[subfigure]{subrefformat=simple,labelformat=simple,listofformat=subsimple}
+\renewcommand\thesubfigure{(\alph{subfigure})}
+%%%
 \numberwithin{equation}{section} 	%cislovani rovnic pro article
+\usepackage{physics}	%nice, standing differentials
+\usepackage[]{units} %pěkné jednotky
+\newcommand{\FIGDIR}{./Pics}    %%% directory containing figures
+\interfootnotelinepenalty=10000	%aby se \footnote nerozdeloval na dve strany
+
+
+% ####################################################################
+% ####################################################################
+% ####################################################################
+% ####################################################################
+
+
 \begin{document}
-\include{TitulkaEN}
-
+\include{TitulkaCZ}
 \newpage
-\section*{Introduction}
-\noindent
-
-\newpage
-\section{First chapter}
+\section*{Úvod}
 \noindent
 
 
-
-
-
+\newpage
+\section{První kapitola samotné práce}
+\noindent
 
 
 \newpage
-\section{Conclusion}
+\section{Závěr}
 \noindent
 
 \newpage
 \begin{thebibliography}{99}
-
-% \bibitem{ipython}
-% PEREZ, Fernando a Brian E. GRANGER. IPython: A System for Interactive Scientific Computing. \textit{Computing in Science}. 2007, \textbf{9}(3), 21-29. DOI: 10.1109/MCSE.2007.53. ISSN 1521-9615. Dostupné také z: \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4160251}
-
+\bibitem{ipython}
+PEREZ, Fernando a Brian E. GRANGER. IPython: A System for Interactive Scientific Computing. \textit{Computing in Science}. 2007, \textbf{9}(3), 21-29. DOI: 10.1109/MCSE.2007.53. ISSN 1521-9615. Dostupné také z: \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4160251}
 \end{thebibliography}
 %%%%%%%%%%%%ZKONTROLUJ \TEXTBF V CITACICH%%%%%%%%%%%%%%%%%%%%%%
 
-
-
+\newpage
+%%% The Appendix.
+\section*{Přílohy}
+\addcontentsline{toc}{section}{Přílohy}
+\subsection*{Prvni kapitola přiloh}
+\noindent
 \end{document}
