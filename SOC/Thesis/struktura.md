@@ -6,8 +6,7 @@
 Problém infromační bubliny, jak mění svět (jak vzniká = preferencni algoritmy, MOZKOVE PREFERENČNÍ ALGOS), proč je to problém, proč to není problém.
 #### Data a metody (nematematicky)
 Proč tyto metody (spíše PROČ jsou data z twitteru vhodné)
-#### Data a metody (matematicky)
-Jak tyto metody (jak a co sentimentální analyza)
+#### Konkretni konstrukce experimentů
 
 #### Výsledky
 K čemu jsme došli.

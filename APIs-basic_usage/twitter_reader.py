@@ -4,13 +4,12 @@ import keys
 from time import sleep
 # http://docs.tweepy.org/en/v3.5.0/streaming_how_to.html
 
-
 class MyStreamListener(StreamListener):
 
     def on_status(self, status):
 
-        print(status.text)
-        print('-'*40)
+        # print(status.text)
+        # print('-'*40)
         # sleep(5)
 
     def on_error(self, status_code):
@@ -30,4 +29,4 @@ api = tweepy.API(auth)
 myStreamListener = MyStreamListener
 myStream = tweepy.Stream(auth = api.auth, listener=myStreamListener())
 
-myStream.filter(track=['Trump'],)
+myStream.filter(track=[''],)

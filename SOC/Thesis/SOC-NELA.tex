@@ -53,8 +53,23 @@
 
 
 \newpage
-\section{První kapitola samotné práce}
+\section{Co je to infromační bublina}
 \noindent
+Potřebujeme popsat jak funguje twitter (ze je tam omezeny pocet slov, jak funguje following a podobne)~\cite{wikiTwitter}
+
+a taky proc je twitter relevantni ke studiu~\cite{whyNewsOnTwitter}
+
+\newpage
+\section{Data a metody (nematematicky)}
+\noindent Jak jsme již v předchozích kapitolách zmínili, s pokrokem v oblasti technologie probíhá i obrovský pokrok v oblasti čerpání zpráv a informací. Narozdíl od minulosti, drtivá většina obyvatel vyspělých států má přístup k novinkám v průběhu celého dne. Denní počet příspěvků na \textit{Twitteru} dosahoval v roce 2010 neskutečných 6 milionů~\cite{Mathioudakis2010}. Je zřejmé, že není možné používat stejné postupy pro analýzu takto rozsáhlého množství dat jako dříve. Naštěstí se v již nějakou dobu významným tempem posouvá i oblast \textit{Big Data, Machine Learningu} a jejich podoblastí. Tyto obory nacházejí uplatnění téměř ve všech oblastech dnešní vědy~\cite{Huberman2012-2-15} a stále větší pozornosti se jim dostává i v sociologii~\cite{Tinati2014, McFarland2016, Shah2015-04-09}.
+
+\subsection{Twitter data}
+\noindent Právě data z Twitteru jsou pro nás velmi vhodná. Jak se ukazuje~\cite{whyNotFb}, narozdíl on \textit{Facebooku}, Twitter užívá mnoho lidí jako zdroj informací a zpráv o aktuálním dění ve světě. Samozřejmě můžeme zpochybňovat validitu a přesnost informací, které se na takovýchto sítích objěvují. Ať už jsou takovéto obavy oprávněné, nebo ne, vůzkum sociologických jevů, který v této práci provádíme to nijak neovlivnuje.
+
+Dalším důležitým důvodem, který vedl k výběru Twitteru jako média, ze kterého budeme stahovat informace je snadná přístupnost k datům pomocí služby API poskytovaný právě přímo Twitterem~\cite{twitterAPI}. Konkrétně pro naše účeli jsme tuto službu nepoužívali přímo, ale za pomocí balíčku \textit{tweepy}~\cite{tweepy} pro programovací jazyk \textit{python}. Ten umožňuje velmi snadné ovládání a filtrování proudu dat, které si vyžádáme Twitteru a také jejich okamžitou analýzu a zpracování v pythonu.
+
+\section{Sentimentální analýza textu}
+\noindent 
 
 
 \newpage
@@ -63,8 +78,35 @@
 
 \newpage
 \begin{thebibliography}{99}
-\bibitem{ipython}
-PEREZ, Fernando a Brian E. GRANGER. IPython: A System for Interactive Scientific Computing. \textit{Computing in Science}. 2007, \textbf{9}(3), 21-29. DOI: 10.1109/MCSE.2007.53. ISSN 1521-9615. Dostupné také z: \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4160251}
+
+    \bibitem{wikiTwitter}
+    Twitter. In: \textit{Wikipedia: the free encyclopedia} [online]. San Francisco (CA): Wikimedia Foundation, 2017, 2017-01-22 [cit. 2017-01-22]. Dostupné z: \url{https://en.wikipedia.org/wiki/Twitter}
+
+    \bibitem{whyNotFb}
+    BARTHEL, MICHAEL, ELISA SHEARER, JEFFREY GOTTFRIED a AMY MITCHELL. \textit{The Evolving Role of News on Twitter and Facebook} [online]. In: . Pew Research Center, 2015 [cit. 2017-01-22]. Dostupné z: \url{http://www.journalism.org/2015/07/14/the-evolving-role-of-news-on-twitter-and-facebook/}
+
+    \bibitem{whyNewsOnTwitter}
+    Twitter and the News: How people use the social network to learn about the world. \textit{American Press Institute: Insights, tools and research to advance journalism} [online]. 2015, \textbf{2015} [cit. 2017-01-22]. Dostupné z: \url{https://www.americanpressinstitute.org/publications/reports/survey-research/how-people-use-twitter-news/}
+
+    \bibitem{Mathioudakis2010}
+    MATHIOUDAKIS, Michael a Nick KOUDAS. TwitterMonitor. \textit{Proceedings of the 2010 international conference on Management of data - SIGMOD '10}. New York, New York, USA: ACM Press, 2010, \textbf{2010}, 1155-1158. DOI: 10.1145/1807167.1807306. ISBN 9781450300322. Dostupné také z: \url{http://portal.acm.org/citation.cfm?doid=1807167.1807306}
+
+    \bibitem{Tinati2014} % big data in sociology
+    TINATI, Ramine, Susan HALFORD, Leslie CARR a Catherine POPE. Big Data: Methodological Challenges and Approaches for Sociological Analysis. \textit{Sociology}. 2014, \textbf{48}(4), 663-681. DOI: 10.1177/0038038513511561. ISSN 0038-0385. Dostupné také z: \url{http://journals.sagepub.com/doi/10.1177/0038038513511561}
+    \bibitem{McFarland2016} % big data in sociology
+    MCFARLAND, Daniel A., Kevin LEWIS a Amir GOLDBERG. Sociology in the Era of Big Data: The Ascent of Forensic Social Science. \textit{The American Sociologist}. 2016, \textbf{47}(1), 12-35. DOI: 10.1007/s12108-015-9291-8. ISSN 0003-1232. Dostupné také z: \url{http://link.springer.com/10.1007/s12108-015-9291-8}
+    \bibitem{Shah2015-04-09} % big data in sociology
+    SHAH, D. V., J. N. CAPPELLA a W. R. NEUMAN. Big Data, Digital Media, and Computational Social Science: Possibilities and Perils. \textit{The ANNALS of the American Academy of Political and Social Science}. 2015, \textbf{659}(1), 6-13. DOI: 10.1177/0002716215572084. ISSN 0002-7162. Dostupné také z: \url{http://ann.sagepub.com/cgi/doi/10.1177/0002716215572084}
+    \bibitem{Huberman2012-2-15} % big data anywhere
+    HUBERMAN, Bernardo A. Sociology of science: Big data deserve a bigger audience. \textit{Nature}. 2012-2-15, \textbf{482}(7385), 308-308. DOI: 10.1038/482308d. ISSN 0028-0836. Dostupné také z: \url{http://www.nature.com/doifinder/10.1038/482308d}
+
+    \bibitem{tweepy}
+    HILL, Aaron a Joshua ROESSLEIN. Tweepy. \textit{Github} [online]. [cit. 2017-01-22]. Dostupné z: \url{https://github.com/tweepy/tweepy}
+    \bibitem{twitterAPI}
+    API Overview. \textit{Twitter Developer Documentation} [online]. Twitter, 2016 [cit. 2017-01-22]. Dostupné z: \url{https://dev.twitter.com/overview/api}
+
+
+
 \end{thebibliography}
 %%%%%%%%%%%%ZKONTROLUJ \TEXTBF V CITACICH%%%%%%%%%%%%%%%%%%%%%%
 
