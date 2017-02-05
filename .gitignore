@@ -1,0 +1,12 @@
+keys.py
+__pycache__/
+.DS_Store
+data/
+
+*.pickle
+*.h5
+
+*.aux
+*.log
+*.out
+*.toc
