@@ -33,11 +33,17 @@ batch_size = 128
 test_size = 0.1
 ###################
 
-save_file = 'reviews-classifier.h5'
-Vocab = Vocabulary('./data/rt-polaritydata/rt-polarity.pos',
-                   './data/rt-polaritydata/rt-polarity.neg',
+# save_file = 'reviews-classifier.h5'
+# Vocab = Vocabulary('./data/rt-polaritydata/rt-polarity.pos',
+#                    './data/rt-polaritydata/rt-polarity.neg',
+#                    vocabulary_size=top_words)
+# Vocab.save_vocabulary(path_to_save='reviews-vocabulary.pickle')
+
+save_file = 'HugeTwitter-classifier.h5'
+Vocab = Vocabulary('./data/HugeTwitterDataset/positive.txt',
+                   './data/HugeTwitterDataset/negative.txt',
                    vocabulary_size=top_words)
-Vocab.save_vocabulary(path_to_save='reviews-vocabulary.pickle')
+Vocab.save_vocabulary(path_to_save='HugeTwitter-vocabulary.pickle')
 
 X, y = Vocab.prepare_data_and_labels()
 # pad dataset to a maximum review length in words
@@ -72,7 +78,7 @@ model.add(Dense(1, activation='sigmoid'))
 model.compile(loss='binary_crossentropy',
               optimizer='adam',
               metrics=['accuracy'])
-print(model.summary())
+model.summary()
 
 # fit the model
 model.fit(X_train, y_train,
