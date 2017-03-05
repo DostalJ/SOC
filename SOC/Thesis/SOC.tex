@@ -31,28 +31,23 @@
 %%% \subref*
 \captionsetup[subfigure]{subrefformat=simple,labelformat=simple,listofformat=subsimple}
 \renewcommand\thesubfigure{(\alph{subfigure})}
-%%%
+
 \numberwithin{equation}{section} 	%cislovani rovnic pro article
-\usepackage{physics}	%nice, standing differentials
-\usepackage[]{units} %pěkné jednotky
 \interfootnotelinepenalty=10000	%aby se \footnote nerozdeloval na dve strany
 
 
 % ####################################################################
 % ####################################################################
-% ####################################################################
-% ####################################################################
-
-
 \begin{document}
 \include{TitulkaCZ}
 \newpage
 \section*{Úvod}
 \noindent
 
-
+% ##############################################################################
+% ##############################################################################
 \newpage
-\section{Co je to infromační bublina}
+\section{Co před námi internet skrývá}
 \noindent Ve světě plném technického pokroku a masového používání internetu se snadno můžeme ztrácet v množství přijímaných informací. Nepřeberné množství zdrojů nás dennodenně zahlcuje spoustou nových zpráv ať už na sociálních sítích, či kdekoliv jinde. Je složité se v nich orientovat, natož tak hledat a nalézat relevantní souvislosti, neboť nikde není psáno, které zprávy považovat za pravdivé a které naopak za nepravdivé zprávy anonymních komentátorů.
 
 Role, tedy působnost žurnalistiky samotné se razantně mění. Dnešní novinář nechodí s poznámkovým blokem a tužkou v kapse, získané informace a souvislosti nesepisuje doma do celistvých článků poutajících pozornost čtenářů svou kvalitou, nýbrž se smartphonem v ruce fotí, natáčí a dělá živé reportáže přímo z místa.
@@ -64,26 +59,48 @@ Mají stále žurnalisté moc ovlivnit čtenáře a oslovit je svými pracemi, �
 \subsection{Filter bubble}
 \noindent \textit{Filter bubble} nebo také \textit{informační bublina} je jeden z mnoha fenoménů dnešní doby. Jako první na ni upozornil a popsal ji Eli Pariser~\cite{Pariser2011, PariserTed}. Jde o jev vyskytující se na sociálních sítích, kdy uživatel každou online aktivitou\footnote{Tím rozumějmě kliknutí, sdílení, komentování a obdobné činnosti.} poukazuje na oblasti jeho zájmů. Tyto algoritmy snažící se usnadnit život pomocí personalizace viděných informací se každou další činností uživatele zdokonalují, což v konečném výsledku znamená, že jsou to právě ony, jež rozhdují, co bude pro uživatlele viditelné a co naopak konsekvencí prací algoritmů bude uživateli podáno v menší míře, či úplně skryto v celkovém proudu informací~\cite{TheImpactOfFilterBubble}. Celkově to tedy může vést jedince do situace, kdy místo širokého spektra příspěvků na sobě obsahově nezávislých, vidí příspěvky jen takové, jež byly vybrány preferenčními algoritmy na základě jeho předešlé činnosti a tedy velmi zúžené škále informací.
 
-Vezmeme-li v úvahu, kolik času lidé tráví na sociálních sítích, docházíme k závěru, že jejich názory a postoje se primárně vytvářejí zrovna zde~\cite{TheImpactOfFilterBubble, BeyondFilterBubble}.  Sleduje-li uživatel pouze názorově shodné příspěvky může toV demokratických společnostech by Filter bubble mohla představovat značné ohrožení systému, neboť  uživatelům předkládá již vyfiltrované příspěvky a to zejména takové, jež by podpořili názor uživatele samotného, nikoli
+\cite{wikiTwitter}
+\cite{whyNewsOnTwitter}
+
+
+\subsection{Problémy filter bubble}
+\subsection{Výhody filter bubble}
+\subsection{Preferenční algoritmy}
+\noindent Jak jsme již výše zmínili, personalizace obsahum který vidíme na internetu může být jak velkým problémem, tak velkou výhodou. Čemu jsme však dosud nevěnovali pozornost je jak informační bubliny vznikají. Je zřejmé, že \textit{Facebook}, \textit{Twitter}, \textit{YouTube} a podobné internetové giganty shromažďují velké množství dat o našich internetových aktivitách. Méně jasná je, že to nedělá kvůli zlomyslným plánům na ovládutí světa, nýbrž kvůli snaze zpříjemnit užívání jejich služeb\footnote{Tím, že nám usnadní a zpříjemní jejich užívání si zajistí větší návštěvnost, což je zdroj jejich příjmů.}. Tato data poté pomocí moderních matematických a statistických metod užívá například k výběru obsahu, který nám bude co nejvíce imponovat, respektive k výberu obsahu, o kterém jsme se již dříve výjádřili, že je pro nás zajímavý.
+
+S obdobným přístupem se můžeme setak při online nakupování~\cite{Amazon}, kde jsou nám doporučovány produkty obdobné těm, které jsme v poslední době hledali. Stejně tak například na \textit{YouTube}~\cite{YouTube}, kde se dříve dostaneme k videím s podobným obsahem, jaký často sledujeme.
+
+Metody, které e užívají pro sociální sítě a informační kanály~\cite{TwitterRecomendation} jsou většinou velmi sofistikované a opírají se o hluboké znalosti \textit{machine learningu}, \textit{statistiky} a \textit{data mining}. Velmi zjednodušeně řečeno, nový uživatel určité stránky je nejprve vystaven velmi širokému spektru informací. Někde na serveru provozovatele sítě sedí malá ne příliš chytrá umělá inteligence, která si zapisuje na co uživatel kliká. Své zápisky následně zpracovává a pomocí těchto pracovaných poznámek následně odhaduje co by se danému uživateli mohlo líbit.
 
 
 
 
-Potřebujeme popsat jak funguje twitter (ze je tam omezeny pocet slov, jak funguje following a podobne)~\cite{wikiTwitter}
 
-a taky proc je twitter relevantni ke studiu~\cite{whyNewsOnTwitter}
 
+% ##############################################################################
+% ##############################################################################
 \newpage
-\section{Data a metody (nematematicky)}
+\section{Metodika sběru dat}
 \noindent Jak jsme již v předchozích kapitolách zmínili, s pokrokem v oblasti technologie probíhá i obrovský pokrok v oblasti čerpání zpráv a informací. Narozdíl od minulosti, drtivá většina obyvatel vyspělých států má přístup k novinkám v průběhu celého dne. Denní počet příspěvků na \textit{Twitteru} dosahoval v roce 2010 neskutečných 6 milionů~\cite{Mathioudakis2010}. Je zřejmé, že není možné používat stejné postupy pro analýzu takto rozsáhlého množství dat jako dříve. Naštěstí se v již nějakou dobu významným tempem posouvá i oblast \textit{Big Data, Machine Learningu} a jejich podoblastí. Tyto obory nacházejí uplatnění téměř ve všech oblastech dnešní vědy~\cite{Huberman2012-2-15} a stále větší pozornosti se jim dostává i v sociologii~\cite{Tinati2014, McFarland2016, Shah2015-04-09}.
 
-\subsection{Twitter data}
+\subsection{Data z Twitteru}
 \noindent Právě data z Twitteru jsou pro nás velmi vhodná. Jak se ukazuje~\cite{whyNotFb}, narozdíl on \textit{Facebooku}, Twitter užívá mnoho lidí jako zdroj informací a zpráv o aktuálním dění ve světě. Samozřejmě můžeme zpochybňovat validitu a přesnost informací, které se na takovýchto sítích objěvují. Ať už jsou takovéto obavy oprávněné, nebo ne, vůzkum sociologických jevů, který v této práci provádíme to nijak neovlivnuje.
 
 Dalším důležitým důvodem, který vedl k výběru Twitteru jako média, ze kterého budeme stahovat informace je snadná přístupnost k datům pomocí služby API poskytovaný právě přímo Twitterem~\cite{twitterAPI}. Konkrétně pro naše účely jsme tuto službu nepoužívali přímo, ale za pomocí balíčku \textit{tweepy}~\cite{tweepy} pro programovací jazyk \textit{python}. Ten umožňuje velmi snadné ovládání a filtrování proudu dat, které si vyžádáme Twitteru a také jejich okamžitou analýzu a zpracování v pythonu.
 
-\section{Sentimentální analýza textu}
+\subsection{Sentimentální analýza textu}
 \noindent
+
+
+% ##############################################################################
+% ##############################################################################
+\newpage
+\section{Konstrukce měření}
+\subsection{Výběr pozorovaných vzorků}
+\subsection{Metodika výběru vzorků}
+
+
+
 
 
 \newpage
@@ -92,6 +109,14 @@ Dalším důležitým důvodem, který vedl k výběru Twitteru jako média, ze 
 
 \newpage
 \begin{thebibliography}{99}
+    \bibitem{TwitterRecomendation}
+    KIM, Younghoon a Kyuseok SHIM. TWITOBI: A Recommendation System for Twitter Using Probabilistic Modeling. \textit{2011 IEEE 11th International Conference on Data Mining}. IEEE, 2011, , 340-349. DOI: 10.1109/ICDM.2011.150. ISBN 978-1-4577-2075-8. Dostupné také z: \url{http://ieeexplore.ieee.org/document/6137238/}
+
+    \bibitem{YouTube}
+    DAVIDSON, James, Blake LIVINGSTON, Dasarathi SAMPATH, et al. The YouTube video recommendation system. \textit{Proceedings of the fourth ACM conference on Recommender systems - RecSys '10}. New York, New York, USA: ACM Press, 2010, , 293-. DOI: 10.1145/1864708.1864770. ISBN 9781605589060. Dostupné také z: \url{http://portal.acm.org/citation.cfm?doid=1864708.1864770}
+
+    \bibitem{Amazon}
+    LINDEN, G., B. SMITH a J. YORK. Amazon.com recommendations: item-to-item collaborative filtering. \textit{IEEE Internet Computing}. 2003, \textbf{7}(1), 76-80. DOI: 10.1109/MIC.2003.1167344. ISSN 1089-7801. Dostupné také z: \url{http://ieeexplore.ieee.org/document/1167344/}
 
     \bibitem{BeyondFilterBubble}
     LIAO, Q. Vera a Wai-Tat FU. Beyond the filter bubble: Interactive effects of perceived threat and topic involvement on selective exposure to information. \textit{Proceedings of the SIGCHI Conference on Human Factors in Computing Systems - CHI '13}. New York, New York, USA: ACM Press, 2013, 2359-2368. DOI: 10.1145/2470654.2481326. ISBN 9781450318990. Dostupné také z: \url{http://dl.acm.org/citation.cfm?doid=2470654.2481326}
@@ -119,25 +144,27 @@ Dalším důležitým důvodem, který vedl k výběru Twitteru jako média, ze 
 
     \bibitem{Tinati2014} % big data in sociology
     TINATI, Ramine, Susan HALFORD, Leslie CARR a Catherine POPE. Big Data: Methodological Challenges and Approaches for Sociological Analysis. \textit{Sociology}. 2014, \textbf{48}(4), 663-681. DOI: 10.1177/0038038513511561. ISSN 0038-0385. Dostupné také z: \url{http://journals.sagepub.com/doi/10.1177/0038038513511561}
+
     \bibitem{McFarland2016} % big data in sociology
     MCFARLAND, Daniel A., Kevin LEWIS a Amir GOLDBERG. Sociology in the Era of Big Data: The Ascent of Forensic Social Science. \textit{The American Sociologist}. 2016, \textbf{47}(1), 12-35. DOI: 10.1007/s12108-015-9291-8. ISSN 0003-1232. Dostupné také z: \url{http://link.springer.com/10.1007/s12108-015-9291-8}
+
     \bibitem{Shah2015-04-09} % big data in sociology
     SHAH, D. V., J. N. CAPPELLA a W. R. NEUMAN. Big Data, Digital Media, and Computational Social Science: Possibilities and Perils. \textit{The ANNALS of the American Academy of Political and Social Science}. 2015, \textbf{659}(1), 6-13. DOI: 10.1177/0002716215572084. ISSN 0002-7162. Dostupné také z: \url{http://ann.sagepub.com/cgi/doi/10.1177/0002716215572084}
+
     \bibitem{Huberman2012-2-15} % big data anywhere
     HUBERMAN, Bernardo A. Sociology of science: Big data deserve a bigger audience. \textit{Nature}. 2012-2-15, \textbf{482}(7385), 308-308. DOI: 10.1038/482308d. ISSN 0028-0836. Dostupné také z: \url{http://www.nature.com/doifinder/10.1038/482308d}
 
     \bibitem{tweepy}
     HILL, Aaron a Joshua ROESSLEIN. Tweepy. \textit{Github} [online]. [cit. 2017-01-22]. Dostupné z: \url{https://github.com/tweepy/tweepy}
+
     \bibitem{twitterAPI}
     API Overview. \textit{Twitter Developer Documentation} [online]. Twitter, 2016 [cit. 2017-01-22]. Dostupné z: \url{https://dev.twitter.com/overview/api}
-
-
-
 \end{thebibliography}
-%%%%%%%%%%%%ZKONTROLUJ \TEXTBF V CITACICH%%%%%%%%%%%%%%%%%%%%%%
+% ZKONTROLUJ \TEXTBF V CITACICH
 
+% ##############################################################################
+% ##############################################################################
 \newpage
-%%% The Appendix.
 \section*{Přílohy}
 \addcontentsline{toc}{section}{Přílohy}
 \subsection*{Prvni kapitola přiloh}

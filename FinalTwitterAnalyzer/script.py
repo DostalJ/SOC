@@ -1,4 +1,5 @@
 from tweepy import StreamListener, TweepError
+from http.client import IncompleteRead
 import tensorflow as tf
 import tweepy
 import keys
@@ -6,7 +7,29 @@ from keras.models import load_model
 from tools import Vocabulary
 from pickle import load
 from keras.preprocessing import sequence
-import time
+import argparse
+from datetime import datetime
+
+def main():
+
+    parser = argparse.ArgumentParser(description='This script streams content that see given users and saves sentiment for every post with one of given keywords that given users might see.')
+    parser.add_argument('-p','--people', help="Path to file with ids (delimited by comma). The script will stream what everything these users might see", required=True)
+    parser.add_argument('-k','--keywords', help="Keywords the script will look for in the stream.",required=True)
+    parser.add_argument('-o','--output_file',help='File we are writing sentiment to.', required=True)
+    args = parser.parse_args()
+
+    try:
+        f = open(file=args.people, mode='r')
+        people = f.read().split(',')[:-1] # [:-1] (vse az na posledni prve) je to tu proto, ze posledni prvek je prazdny string
+        f.close()
+    except Exception as e:
+        print("Can't load file with people to follow:", e)
+
+    keywords = args.keywords.split(',')
+
+    print('Preparing streaming...')
+    TA = TwitterAnalyzer(people=people, keywords=keywords)
+    TA.stream_analyze_save(out_path=args.output_file)
 
 
 class Classifier:
@@ -36,17 +59,14 @@ class MyStreamListener(StreamListener, TweepError):
         StreamListener.__init__(self)
 
         self.out_path = out_path
-        try:
-            self.out_file = open(out_path, 'w')
-        except Exception as e:
-            print("Can't open file", out_path, ':', e)
+        self.out_path = out_path
         self.TwitterClassifier = Classifier('HugeTwitter-classifier.h5', 'HugeTwitter-vocabulary.pickle')
 
     def on_status(self, status):
         try:
             sent = self.TwitterClassifier.sentiment(status.text)[0,0]
-            self.out_file.write(str(status.text)+','+str(sent)+'\n')
-            print(sent)
+            with open(self.out_path, 'a') as out_file:
+                out_file.write(str(sent)+',')
         except TweepError:
             print('Error: ' + str(status_code) + '\n')
             return False
@@ -54,7 +74,6 @@ class MyStreamListener(StreamListener, TweepError):
     def on_error(self, status_code):
         print('Error: ' + str(status_code) + '\n')
         return False
-
 
 class TwitterAnalyzer:
     """
@@ -82,8 +101,11 @@ class TwitterAnalyzer:
         """
         ids = set()
         for node in people:
-            friends_of_node = self.api.friends_ids(node)
-            ids = ids.union(friends_of_node)
+            try: # some users are protected
+                friends_of_node = self.api.friends_ids(node)
+                ids = ids.union(friends_of_node)
+            except TweepError:
+                pass
         ids = [str(_id) for _id in ids]
         return ids
 
@@ -93,8 +115,18 @@ class TwitterAnalyzer:
         """
         myStreamListener = MyStreamListener(out_path)
         myStream = tweepy.Stream(auth=self.api.auth, listener=myStreamListener)
-        start_time = time.time()
-        myStream.filter(track=self.keywords, follow=self.ids, async=True, languages=['en'])
+        print('Streaming...')
+        while True:
+            try:
+                myStream.filter(track=self.keywords, follow=self.ids, languages=['en'], filter_level=['medium'])
+            except IncompleteRead:
+                # Oh well, reconnect and keep trucking
+                pass
+            except KeyboardInterrupt:
+                # Or however you want to exit this loop
+                stream.disconnect()
+                break
 
-TA = TwitterAnalyzer(people=['Conflicts'], keywords=['Trump'])
-TA.stream_analyze_save(out_path='01.txt')
+
+if __name__ == '__main__':
+    main()
