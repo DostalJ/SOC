@@ -116,14 +116,17 @@ class TwitterAnalyzer:
         myStreamListener = MyStreamListener(out_path)
         myStream = tweepy.Stream(auth=self.api.auth, listener=myStreamListener)
         print('Streaming...')
+        stop = False
         while True:
             try:
                 myStream.filter(track=self.keywords, follow=self.ids, languages=['en'], filter_level=['medium'])
-            except IncompleteRead:
-                # Oh well, reconnect and keep trucking
-                pass
             except KeyboardInterrupt:
-                # Or however you want to exit this loop
+                stop = True
+            except Exception as e:
+                print('Exception:', e)
+                print('Retrying...')
+                pass
+            if stop:
                 stream.disconnect()
                 break
 
