@@ -1,5 +1,8 @@
 PetroleumEcon
 
+BiochemSoc
+
+
 OnlyMormons
 
 CatholicNewsSvc
@@ -7,6 +10,3 @@ CatholicNewsSvc
 EvrydayFeminism
 
 LGBTfdn
-
-BiochemSoc
-

@@ -8,7 +8,9 @@ from tools import Vocabulary
 from pickle import load
 from keras.preprocessing import sequence
 import argparse
+import time
 from datetime import datetime
+
 
 def main():
 
@@ -60,19 +62,21 @@ class MyStreamListener(StreamListener, TweepError):
 
         self.out_path = out_path
         self.out_path = out_path
-        self.TwitterClassifier = Classifier('HugeTwitter-classifier.h5', 'HugeTwitter-vocabulary.pickle')
+        self.TwitterClassifier = Classifier('./classifier/HugeTwitter-classifier.h5', './classifier/HugeTwitter-vocabulary.pickle')
 
     def on_status(self, status):
         try:
             sent = self.TwitterClassifier.sentiment(status.text)[0,0]
             with open(self.out_path, 'a') as out_file:
-                out_file.write(str(sent)+',')
+                out_file.write(str(datetime.now()) + ',' + str(sent)+'\n')
         except TweepError:
             print('Error: ' + str(status_code) + '\n')
             return False
 
     def on_error(self, status_code):
         print('Error: ' + str(status_code) + '\n')
+        if status_code == 420:
+            time.sleep(5*60)
         return False
 
 class TwitterAnalyzer:
@@ -127,6 +131,7 @@ class TwitterAnalyzer:
                 print('Retrying...')
                 pass
             if stop:
+                print('Disconnecting.')
                 stream.disconnect()
                 break
 

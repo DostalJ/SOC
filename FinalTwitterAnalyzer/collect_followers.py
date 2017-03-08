@@ -49,6 +49,7 @@ class CollectFollowers:
             f = open(file=file_path, mode='w')
             for s in list_of_followers:
                 f.write(str(s)+',')
+            print('Successfully saved to:', file_path)
         except Exception as e:
             print("Can't write followers to file:", e)
 
