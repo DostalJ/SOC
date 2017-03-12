@@ -100,15 +100,27 @@ Metody, které se užívají pro sociální sítě a informační kanály~\cite{
 \section{Metody sběru dat}
 \noindent S pokrokem v oblasti technologie probíhá i obrovský pokrok v oblasti čerpání zpráv a informací. Narozdíl od minulosti, drtivá většina obyvatel vyspělých států má přístup k novinkám v průběhu celého dne. Denní počet příspěvků na \textit{Twitteru} dosahoval v roce 2010 neskutečných 6 milionů~\cite{Mathioudakis2010}. Je zřejmé, že není možné používat stejné postupy pro analýzu takto rozsáhlého množství dat jako dříve. Naštěstí se v již nějakou dobu významným tempem posouvá i oblast \textit{Big Data, Machine Learningu} a jejich podoblastí. Tyto obory nacházejí uplatnění téměř ve všech oblastech dnešní vědy~\cite{Huberman2012-2-15} a stále větší pozornosti se jim dostává i v sociologii~\cite{Tinati2014, McFarland2016, Shah2015-04-09}.
 
+
+\subsection{Twitter}
+\noindent\textit{Twitter} je sociální síť s strukturou prátelských vztahů odlišnou od \textit{Facebooku}. Uživatel si může navolit téměř libovolné množství lidí, jejichž příspěvku se mu budou zobrazovat. To však neznamená, že lidem které si navolil se budou zobrazovat jeho příspěvky.
+
+Pro jednoduchost uveďme příklad. Pepa je nový uživatel \textit{Twitteru}. Jeho kamarád ze školy se jmenuje Jiří a politik, kterého viděl včera ve zprávách a zamlouval se mu, má jméno Alois. Pepa začne \textit{sledovat}\footnote{Jde přímo o pojem \textit{following} z této sociální sítě, něco jako \textit{přátelství} na Facebooku.} jak Jiřího, tak Aloise. Od té chvíle uvidí všechny příspěvky, jak od spolužáka Jiřího, tak od politika Aloise. Za nějaký čas začne i Jiří \textit{sledovat} Pepu. Od té chvíle i Jiří uvidí všechny Pepovi příspěvky. Politik Alois však Pepu nezná, proto ho \textit{sledovat} nezačne, a tedy neuvidí příspěvky, které Pepa sdílí.
+
+Takovouto strukturu můžeme chápat jako orientovaný graf, kde vrcholy před\-sta\-vu\-jí uživatelé \textit{Twitteru} a orientované hrany mezi nimi proud příspěvků, tedy vztah \textit{following}, neboli \textit{sledující}. Pokud uživatele sleduje mnoho lidí, je směrem k němu připojeno více hran, mluvíme o uživateli s vysokou konektivitou nebo s vysokým stupněm. Obdobně, uživatel, který má malou konektivitu je takový, k němuž směřuje málo hran, je málo \textit{sledován}.
+
+Příspěvky na \textit{Twitteru} mohou mít jakýkoliv textový tvar do délký $140$ znaků, doplěný obrázkem nebo videem, mnohdy také hypertextovým odkazem na externí článek. Obrázky, videa, ani články na jiných stránkách nejsme schopni analyzovat. Plně však zkoumáme textovou část příspěvků. Ty bývají mnohdy doplněné o tzv. \textit{hastagy}. To jsou slova nebo krátká spojení slov, před kterými stojí znak \textit{\# (křížek)}. Z pravidla se jedná o slova, která jsou velmi aktuální, nepříklad různé reference na současné politické dění a podobně. Mnohdy jsou \textit{hastagy} užívány pouze pro zvětšení popularity příspěvku, jelikož častá forma vyhledávání je právě pomocí \textit{hastagů}.
+
 \subsection{Data z Twitteru}
-\noindent Právě data z Twitteru jsou pro nás velmi vhodná. Jak se ukazuje~\cite{whyNotFb}, narozdíl on \textit{Facebooku}, Twitter užívá mnoho lidí jako zdroj informací a zpráv o aktuálním dění ve světě. Samozřejmě můžeme zpochybňovat validitu a přesnost informací, které se na takovýchto sítích objěvují. Ať už jsou takovéto obavy oprávněné, nebo ne, vůzkum sociologických jevů, který v této práci provádíme to nijak neovlivnuje.
+\noindent Právě data z \textit{Twitteru} jsou pro nás velmi vhodná. Jak se ukazuje~\cite{whyNotFb}, narozdíl on \textit{Facebooku}, Twitter užívá mnoho lidí jako zdroj informací a zpráv o aktuálním dění ve světě. Samozřejmě můžeme zpochybňovat validitu a přesnost informací, které se na takovýchto sítích objěvují. Ať už jsou takovéto obavy oprávněné, nebo ne, vůzkum sociologických jevů, který v této práci provádíme to nijak neovlivnuje.
 
 Dalším důležitým důvodem, který vedl k výběru Twitteru jako média, ze kterého budeme stahovat informace je snadná přístupnost k datům pomocí služby API poskytovaný právě přímo Twitterem~\cite{twitterAPI}. Konkrétně pro naše účely jsme tuto službu nepoužívali přímo, ale za pomocí balíčku \textit{tweepy}~\cite{tweepy} pro programovací jazyk \textit{python}. Ten umožňuje velmi snadné ovládání a filtrování proudu dat, které si vyžádáme z Twitteru a také jejich okamžitou analýzu a zpracování v \textit{pythonu}.
 
 \subsection{Sentimentální analýza textu}
 \noindent Jednou z velice rozvinutých oblastí machine learningu, je tzv. \textit{sentimentální analýza textu}, což je forma zpracování přirozeného jazyka\footnote{Pro pojem zpracování přirozeného jazyka budeme užívat převážně zkratku NLP z anglického názvu \textit{Natural Language Processing}}~\cite{NLTKbook}. V základní a nejvíce studované verzi tohoto problému se snažíme naučit počítač odhadnout, jestli je věta, \textit{positivní, či negativní}. Existují samozřejmě i obdobné úlohy. Můžeme se zajímat o rozdíl mezi větami psanými \textit{objektivně a subjektivně}, nebo rozlišovat více než dvě kategorie, například rozlišovat texty napsané \textit{rozčíleně, smutně, radostně a překvapeně}. Záleží pouze na účelu, za kterým problém řešíme a datech, které máme k dispozici.
 
-Sentimentální analýza textu se skládá z několika základních kroků, které jsou v obecném měřítku velmi podobné jiným machine learning algoritmům. Zakladem jsou data. V našem konkrétním případě se jedná přibližně o $1.5$ miliónů tweetů\footnote{Uspořádaných ve velkém datasetu složeném z několika menších~\cite{TwitterData1, TwitterData2}.} v anglické jazyce, které jsou označeny lidmi jako positivní, nebo negativní. Algoritmus, který používáme je neuronová síť~\cite{TwitterSentAnalysis} obohacená o takzvané \textit{word embedding} vrstvy a \textit{convolution} vrstvy. Takovýto model je nejdříve \textit{"natrénován"}\footnote{Tréninkem je v této oblasti většinou myšlena optimalizace vhodně zvolené fuknce, která odráží přesnost modelu.} na označených datech\footnote{Data, u kterých označil jejich sentiment reálný člověk, považujeme je tedy za správná. I to je však poměrně relativní. Necháme-li více lidí ohodnotit ta stejná data, zjistíme, že ani lidé nejsou v hodnocení příliš konzistetní~\cite{HumanVsMachineLearning}. Pro naše účely je to však naprosto dostačující.}. Poté je možné ho snadno a s mnohem nižší časovou komplexitou, než byla zapotřebí při tréninku, používat pro predikci sentimentu z textu. Výstupem takového modelu je pravděpodobnost, že předložený text je positivní, tedy reálné číslo mezi $0.0$ a $1.0$. Takové číslo můžeme chápat jako míru positivity sentimentu textu. Tedy je-li tweet ohodnocen číslem $0.0$, je zřejmé, že je negativní. Je-li ohodnocen číslem $0.5$, chápeme ho jako neutrální. Text ohodnocený číslem $1.0$ je jistě positivní. Pokud řekneme, že při měření bylo zjištěno, že za určitou dobu bylo v určité skupině $40\ \%$ lidí proti a $60\ \%$ pro, je tím myšleno, že $40\ \%$ tweetů mělo sentiment menší než $0.5$ a naopak $60\ \%$ větší než $0.5$.
+Sentimentální analýza textu se skládá z několika základních kroků, které jsou v obecném měřítku velmi podobné jiným machine learning algoritmům. Zakladem jsou data. V našem konkrétním případě se jedná přibližně o $1.5$ miliónů tweetů\footnote{Uspořádaných ve velkém datasetu složeném z několika menších~\cite{TwitterData1, TwitterData2}.} v anglické jazyce, které jsou označeny lidmi jako positivní, nebo negativní. Algoritmus, který používáme je neuronová síť~\cite{TwitterSentAnalysis} obohacená o takzvané \textit{word embedding} vrstvy a \textit{convolution} vrstvy. Takovýto model je nejdříve \textit{"natrénován"}\footnote{Tréninkem je v této oblasti většinou myšlena optimalizace vhodně zvolené fuknce, která odráží přesnost modelu.} na označených datech\footnote{Data, u kterých označil jejich sentiment reálný člověk, považujeme je tedy za správná. I to je však poměrně relativní. Necháme-li více lidí ohodnotit ta stejná data, zjistíme, že ani lidé nejsou v hodnocení příliš konzistetní~\cite{HumanVsMachineLearning}. Pro naše účely je to však naprosto dostačující.}. Poté je možné ho snadno a s mnohem nižší časovou komplexitou, než byla zapotřebí při tréninku, používat pro predikci sentimentu z textu. Výstupem takového modelu je pravděpodobnost, že předložený text je positivní, tedy reálné číslo mezi $0.0$ a $1.0$. Takové číslo můžeme chápat jako míru positivity sentimentu textu. Tedy je-li tweet ohodnocen číslem $0.0$, je zřejmé, že je negativní. Je-li ohodnocen číslem $0.5$, chápeme ho jako neutrální. Text ohodnocený číslem $1.0$ je jistě positivní.
+
+Pokud řekneme, že při měření bylo zjištěno, že za určitou dobu bylo v určité skupině $40\ \%$ lidí proti a $60\ \%$ pro, je tím myšleno, že $40\ \%$ tweetů mělo sentiment menší než $0.5$ a naopak $60\ \%$ větší než $0.5$.
 
 \subsection{Technické detaily sentimentální analýzy textu}
 \noindent Pohlédneme-li do větších detailů našeho modelu na odhad sentimentu, prvním krokem po získání datasetu je vytvořit slovník s $V = 5000$ nejčastějšími slovy. Poté je každý datový bod, tedy každý \textit{tweet}, transformován ze sezamu slov do seznamu \textit{1-hot-encoding} vektorů\footnote{Kde každý vektro je reprezantací jednoho slova. Takové reprezantace mají velmi jednoduchý a zároveň velmi nepraktický tvar. Je-li slovo ve slovníku na $k$-té pozici, bude jeho \textit{1-hot-encoding} reprezentace vektor plný nul, až na $k$-tou pozici, kde se bude nacházet čílo $1$. Je zřejmé, že tato reprezentace není příliš efektivní.} ze slovníku, které jednotlivá slova reprezentují v prostoru o obrovské dimenzi $V = 5000$.
@@ -124,8 +136,39 @@ Zdrojový kód pro sentimentální analýzu byl napsán v pragramovacím jazyce 
 % ##############################################################################
 \newpage
 \section{Konstrukce měření}
-\subsection{Výběr pozorovaných vzorků}
-\subsection{Metodika výběru vzorků}
+\noindent Sentimentální analýza textu nám umožňuje automaticky ohodnotit mírou sentimentu u velkého množství textových příspěvků. Výsledkem takového ohodnocení je však pouze reálné číslo mezi nulou a jedničkou. Proto odtud nevede žádná přímá cesta k měření síly informační bubliny na částech společnosti. % tady by se hodilo shrnout jak to studují ostatní
+
+Uvažujeme-li konkrétního jedince ve společnosti, informační bublina není nijak explicitně závislá na něm samotném. Místo toho je až implicitně závislá na osobách, které tvoří obsah viditelný studovaným jedincem. Proto je zřejmé, že budeme-li chtít pozorovat sílu a efekt infromační bubliny na konkrétního jedince, předmětem našeho studia musí být lidé v okolí tohoto jedince. V případě sociálních sití to musí být konkrétně příspěvky, které tito lidé tvoří.
+
+Jak jsme již zmiňovali v předešlých kapitolách, pro účely našeho výzkumu jsme využili sociální síť \textit{Twitter}. Ta se v poslední době transformuje spíše do podoby informačního kanálu~\cite{whyNotFb}. Neméně důležitý je fakt, že umožňuje poměrně snadný přístup k datům~\cite{tweepy, twitterAPI}.
+
+\subsection{Výběr pozorovaných skupin}
+\noindent Našim cílem je pozorovat efekty a sílu informační bubliny na vybrané skupině ve společnosti. V odstavcích výše jsme však shrnuli proč to není vůbec přímočarý proces.
+
+Abychom vybrali určitou skupinu uživatel \textit{Twitteru} co nejpřesněji, využijeme existujících stránek, které sdružují příznivce hledané skupinu. Chceme-li například studovat jak jsou informační bublinou postiženi \textit{biochemici}, vybereme je z lidí, kteří sledují Twitterový profil \textit{Biochemical Society}. Ten se po našem průzkumu Twitteru ukázal jako nejvíce populární účet s tímto tématem, sleduje ho přibližně $15$ tis. lidí. Služby poskytované Twitterem na stahování dat nás bohužel omezují v počtu zkoumaných uživatelů, proto musíme ze všech $15$ tisíc vybrat pouze část. Abychom zajistili náhodnost tohoto procesu, o výběr podmožiny se stará jedna část softwaru, který jsme pro tyto účely vytvořili. % citace na GitHub???????
+
+Nyní máme vybranou skupinu vzorků, na kterých chceme pozorovat efekty infromační bubliny. Ta je však závislá na uživatelech, kteří vytvářejí obsah vyditelný studovanými lidmi. To jsou Ti uživatelé, které studované subjekty sledují. Vybrali jsme-li například několik biochemiků, na kterých chceme sledovat informační bublinu, musíme nyní studovat obsah, který tvoří uživatelé, které tito biochemici na Twitteru sledují.
+
+Pro přehlednost tyto vztahu vyjádřeme matematicky. Je-li $\mathbb{M}_{bio}$ množina všech uživatelů, kteří sledují stránku \textit{Biochemical Society}, našim prvním úkolem je náhodně vybrat podmnožinu $\mathbb{P}_{bio}$ takovou, že obsahuje námi zvolený počet prvků $\left\vert{\mathbb{P}_{bio}}\right\vert = n$ a zároveň každý prvek je vybrán s pravděpodobností $p = \frac{1}{\left\vert{\mathbb{M}_{bio}}\right\vert}$. Nyní pomocí služeb poskytovaných Twitterem vybereme množinu $\mathbb{S}_{bio}$ takovou, že každý prvek je sledován alespoň jedním prvkem z $\mathbb{P}_{bio}$. Je-li $\mathbb{T}$ množina všech uživatelů Twitteru a  $\mathbb{A}$ tzv. \textit{adjacency matrix} celého Twittery, tedy matice, pro kterou platí:
+\begin{equation}
+    \mathbb{A}_{ij}=
+    \begin{cases}
+        1, &\text{pokud j sleduje i;}\\
+        0, &\text{jinak.}
+    \end{cases}
+\end{equation}
+Potom $\mathbb{S}_{bio} = \{k\ \text{takových, že}\ \exists l\in\mathbb{T}: \mathbb{A}_{kl} = 1 \wedge l\in\mathbb{P}_{bio} \}$.
+
+\subsection{Pozorování efektů infromační bubliny}
+\noindent Na takto vybrané skupině lidí $\mathbb{S}_{bio}$, které sledují uživatelé jejichž informační bublina nás zajímá chceme pozorovat, zda jsou zaměřené pouze jedním směrem a nepodávají dostatečně široké spektrum názorů. Umíme však pouze odhadnout sentiment jakéhokoliv \textit{tweetu}.
+
+Po dobu měření budeme stahovat všechny tweety, které vytvoří uživatelé z $\mathbb{S}_{bio}$, tedy lidé, které sledují subjekty našeho zájmu. Zajímmají-li nás efekty filter bubble na \textit{biochemiky} budeme stahovat všechny tweety, které vytvoří lidé, které \textit{biochemici} sleudjí\footnote{Ve výsledku tedy budeme stahovat všechny tweety, které \textit{biochemici} uvidí, což je právě náš záměr.}.
+
+Ze všech takto stažených tweetů vybereme pouze ty, které obsahují nějaké, námi zvolené, klíčové slovo. Mohli bychom použít například slovo \textit{\uv{Trump}}. Tím dostaneme pouze tweety, které se zabývají něčím se vztahem k prezidentu \textit{Trumpovi}. Pro každý takto vyfiltrovaný tweet provedeme sentimentální analýzu a tím odhadneme, zda má autor positivní nebo negativní vztah k danému tématu. Provedeme-li takováto měření na dvou odlišných skupinách a stejném klíčovém slově, tedy konkrétním tématu, můžeme odhadovat kde působí informační bublina, která podporuje dané téma, nebo ho naprosto zamítá. Například můžeme porovnávat rozložení sentimentu zpráv s klíčovým slovem \textit{\uv{Trump}}, které vidí \textit{biochemici} a příznivci \textit{těžbý ropy}. Můžeme předpokládat, že biochemici budou žít v bublině, která má více negativní názor na prezdenta \textit{Trumpa} a příznivci \textit{těžby ropy} naopak.
+
+Člověku se může zdát, že tímto pouze pozorujeme názor, který mají \textit{biochemici} na \textit{Trump}. Tak to ale zdaleka není. Ve skutečnosti zkoumáme jaké zprávy jsou viditelné \textit{biochemiky}. A právě zprávy nimi viditelné jsou zdrojem informační bubliny, kterou chceme popisovat.
+
+Zde je potřeba podotknout, že skupiny a klíčová slova se musí volit velmi pečlivě. Vybereme-li klíčové slovo \textit{\uv{Islámský stát}} a pozorujeme sentiment, může dojít k velkému nedorozumění. Tweet, který hovoří o tom zvěrstvech, která koná \textit{Islámský stát} bude jistě negativní, což je ten efekt, který si přejeme. Problém však nastává v případě, kdy nějaký tweet hovoří například o vítězství nad \textit{Islámským státem}. Text takového příspěvku se snadno může jevit jako pozitivní\footnote{To však není problémem počítače, který text analyzuje. I člověk by radostný tweet o vítězství označil jako pozitivní.}, což bychom špatně vyhodnotili jako tweet podporující \textit{Islámský stát}. Proto je potřeba jak pozorované skupiny, tak klíčová svola volit velmi pečlivě.
 
 
 
@@ -139,7 +182,7 @@ Zdrojový kód pro sentimentální analýzu byl napsán v pragramovacím jazyce 
 \begin{thebibliography}{99}
 
     \bibitem{keras}
-    CHOLLET, Fran\c{c}ois. \textit{Keras}. GitHub, 2015. Dostupné také z: \url{https://github.com/fchollet/keras}
+    CHOLLET, Fran\c{c}ois. \textit{Keras}. GitHub 2015 [online]. [cit. 2017-01-22]. Dostupné také z: \url{https://github.com/fchollet/keras}
 
     \bibitem{TensorFlow}
     ABADI, Martín, et al. \textit{TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems}. (2015). arXiv:1603.04467. Dostupné také z: \url{https://arxiv.org/abs/1603.04467}
@@ -217,7 +260,7 @@ Zdrojový kód pro sentimentální analýzu byl napsán v pragramovacím jazyce 
     HUBERMAN, Bernardo A. Sociology of science: Big data deserve a bigger audience. \textit{Nature}. 2012-2-15, \textbf{482}(7385), 308-308. DOI: 10.1038/482308d. ISSN 0028-0836. Dostupné také z: \url{http://www.nature.com/doifinder/10.1038/482308d}
 
     \bibitem{tweepy}
-    HILL, Aaron a Joshua ROESSLEIN. Tweepy. \textit{Github} [online]. [cit. 2017-01-22]. Dostupné z: \url{https://github.com/tweepy/tweepy}
+    HILL, Aaron a Joshua ROESSLEIN. \textit{Tweepy}. Github 2015 [online]. [cit. 2017-01-22]. Dostupné z: \url{https://github.com/tweepy/tweepy}
 
     \bibitem{twitterAPI}
     API Overview. \textit{Twitter Developer Documentation} [online]. Twitter, 2016 [cit. 2017-01-22]. Dostupné z: \url{https://dev.twitter.com/overview/api}

@@ -18,11 +18,4 @@ df4 = pd.read_csv('/Users/Jakub/MEGA/Work/SOC/FinalTwitterAnalyzer/measurements/
 
 dfs = [df1, df2, df3, df4]
 for df in dfs:
-    df.columns = ['date', 'sent']
-
-# plt.hist([df['sent'] for df in dfs], bins=15, normed=False, color=['b', 'r', 'g', 'k'])
-plt.hist([df1['sent'], df3['sent']], bins=15, normed=False, color=['b','g'])
-plt.show()
-
-plt.hist([sent1, sent2], bins=30, normed=False, color=['b', 'r'])
-plt.show()
+    df.columns = ['date', 
