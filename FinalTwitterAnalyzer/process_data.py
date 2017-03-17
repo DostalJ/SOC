@@ -12,7 +12,10 @@ df4 = pd.read_csv('/Users/Jakub/MEGA/Work/SOC/FinalTwitterAnalyzer/measurements/
 df5 = pd.read_csv('/Users/Jakub/MEGA/Work/SOC/FinalTwitterAnalyzer/measurements/sentiment/BiochemSoc-trump.txt', header=None)
 df6 = pd.read_csv('/Users/Jakub/MEGA/Work/SOC/FinalTwitterAnalyzer/measurements/sentiment/PetroleumEcon-trump.txt', header=None)
 
-dfs = [df1, df2, df3, df4, df5, df6]
+df7 = pd.read_csv('/Users/Jakub/MEGA/Work/SOC/FinalTwitterAnalyzer/measurements/sentiment/trump.txt', header=None)
+
+
+dfs = [df1, df2, df3, df4, df5, df6, df7]
 for df in dfs:
     df.columns = ['date', 'sent']
 dfs = {'CatholicNewsSVC_abortion': df1['sent'],
@@ -20,7 +23,8 @@ dfs = {'CatholicNewsSVC_abortion': df1['sent'],
        'EvryDayFeminism_abortion': df3['sent'],
        'LGBTfdn_abortion': df4['sent'],
        'BiochemSoc_trump': df5['sent'],
-       'PetroleumEcon_trump': df6['sent']}
+       'PetroleumEcon_trump': df6['sent'],
+       'Twitter_trump': df7['sent']}
 
 def hist(names, legends, keyword, colors=['b', 'r', 'g', 'k'], num_bins=30, out_path=None):
 
@@ -42,6 +46,9 @@ hist(names=['LGBTfdn_abortion', 'OnlyMormons_abortion'],
 hist(names=['BiochemSoc_trump', 'PetroleumEcon_trump'],
      legends=['BiochemSoc', 'PetroleumEcon'],
      keyword='Trump')
+hist(names=['Twitter_trump', 'PetroleumEcon_trump'],
+     legends=['Twitter', 'PetroleumEcon'],
+     keyword='Trump',)
 
 
 help(plt.ticklabel_format)

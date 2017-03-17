@@ -124,6 +124,7 @@ class TwitterAnalyzer:
         while True:
             try:
                 myStream.filter(track=self.keywords, follow=self.ids, languages=['en'], filter_level=['medium'])
+                # myStream.filter(track=self.keywords, languages=['en'], filter_level=['medium'])
             except KeyboardInterrupt:
                 stop = True
             except Exception as e:
