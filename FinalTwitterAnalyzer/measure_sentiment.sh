@@ -1,4 +1,3 @@
-# 7/3/2017 21:22
 # python3 script.py -p=./measurements/people_to_follow/PetroleumEcon.txt -k=trump -o=./measurements/sentiment/PetroleumEcon-trump.txt
 # python3 script.py -p=./measurements/people_to_follow/BiochemSoc.txt -k=trump -o=./measurements/sentiment/BiochemSoc-trump.txt
 
@@ -11,5 +10,6 @@
 
 
 
-# python3 script.py -p=./measurements/people_to_follow/PetroleumEcon.txt -k=trump -o=./measurements/sentiment/PetroleumEcon-trump-2.txt
-# python3 script.py -p=./measurements/people_to_follow/BiochemSoc.txt -k=trump -o=./measurements/sentiment/BiochemSoc-trump-2.txt
+# python3 script.py -p=./measurements/people_to_follow/PetroleumEcon.txt -k=trump -o=./measurements/sentiment/PetroleumEcon-trump-3.txt -api=1
+# python3 script.py -p=./measurements/people_to_follow/BiochemSoc.txt -k=trump -o=./measurements/sentiment/BiochemSoc-trump-3.txt -api=1
+# python3 script.py -k=trump -o=./measurements/sentiment/trump-3.txt -api=2
