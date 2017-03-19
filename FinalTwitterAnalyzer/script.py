@@ -18,6 +18,7 @@ def main():
     parser.add_argument('-p','--people', help="Path to file with ids (delimited by comma). The script will stream what everything these users might see. If not given, whole Twitter is streamed.", required=False)
     parser.add_argument('-k','--keywords', help="Keywords the script will look for in the stream.",required=True)
     parser.add_argument('-o','--output_file',help='File we are writing sentiment to.', required=True)
+    parser.add_argument('-l', '--log', help='0 for no logging, 1 for logging to terminal, path/to/log/file to write logs to file', required=False, default='1')
     parser.add_argument('-api', '--api', help='The index of API authentication', required=False, default=1, type=int)
     args = parser.parse_args()
 
@@ -34,7 +35,7 @@ def main():
     keywords = args.keywords.split(',')
 
     print('Preparing streaming...')
-    TA = TwitterAnalyzer(people=people, keywords=keywords, api=args.api)
+    TA = TwitterAnalyzer(people=people, keywords=keywords, api=args.api, log=args.log)
     TA.stream_analyze_save(out_path=args.output_file)
 
 
@@ -43,12 +44,11 @@ class Classifier:
         try:
             self.classifier = load_model(filepath=classifier_path)
             self.graph = tf.get_default_graph()
-
-            print('-'*30)
             print('Classifier successfuly loaded.')
-            print('-'*30)
         except Exception as e:
+            print('-'*30)
             raise Exception('Failed in loading classifier:', e)
+            print('-'*30)
 
         self.Vocabulary = Vocabulary(vocabulary_file=vocabulary_path)
     def sentiment(self, sentence):
@@ -81,24 +81,19 @@ class MyStreamListener(StreamListener, TweepError):
         print('Error: ' + str(status_code) + '\n')
         if status_code == 420:
             time.sleep(5*60)
+            print('Retrying...')
         return False
 
 class TwitterAnalyzer:
     """
     Streams and analyzes data from twitter.
     """
-    def __init__(self, people, keywords, api):
+    def __init__(self, people, keywords, api, log):
         # authentication
-        if api == 1:
-            consumer_key = keys.consumer_key
-            consumer_secret = keys.consumer_secret
-            access_token = keys.access_token
-            access_token_secret = keys.access_token_secret
-        elif api == 2:
-            consumer_key = keys.consumer_key2
-            consumer_secret = keys.consumer_secret2
-            access_token = keys.access_token2
-            access_token_secret = keys.access_token_secret2
+        consumer_key = keys.consumer_key[api]
+        consumer_secret = keys.consumer_secret[api]
+        access_token = keys.access_token[api]
+        access_token_secret = keys.access_token_secret[api]
 
         auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
         auth.set_access_token(access_token, access_token_secret)
@@ -110,6 +105,7 @@ class TwitterAnalyzer:
             self.ids = self._filter_by_friends(people)
 
         self.keywords = keywords
+        self.log = log
 
 
     def _filter_by_friends(self, people):
@@ -125,6 +121,22 @@ class TwitterAnalyzer:
                 pass
         ids = [str(_id) for _id in ids]
         return ids
+
+    def _log(self, e, log):
+        """
+        Log errors
+        """
+        if log == '0':
+            pass
+        elif log == '1':
+            print('Exception:', e)
+            print('Retrying...')
+        else:
+            try:
+                with open(log, 'a') as log_file:
+                    log_file.write(str(datetime.now()) + ',' + str(e)+'\n')
+            except Exception as e:
+                print('Exception while writing log:', e)
 
     def stream_analyze_save(self, out_path):
         """
@@ -143,14 +155,12 @@ class TwitterAnalyzer:
             except KeyboardInterrupt:
                 stop = True
             except Exception as e:
-                print('Exception:', e)
-                print('Retrying...')
+                self._log(e=e, log=self.log)
                 pass
             if stop:
                 print('Disconnecting.')
                 stream.disconnect()
                 break
-
 
 if __name__ == '__main__':
     main()

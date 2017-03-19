@@ -5,52 +5,99 @@ from matplotlib.style import use
 use('ggplot')
 
 
-df1 = pd.read_csv('/Users/Jakub/MEGA/Work/SOC/FinalTwitterAnalyzer/measurements/sentiment/CatholicNewsSVC-abortion.txt', header=None)
-df2 = pd.read_csv('/Users/Jakub/MEGA/Work/SOC/FinalTwitterAnalyzer/measurements/sentiment/OnlyMormons-abortion.txt', header=None)
-df3 = pd.read_csv('/Users/Jakub/MEGA/Work/SOC/FinalTwitterAnalyzer/measurements/sentiment/EvryDayFeminism-abortion.txt', header=None)
-df4 = pd.read_csv('/Users/Jakub/MEGA/Work/SOC/FinalTwitterAnalyzer/measurements/sentiment/LGBTfdn-abortion.txt', header=None)
-df5 = pd.read_csv('/Users/Jakub/MEGA/Work/SOC/FinalTwitterAnalyzer/measurements/sentiment/BiochemSoc-trump.txt', header=None)
-df6 = pd.read_csv('/Users/Jakub/MEGA/Work/SOC/FinalTwitterAnalyzer/measurements/sentiment/PetroleumEcon-trump.txt', header=None)
-
-df7 = pd.read_csv('/Users/Jakub/MEGA/Work/SOC/FinalTwitterAnalyzer/measurements/sentiment/trump.txt', header=None)
-
-df8 = pd.read_csv('/Users/Jakub/MEGA/Work/SOC/FinalTwitterAnalyzer/measurements/sentiment/BiochemSoc-trump-2.txt', header=None)
-df9 = pd.read_csv('/Users/Jakub/MEGA/Work/SOC/FinalTwitterAnalyzer/measurements/sentiment/trump-2.txt', header=None)
 
 
-dfs = [df1, df2, df3, df4, df5, df6, df7, df8, df9]
-for df in dfs:
-    df.columns = ['date', 'sent']
-dfs = {'CatholicNewsSVC_abortion': df1['sent'],
-       'OnlyMormons_abortion': df2['sent'],
-       'EvryDayFeminism_abortion': df3['sent'],
-       'LGBTfdn_abortion': df4['sent'],
-       'BiochemSoc_trump': df5['sent'],
-       'PetroleumEcon_trump': df6['sent'],
-       'Twitter_trump': df7['sent'],
-       'BiochemSoc_trump-2': df8['sent'],
-       'Twitter_trump-2': df9['sent']}
+def load_sent(name):
 
-def hist(names, legends, keyword, colors=['b', 'r', 'g', 'k'], num_bins=30, out_path=None):
+    # df = pd.read_csv(filepath_or_buffer='./measurements/sentiment/' + name + '.csv', header=None)
+    # sent = df[1]
+
+    path = './measurements/sentiment/' + name + '.csv'
+    f = open(file=path, mode='r')
+    sent = []
+    for line in f.readlines():
+        line = line.split(',')
+        sent.append(float(line[1]))
+    return sent
+
+def get_proportion(name):
+    df = pd.read_csv(filepath_or_buffer='./measurements/sentiment/' + name + '.csv', header=None)
+    # df = pd.read_csv(filepath_or_buffer='./measurements/sentiment/' + name + '.txt', header=None)
+    sent = df[1]
+    l = len(sent)
+    p = [0,0]
+    for j in range(l):
+        if sent[j] < 0.5:
+            p[0] += 1/l
+        else:
+            p[1] += 1/l
+    return p
+# get_proportion('CatholicNewsSVC-abortion-2')
+# get_proportion('EvryDayFeminism-abortion-2')
+
+def hist(names, legends, keyword, colors=['b', 'r', 'g', 'c', 'y'], num_bins=30, normed=False, out_name=None, exp=4):
+    plt.clf()
 
     data = []
     for name in names:
-        data.append(dfs[name])
+        sent = load_sent(name)
+        data.append(sent)
 
-    plt.hist(x=data, bins=num_bins, normed=False, color=colors[:len(data)], label=legends)
-    plt.ticklabel_format(style='sci', axis='y', scilimits=(0,0))
+    if normed == True:
+        weights = [np.ones_like(array)/float(len(array)) for array in data]
+        plt.hist(x=data, bins=num_bins, color=colors[:len(data)], label=legends, weights=weights)
+        plt.ylabel(r'Proportion of tweets')
+
+    else:
+        plt.hist(x=data, bins=num_bins, color=colors[:len(data)], label=legends)
+        plt.ylabel(r'Number of tweets [$10^{}$]'.format(exp))
+        plt.ticklabel_format(style='sci', axis='y', scilimits=(0,0))
+
     plt.legend(loc=2)
     plt.title('Keyword: {}'.format(keyword))
     plt.xlabel('Sentiment')
-    plt.ylabel(r'Number of tweets [$10^4$]')
-    plt.show()
 
-# hist(names=['LGBTfdn_abortion', 'OnlyMormons_abortion'],
-#      legends=['LGBTfdn', 'OnlyMormons'],
-#      keyword='abortion')
-# hist(names=['BiochemSoc_trump', 'PetroleumEcon_trump'],
-#      legends=['BiochemSoc', 'PetroleumEcon'],
-#      keyword='Trump')
-hist(names=['Twitter_trump-2', 'BiochemSoc_trump-2'],
-     legends=['Twitter', 'BiochemSoc'],
-     keyword='Trump',)
+
+    if out_name == None:
+        plt.show()
+    else:
+        path = '/Users/Jakub/MEGA/Work/SOC/SOC/Thesis/Pics/' + out_name
+        plt.savefig(path, dpi=500)
+
+
+
+hist(names=['StandingRockST-trump-4', 'trump-4'],
+     legends=['StandingRockST', 'Twitter'],
+     keyword='Trump', num_bins=30)
+
+
+
+
+
+"""
+hist(names=['CatholicNewsSVC-abortion-2', 'OnlyMormons-abortion-2', 'LGBTfdn-abortion-2', 'abortion-3'],
+     legends=['CatholicNewsSVC', 'OnlyMormons', 'LGBTfdn', 'Twitter'],
+     colors = ['b', 'm', 'g', 'c', 'y'],
+     keyword='abortion',
+     exp=3,
+     normed=False, num_bins=15,
+     out_name='abortion-3groups.png')
+
+hist(names=['CatholicNewsSVC-abortion-2', 'EvryDayFeminism-abortion-2'],
+     legends=['CatholicNewsSVC', 'EvryDayFeminism'],
+     keyword='abortion',
+     normed=False,
+     exp=5,
+     out_name='feminismXcatholic.png')
+
+hist(names=['CatholicNewsSVC-abortion-2', 'EvryDayFeminism-abortion-2'],
+     legends=['CatholicNewsSVC', 'EvryDayFeminism'],
+     keyword='abortion',
+     normed=True,
+     out_name='feminismXcatholic-normed.png')
+
+hist(names=['BiochemSoc-trump-3', 'PetroleumEcon-trump-3', 'trump-3'],
+     legends=['BiochemSoc', 'PetroleumEcon', 'Twitter'],
+     keyword='Trump', num_bins=20,
+     out_name='biochem_petroleum-trump.png')
+"""

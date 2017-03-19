@@ -19,10 +19,10 @@ class CollectFollowers:
     def __init__(self):
         """Authenticate the Twitter API"""
         # authentication
-        consumer_key = keys.consumer_key
-        consumer_secret = keys.consumer_secret
-        access_token = keys.access_token
-        access_token_secret = keys.access_token_secret
+        consumer_key = keys.consumer_key[1]
+        consumer_secret = keys.consumer_secret[1]
+        access_token = keys.access_token[1]
+        access_token_secret = keys.access_token_secret[1]
         auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
         auth.set_access_token(access_token, access_token_secret)
         self.api = tweepy.API(auth)

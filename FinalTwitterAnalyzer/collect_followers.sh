@@ -9,3 +9,5 @@
 # python3 collect_followers.py -p=LGBTfdn -n=100 -o=./measurements/people_to_follow/LGBTfdn.txt
 #
 # python3 collect_followers.py -p=BiochemSoc -n=100 -o=./measurements/people_to_follow/BiochemSoc.txt
+# 
+# python3 collect_followers.py -p=StandingRockST -n=100 -o=./measurements/people_to_follow/StandingRockST.txt

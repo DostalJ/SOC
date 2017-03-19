@@ -55,9 +55,7 @@ class Vocabulary:
                 open_file = open(vocabulary_file, "rb")
                 self.vocabulary = pickle.load(open_file)
                 open_file.close()
-                print('-'*30)
                 print('Vocabulary {} successfuly loaded.'.format(vocabulary_file))
-                print('-'*30)
             except Exception as e:
                 print('-'*30)
                 print('Error while loading {}:.'.format(vocabulary_file), e)
@@ -162,9 +160,7 @@ class Vocabulary:
                 save = open(path_to_save, "wb")
                 pickle.dump(vocabulary, save)
                 save.close()
-                print('-'*30)
                 print('Vocabulary {} successfuly saved.'.format(path_to_save))
-                print('-'*30)
             except Exception as e:
                 print('-'*30)
                 print('Vocabulary {} wasn\'t saved:'.format(path_to_save), e)

@@ -12,6 +12,7 @@
 \let\openright=\clearpage
 
 %%% Additional useful packages
+% \usepackage{hyperref} % reference: (Figure 1) instead of (1)  <-- \autoref{}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amsthm}
@@ -42,7 +43,13 @@
 \include{TitulkaCZ}
 \newpage
 \section*{Úvod}
-\noindent
+\noindent Sociální sítě se čím dál více dostávají do popředí nejen jako volnočasové platformy pro různé aktivity, ale i jako informační kanály. V tomto ohledu se transformují ve zdroj aktuálních zpráv z celého světa bez ohledu na to, zda jde o novinku z uměleckých sfér, výsledky vědeckého zkoumání či seriózní informace z problematiky politických vztahů.
+
+Aby uživatelé mohli sledovat jim imponující obsah, existují na sociálních sítích softwary umožňující filtraci uživatelem viděných příspěvků, nazýváme je „prefenční algoritmy“. Personalizace informačního kanálu vytváří kolem uživatele okruh pro něj obsahově zajímavých příspěvků, což v důsledku může vést do situace, kdy je obklopován stále stejnými myšlenkami a názory na mnohá témata. Tento fenomén byl nazván Filter bubble neboli informační bublina a stává se doposud nepříliš prozkoumaným předmětem spousty prací na mezioborové úrovni.
+
+Většina těchto studií primárně pojímá filter bubble jako fenomén na úrovni sociologie studující ho svými tradičními postupy a popisuje ho v malém měřítku, tedy na nepatrném vzorku společnosti.
+
+Cílem naší práce je vyvinutí nové metody studia filter bubble, která by umožnila ilustrovat a sledovat míru postižení konkrétních skupin ve společnosti. Abychom mohli informační bublinu studovat na „large scale“, využijeme nejmodernějších poznatků z oblasti „machine learningu“ a aplikujeme je na data poskytovaná sociální sítí Twitter. Tato data po pečlivé selekci podrobíme zpracování „sentimentální analýzou“, která nám umožní ilustraci rozšíření informační bubliny napříč společností.
 
 % ##############################################################################
 % ##############################################################################
@@ -116,7 +123,7 @@ Příspěvky na \textit{Twitteru} mohou mít jakýkoliv textový tvar do délký
 Dalším důležitým důvodem, který vedl k výběru Twitteru jako média, ze kterého budeme stahovat informace, je snadná přístupnost k datům pomocí služby API poskytované přímo Twitterem~\cite{twitterAPI}. Konkrétně pro naše účely jsme tuto službu nepoužívali přímo, ale za pomocí balíčku \textit{tweepy}~\cite{tweepy} pro programovací jazyk \textit{python}. Ten umožňuje velmi snadné ovládání a filtrování proudu dat, které si vyžádáme z Twitteru a také jejich okamžitou analýzu a zpracování v \textit{pythonu}.
 
 \subsection{Sentimentální analýza textu}
-\noindent Jednou z velice rozvinutých oblastí machine learningu, je tzv. \textit{sentimentální analýza textu}, což je forma zpracování přirozeného jazyka\footnote{Pro pojem zpracování přirozeného jazyka budeme užívat převážně zkratku NLP z anglického názvu \textit{Natural Language Processing}}~\cite{NLTKbook}. V základní a nejvíce studované verzi tohoto problému se snažíme naučit počítač odhadnout, jestli je věta \textit{positivní, či negativní}. Existují samozřejmě i obdobné úlohy. Můžeme se zajímat o rozdíl mezi větami psanými \textit{objektivně a subjektivně}, nebo rozlišovat více než dvě kategorie, například rozlišovat texty napsané \textit{rozčíleně, smutně, radostně a překvapeně}. Záleží pouze za jakým účelem problém řešíme a datech, které máme k dispozici.
+\noindent Jednou z velice rozvinutých oblastí machine learningu, je tzv. \textit{sentimentální a\-na\-lý\-za textu}, což je forma zpracování přirozeného jazyka\footnote{Pro pojem zpracování přirozeného jazyka budeme užívat převážně zkratku NLP z anglického názvu \textit{Natural Language Processing}}~\cite{NLTKbook}. V základní a nejvíce studované verzi tohoto problému se snažíme naučit počítač odhadnout, jestli je věta \textit{positivní, či negativní}. Existují samozřejmě i obdobné úlohy. Můžeme se zajímat o rozdíl mezi větami psanými \textit{objektivně a subjektivně}, nebo rozlišovat více než dvě kategorie, například rozlišovat texty napsané \textit{rozčíleně, smutně, radostně a překvapeně}. Záleží pouze za jakým účelem problém řešíme a datech, které máme k dispozici.
 
 Sentimentální analýza textu se skládá z několika základních kroků, které jsou v obecném měřítku velmi podobné jiným machine learning algoritmům. Základem jsou data. V našem konkrétním případě se jedná přibližně o $1.5$ miliónů tweetů\footnote{Uspořádaných ve velkém datasetu složeném z několika menších~\cite{TwitterData1, TwitterData2}.} v anglickém jazyce, které jsou označeny lidmi jako positivní, nebo negativní. Algoritmus, který používáme, je neuronová síť~\cite{TwitterSentAnalysis} obohacená o takzvané \textit{word embedding} vrstvy a \textit{convolution} vrstvy. Takovýto model je nejdříve \textit{"natrénován"}\footnote{Tréninkem je v této oblasti většinou myšlena optimalizace vhodně zvolené fuknce, která odráží přesnost modelu.} na označených datech\footnote{Data, u kterých označil jejich sentiment reálný člověk, považujeme za správná. I to je však relativní. Necháme-li více lidí ohodnotit ta stejná data, zjistíme, že ani lidé nejsou v hodnocení příliš konzistetní~\cite{HumanVsMachineLearning}. Pro naše účely je to však naprosto dostačující.}. Poté je možné ho snadno a s mnohem nižší časovou komplexitou, než byla zapotřebí při tréninku, používat pro predikci sentimentu z textu. Výstupem takového modelu je pravděpodobnost, že předložený text je positivní, tedy reálné číslo mezi $0.0$ a $1.0$. Takové číslo můžeme chápat jako míru positivity sentimentu textu. Tedy je-li tweet ohodnocen číslem $0.0$, je zřejmé, že je negativní. Je-li ohodnocen číslem $0.5$, chápeme ho jako neutrální. Text ohodnocený číslem $1.0$ je jistě positivní.
 
@@ -170,6 +177,10 @@ Ze všech takto stažených tweetů vybereme pouze ty, které obsahují, námi z
 
 Zde je potřeba podotknout, že skupiny a klíčová slova se musí volit velmi pečlivě. Vybereme-li klíčové slovo \textit{\uv{Islámský stát}} a pozorujeme sentiment, může dojít k velkému nedorozumění. Tweet, který hovoří o těchto zvěrstvech, která koná \textit{Islámský stát} bude jistě negativní, což je ten efekt, který si přejeme. Problém však nastává v případě, kdy nějaký tweet hovoří například o vítězství nad \textit{Islámským státem}. Text takového příspěvku se snadno může jevit jako positivní\footnote{To však není problémem počítače, který text analyzuje. I člověk by radostný tweet o vítězství označil jako pozitivní.}, což bychom špatně vyhodnotili jako tweet podporující \textit{Islámský stát}. Proto je potřeba jak pozorované skupiny, tak klíčová slova volit velmi pečlivě.
 
+V neposlední řadě zmiňme, že data stahovaná z Twitteru jsou již filtrována preferenčními algoritmy. Analyzované příspěvky jsou jen ty, které splňují námi zadané požadavky a zároveň se objevují na předních pozicích informačních kanálů sledovaných uživatelů\footnote{Vyvstává otázka jak moc musí být příspěvek sdílený na to, aby byl považován za dostatečně známý a my ho analyzovali. O toto se automaticky starají preferenční algoritmy Twitteru~\cite{twitterAPI}, které jsou námi nastavené na úroveň \textit{medium} což je nepřísnější nám poskytovaná úroveň filtrace.}. Podotkněme, že toto chování je pro náš výzkum velmi úžitečné, ne-li klíčové. Pokud bychom stahovali všechny příspěvky, i ty, které se objeví až ve velmi spodní části informačních kanálů, kde je již uživatel nemá šanci zaznamenat, nemohli bychom informační bublinu studovat.
+
+V souvislosti s tímto vyvstává ještě jedna záležitost, která by mohla být zdrojem nedorozumění. Pro kvalitní vysvětlení, předběhněme strukturu naší práce uveďme příklad. Jednou z pozorovaných skupin je skupina \textit{feministek} s klíčovým slovem \textit{\uv{abortion}}. Porovnáme-li nalayzovaná data této skupiny s daty s přízpěvky z celého \textit{Twitteru}\footnote{Tedy s příspěvky, které nejsou nijak omezeni skupinou, která je vidí.} zjistíme, že tweetů viditelných \textit{feministkami} je podstatně více než tweetů viditelných celým \textit{Twitterem}. Co se může zdát naprosto nesmyslné. Vždyť skupina \textit{feministek} je jistě podmnožina celého \textit{Twitteru}, proto by počet příspěvků s daným klíčovým slovem měl být podstatně menší. Ve skutečnosti nám však toto říká, že počet velmi sdílených příspěvků s daným klíčovým slovem je větší u \textit{feministek} než u náhodného uživatele \textit{Twitteru}.
+
 \subsection{Výběr pozorovaných skupin}
 \noindent Pro naše měření jsme provedli důkladný výběr studovaných objektů vycházející z nejaktuálnějšího politického dění, abychom dosáhli co nejpřesnějšího zachycení veškerých možných skupin názorů.
 
@@ -189,13 +200,69 @@ Na rozdíl od těchto dvou podskupin potenciálních sympatizantů s potraty jsm
 % ##############################################################################
 % ##############################################################################
 \section{Diskuze měření}
+\noindent Pozorované skupiny jsme vybírali tak, abychom mohli pozorovat co nejsilnější efekty informační bubliny. Sledované komunity se tedy liší názorem na dané pozorované téma.  Je klíčové pochopit, že našim cílem není ukázat to, že mají jiný názor. Cílem je ukázat rozdílnost v příspěvcích, které na sociální sítí členové komunit vidí. Pomocí našich výsledků poté okomentovat jak moc je ohrožena objektivita uživatelů sociálních sítí.
+
+\subsection{Potrat}
+\noindent Začněme s případem, kdy jsme se zabývali diversitou názorů na \textit{\uv{potrat}}. Hledali jsme příspěvky s klíčovým slovem \textit{\uv{abortion}} a sledovali, zda se sentiment takovýchto příspevků liší v různých skupinách\footnote{Konkrétně šlo o \textit{katolíky} sledující skupinu \textit{Catholic News Svc}, \textit{mormony} sledující skupinu \textit{Only Mormons}, \textit{feministky} sledující skupinu \textit{Everyday Feminism} a uživatele sledující skupinu \textit{LGBT foundation}.}. Předpokládali jsme, že \textit{katolíky} a \textit{mormoni} budou spíše proti potratům jejich sentiment bude tedy spíše nižší. Narozdíl od toho u \textit{feministek} a uživatelů sledujících \textit{LGBT foundation} jsme očekávali vyšší sentiment. Tyto skupiny jsme následně porovnávali i se sentimentem a frekvencí příspěvků s tímto klíčovým slovem na celém Twitteru.
+\begin{figure}[!h]
+\centering
+\subfloat[Všechny skupiny krom \textit{Everyday Feminism}.]{\label{fig:abortion-3groups}\includegraphics[scale=0.5]{./Pics/abortion-3groups.png}}
+\subfloat[\textit{Everyday Feminism} a \textit{Catholic News Svc}]{\label{fig:feminismXcatholic}\includegraphics[scale=0.5]{./Pics/feminismXcatholic.png}}
+\caption[]{Histogramy počtu tweetů u skupin s klíčovým slovem \textit{\uv{abortion}}.}
+\label{fig:abortion1}
+\end{figure}
+Na obrázcích~\ref{fig:abortion1} vidíme histogramy\footnote{Na svislé ose je v tomto případě vždy počet příspěvků s příslušnou naměřenou hodnotou sentimentu, která je vyznačena na vodorovné ose. Toto zobrazení nám umožňuje snadno nahlédnout na rozdělení sentimentu v příspěvcích i na počty příspěvků s daným tématem.} sentimentu příspěvků uvedených skupin. Měření probíhalo v době od 18.03.2017 17:00 do 19.03.2017 08:00.
+% TODO: jaky cas????
+
+Překvapivě, z obrázku~\ref{fig:abortion-3groups} jde vidět, že tři skupiny \textit{Catholic News Svc}, \textit{Only Mormons} a \textit{LGBT foundation} mají rozdělení naprosto shodné s průměrem na celém Twitteru. Rozdělení sentimentu i počty příspěvků s tímto tématem jsou naprosto shodné. Toto zjištění pro nás bylo poměrně překvapující. Můžeme říct, že komunity \textit{Catholic News Svc}, \textit{Only Mormons} a \textit{LGBT foundation} se v diskuzi okolo \textit{potratu} dostanou k obsahu, který je v rámci Twitteru absolutně vyvážený.
+
+Na rozdíl od toho, podíváme-li se na histogram~\ref{fig:feminismXcatholic} zobrazující rozdělení sentimentu u skupin \textit{Catholic News Svc} a \textit{Everyday Feminism} vidíme obrovský rozdíl\footnote{Rozdíl je ve dvou řádech, proto se může stát, že malé modré sloupce zobrazující počty tweetů skupiny okolo \textit{Catholic News Svc} nejsou dostatečně viditelné.} v samotném počtu často sídlených tweetů s tématem \textit{potratu}. Už tento fakt naznačuje poměrně silnou informační bublinu, ve které jsou schovani členové komunity \textit{Everyday Feminism}.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{./Pics/feminismXcatholic-normed.png}
+\caption{Normalizované rozdělení sentumentu příspěvků, které vidí komunity \textit{Catholic News Svc} a \textit{Everyday Feminism}.}
+\label{fig:feminismXcatholic-normed}
+\end{figure}
+Abychom mohli prostudovat i rozložení sentimentu a nejenom počet příspěvků vztahujících se k danému tématu pohlédněme na histogram~\ref{fig:feminismXcatholic-normed}, který zobrazuje normalizované\footnote{V tomto případě se díváme na normalizovaný histogram. Na svislé ose tedy nejsou skutečné počty příspěvků s daným sentimentem vyneseným na vodorovné ose. Místo toho je na svislé ose podíl tweetů s daným sentimentem a celkovým počtem tweetů ve sledované skupině. Toto zobrazení nám dovoluje studovat rozložení sentimentu dvou skupin, bez ohledu na rozdíl mezi absolutními počty příspěvků.} rozdělení zmíněných dvou skupin.
+
+Při porovnání komunity \textit{Everyday Feminism} a komunity \textit{Catholic News Svc}, která v daném tématu není nijak postižena informační bublinou, již vidíme markantní rozdíl. Vidíme, že v levé části, kde jsou hodnoty sentimentu menší než $0.5$ lehce převažují příspěvky, které vidí komunita \textit{Catholic News Svc}. Kdežto v pravé části, kde jsou zobrazeny proporce příspěvků s velmi vysokým sentimentem naprosto jednoznačně převažuje komunita \textit{Everyday Feminism}. Uživatelé sledující \textit{Catholic News Svc} vidí $31\ \%$ negativních\footnote{Pod pojmem negativní příspěvek rozumněj takový tweet, který má hodnotu sentimentu menší než $0.5$. Obdobně definujeme i positivní příspěvek.} příspěvků na téma \textit{potratu} a $69\ \%$ kladných příspěvků. Tyto hodnoty jsou stejné i pro náhodný výběr z celého Twitteru. Narozdíl od toho uživatelé sledující \textit{Everyday Feminism} vidí $22\ \%$ negativních a $78\ \%$ positivních příspěvků.
+
+Z výše prezentovaných výsledků je patrné, že narozdíl od skupin \textit{Catholic News Svc}, \textit{Only Mormons} a \textit{LGBT foundation} jejichž obsah je v oblasti debaty nad tématem \textit{potratu} naprosto vyvážený, komunita \textit{Everyday Feminism} se k vyváženému obsahu přímo nedostává. Počet a hlavně rozdělení příspěvků na dané téma se výrazně liší d ostatních skupin i náhodného výběru z celého Twitteru. Můžeme tedy říct, že je postižena informační bublinou.
+
+Někdo by mohl namítnout, že rozdíl nebyl dostatečně markantní. Je však potřeba si uvědomit, že díky velké konektivitě uživatelů Twitteru je alespoň základní přístup k různým názorům snado zajištěn. Při hledání informační bubliny je tedy třeba pozorovat i zdánlivě malé rozdíly v rozdělení, nebo četnosti určitých příspěvků.
+% TODO: rozsirit tento druh povidani?
+
+\subsection{Trump}
+\noindent Prezident Spojených států amerických je v dnešní době sám o sobě velké téma snad všude na světě. Proto bys tématem jednoho z našich pozorování. Konkrétně jsme pozorovali, zda se nevyskytuje efekt informační bubliny v komunitě \textit{biochemiků} okolo twitterové skupiny \textit{BiochemSoc} a lidí zajímajících se o \textit{těžbu ropy} sdružujících se okolu skupiny \textit{PetroleumEcon}.
+
+Měření probíhalo v době od 18.03.2017 10:20 do 18.03.2017 16:00. Dá se předpokládat, že kvůli prohlášením Donalda Trumpa o vědě a jeho postojům k těžbě ropy bude komunita \textit{biochemiků} zahlcována spíše negativními příspěvky norozdíl od toho komunita okolo \textit{těžbu ropy} spíše positivními.
+% TODO: jaky cas????
+
+Ihned po prvním pohledu na histogram~\ref{fig:biochem_petroleum-trump} vidíme, že naše očekávání nebyla správná. Počty tweetů u všech skupin, tj. \textit{BiochemSoc}, \textit{PetroleumEcon} a náhodného výběru z \textit{Twitteru}, jsou řádově naprosto stejné. I samotné rozdělení sentimentu je totožné. Může se zdát, že komunita okolo \textit{BiochemSoc} je vystavena většímu počtu příspěvků na dané téma. Rozdíl je však velice nepatrný.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{./Pics/biochem_petroleum-trump.png}
+\caption{Histogramy počtu tweetů u skupin s klíčovým slovem \textit{\uv{Trump}}.}
+\label{fig:biochem_petroleum-trump}
+\end{figure}
+
+Narozdíl od našeho očekávání můžeme konstatovat, že skupiny \textit{BiochemSoc} a \textit{PetroleumEcon} jsou vystaveny dostatečně vyváženému obsahu na dané téma a nejsou tedy ohroženi informační bublinou. To je pravděpodobně způsobeno velkou konektivitou uživatelů Twitteru, která je spojuje s dostatečně velkým množstvím lidí opačných názorů, obdobně jako u tématu \textit{\uv{abortion}}.
+
+
+
 
 
 
 
 \newpage
 \section{Závěr}
-\noindent
+\noindent V první části práce jsme přiblížili problematiku informační bubliny, její dopady na společnost v makroskopickém měřítku a dosud provedené studie.  Odtud jsme se přesunuli na technickou složku práce, kde jsme rozebrali veškeré detaily od stahování dat ze sociální sítě Twitter, přes aplikaci sentimentální analýzy v praxi až po samotnou konstrukci celého měření.
+
+Jak jsme se v úvodu zmínili, cílem naší práce bylo vyvinutí metody, za pomocí které bychom mohli analyzovat míru postižení společnosti informační bublinou. Tohoto cíle jsme dosáhli, podařilo se nám vyvinout zmíněnou metodu, díky níž jsme prezentovali rozšíření informační bubliny na základě dat poskytovaných Twitterem. Výsledky měření dopadly navzdory naším předpokladům méně polarizovaně, než jsme očekávali, každopádně nevylučují/potvrzují naši hypotézu o míře filter bubble a různosti jejích efektů na vybranou část společnosti.
+% TODO: o hypoteze bych nemluvil, je to nebezpecne
+
+Povedlo se nám tedy nejen vyvinout novou metodu, ale podařilo se nám i potvrdit existenci informační bubliny na sociálních sítích. Naše metoda bude volně přístupná veřejnému použití. Budoucí práce osvětlíme v pondělí, ještě se o tom mladí vědci nebavili.
+% TODO: dlouze popisme co dal
 
 \newpage
 \begin{thebibliography}{99}
@@ -204,7 +271,7 @@ Na rozdíl od těchto dvou podskupin potenciálních sympatizantů s potraty jsm
     ABADI, Martín, et al. \textit{TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems}. (2015). arXiv:1603.04467. Dostupné také z: \url{https://arxiv.org/abs/1603.04467}
 
     \bibitem{whyNotFb}
-    BARTHEL, MICHAEL, ELISA SHEARER, JEFFREY GOTTFRIED a AMY MITCHELL. \textit{The Evolving Role of News on Twitter and Facebook} [online]. In: . Pew Research Center, 2015 [cit. 2017-01-22]. Dostupné z: \url{http://www.journalism.org/2015/07/14/the-evolving-role-of-news-on-twitter-and-facebook/}
+    BARTHEL, Michael, Elisa SHEARER, Jeffrey GOTTFRIED a Amy MITCHELL. \textit{The Evolving Role of News on Twitter and Facebook} [online]. In: . Pew Research Center, 2015 [cit. 2017-01-22]. Dostupné z: \url{http://www.journalism.org/2015/07/14/the-evolving-role-of-news-on-twitter-and-facebook/}
 
     \bibitem{NLTKbook}
     BIRD, Steven, Ewan KLEIN a Edward LOPER. \textit{Natural language processing with Python}. Beijing: O'Reilly, 2009. ISBN 978-0-596-51649-9. Dostupné také z: \url{http://www.nltk.org/book/}
@@ -225,7 +292,7 @@ Na rozdíl od těchto dvou podskupin potenciálních sympatizantů s potraty jsm
     GOLDBERG, Yoav a Omer LEVY. Word2vec Explained: deriving Mikolov et al.'s negative-sampling word-embedding method. \textit{ArXiv: Computation and Language}. 2014. arxiv:1402.3722. Dostupné také z: \url{https://arxiv.org/abs/1402.3722}
 
     \bibitem{TheImpactOfFilterBubble}
-    GOTTRON, Thomas a Felix SCHWAGEREIT. The Impact of the Filter Bubble -- A Simulation Based Framework for Measuring Personalisation Macro Effects in Online Communities. \textit{ARXIV: Computer Science - Social and Information Networks}. 2016, \textbf{2016}. 2016arXiv161206551G. Dostupné také z: \url{https://arxiv.org/abs/1612.06551\#}
+    GOTTRON, Thomas a Felix SCHWAGEREIT. The Impact of the Filter Bubble -- A Simulation Based Framework for Measuring Personalisation Macro Effects in Online Communities. \textit{ARXIV: Computer Science - Social and Information Networks}. 2016, \textbf{2016}. arXiv161206551G. Dostupné také z: \url{https://arxiv.org/abs/1612.06551\#}
 
     \bibitem{tweepy}
     HILL, Aaron a Joshua ROESSLEIN. \textit{Tweepy}. Github 2015 [online]. [cit. 2017-01-22]. Dostupné z: \url{https://github.com/tweepy/tweepy}
@@ -288,13 +355,5 @@ Na rozdíl od těchto dvou podskupin potenciálních sympatizantů s potraty jsm
     YOON, Kim. Convolutional Neural Networks for Sentence Classification. \textit{ArXiv: Computation and Language}. arXiv, 2014. arXiv:1408.5882v2. Dostupné také z: \url{https://arxiv.org/abs/1408.5882}
 
 \end{thebibliography}
-% ZKONTROLUJ \TEXTBF V CITACICH
 
-% ##############################################################################
-% ##############################################################################
-\newpage
-\section*{Přílohy}
-\addcontentsline{toc}{section}{Přílohy}
-\subsection*{Prvni kapitola přiloh}
-\noindent
 \end{document}
