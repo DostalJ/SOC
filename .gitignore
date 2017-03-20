@@ -12,3 +12,5 @@ data/
 *.gz
 *.fls
 *.fdb_latexmk
+*.nav
+*.snm
