@@ -61,14 +61,12 @@ def hist(names, legends, keyword, colors=['b', 'r', 'g', 'c', 'y'], num_bins=30,
     if out_name == None:
         plt.show()
     else:
-        path = '/Users/Jakub/MEGA/Work/SOC/SOC/Thesis/Pics/' + out_name
+        path = '/Users/Jakub/MEGA/Work/SOC/SOC/Images/' + out_name
         plt.savefig(path, dpi=500)
 
 
 
-hist(names=['StandingRockST-trump-4', 'trump-4'],
-     legends=['StandingRockST', 'Twitter'],
-     keyword='Trump', num_bins=30)
+
 
 
 
@@ -100,4 +98,9 @@ hist(names=['BiochemSoc-trump-3', 'PetroleumEcon-trump-3', 'trump-3'],
      legends=['BiochemSoc', 'PetroleumEcon', 'Twitter'],
      keyword='Trump', num_bins=20,
      out_name='biochem_petroleum-trump.png')
+
+hist(names=['StandingRockST-trump-4', 'trump-4'],
+     legends=['StandingRockST', 'Twitter'],
+     keyword='Trump', num_bins=30,
+     out_name='indiani-trump.png')
 """
