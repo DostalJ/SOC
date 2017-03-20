@@ -7,7 +7,6 @@ data/
 *.h5
 
 *.aux
-*.log
 *.out
 *.toc
 *.gz

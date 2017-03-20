@@ -11,5 +11,8 @@
 # python3 script.py -k=trump -o=./measurements/sentiment/trump-3.csv -api=2 -l=./measurements/sentiment/trump-3-log.csv
 
 
-# python3 script.py -p=./measurements/people_to_follow/StandingRockST.txt -k=trump -o=./measurements/sentiment/StandingRockST-trump-4.csv -api=1 -l=./measurements/sentiment/StandingRockST-trump-4-log.csv
-# python3 script.py -k=trump -o=./measurements/sentiment/trump-4.csv -api=2 -l=./measurements/sentiment/trump-4-log.csv
+# python3 script.py -p=./measurements/people_to_follow/StandingRockST.txt -k=trump -o=./measurements/sentiment/StandingRockST-trump-4.csv -api=1 -l=./measurements/sentiment/StandingRockST-trump-4.log
+# python3 script.py -k=trump -o=./measurements/sentiment/trump-4.csv -api=2 -l=./measurements/sentiment/trump-4.log
+
+# python3 script.py -p=./measurements/people_to_follow/StandingRockST.txt -k=#nodalp -o=./measurements/sentiment/StandingRockST-DALP.csv -api=1 -l=./measurements/sentiment/StandingRockST-DALP.log
+# python3 script.py -k=#nodalp -o=./measurements/sentiment/Twitter-DALP.csv -api=2 -l=./measurements/sentiment/Twitter-DALP.log
