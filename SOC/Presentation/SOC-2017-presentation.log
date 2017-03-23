@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  21 MAR 2017 09:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 MAR 2017 07:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2180,133 +2180,158 @@ Overfull \vbox (16.67491pt too high) detected at line 45
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 54.
-
-[2
-
-]
-LaTeX Font Info:    Try loading font information for U+msa on input line 77.
+LaTeX Font Info:    Try loading font information for U+msa on input line 67.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 77.
+LaTeX Font Info:    Try loading font information for U+msb on input line 67.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [3
+) <./Pics/fb.png, id=21, 2007.5pt x 2007.5pt>
+File: ./Pics/fb.png Graphic file (type png)
+ <use ./Pics/fb.png>
+Package pdftex.def Info: ./Pics/fb.png used on input line 67.
+(pdftex.def)             Requested size: 100.38087pt x 100.38087pt.
+ <./Pics/twitter.png, id=23, 274.3851pt x 223.0734pt>
+File: ./Pics/twitter.png Graphic file (type png)
+ <use ./Pics/twitter.png>
+Package pdftex.def Info: ./Pics/twitter.png used on input line 67.
+(pdftex.def)             Requested size: 109.75209pt x 89.22777pt.
+
+Overfull \vbox (5.529pt too high) detected at line 67
+ []
+
+
+LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
+(Font)              size <5> substituted on input line 67.
+
+[2
+
+ <./Pics/fb.png> <./Pics/twitter.png>] [3
 
 ] [4
 
-] <./Pics/pepa.png, id=39, 421.0932pt x 398.2077pt>
+] <./Pics/pepa.png, id=44, 421.0932pt x 398.2077pt>
 File: ./Pics/pepa.png Graphic file (type png)
  <use ./Pics/pepa.png>
-Package pdftex.def Info: ./Pics/pepa.png used on input line 102.
+Package pdftex.def Info: ./Pics/pepa.png used on input line 122.
 (pdftex.def)             Requested size: 147.38483pt x 139.37477pt.
  [5
 
- <./Pics/pepa.png>] <./Pics/sets.png, id=47, 536.9661pt x 566.8377pt>
+ <./Pics/pepa.png>] <./Pics/sets.png, id=51, 536.9661pt x 566.8377pt>
 File: ./Pics/sets.png Graphic file (type png)
  <use ./Pics/sets.png>
-Package pdftex.def Info: ./Pics/sets.png used on input line 118.
+Package pdftex.def Info: ./Pics/sets.png used on input line 138.
 (pdftex.def)             Requested size: 171.83266pt x 181.39177pt.
 
-Overfull \hbox (1.11613pt too wide) in paragraph at lines 118--118
+Overfull \hbox (1.11613pt too wide) in paragraph at lines 138--138
  [] 
  []
 
 [6
 
- <./Pics/sets.png>] <./Pics/abortion-3groups.png, id=55, 433.62pt x 289.08pt>
-File: ./Pics/abortion-3groups.png Graphic file (type png)
- <use ./Pics/abortion-3groups.png>
-Package pdftex.def Info: ./Pics/abortion-3groups.png used on input line 141.
-(pdftex.def)             Requested size: 160.43689pt x 106.95792pt.
- <./Pics/feminismXcatholic.png, id=56, 433.62pt x 289.08pt>
-File: ./Pics/feminismXcatholic.png Graphic file (type png)
- <use ./Pics/feminismXcatholic.png>
-Package pdftex.def Info: ./Pics/feminismXcatholic.png used on input line 141.
-(pdftex.def)             Requested size: 160.43689pt x 106.95792pt.
+ <./Pics/sets.png>] <./Pics/followers.png, id=59, 429.7656pt x 438.438pt>
+File: ./Pics/followers.png Graphic file (type png)
+ <use ./Pics/followers.png>
+Package pdftex.def Info: ./Pics/followers.png used on input line 153.
+(pdftex.def)             Requested size: 171.90318pt x 175.37209pt.
 
-Overfull \hbox (13.58391pt too wide) in paragraph at lines 141--141
- [][] 
- []
-
-
-Overfull \vbox (0.63232pt too high) detected at line 141
+Overfull \hbox (1.18666pt too wide) in paragraph at lines 153--153
+ [] 
  []
 
 [7
 
- <./Pics/abortion-3groups.png> <./Pics/feminismXcatholic.png>]
+ <./Pics/followers.png>] <./Pics/abortion-3groups.png, id=67, 433.62pt x 289.08pt>
 File: ./Pics/abortion-3groups.png Graphic file (type png)
  <use ./Pics/abortion-3groups.png>
-Package pdftex.def Info: ./Pics/abortion-3groups.png used on input line 163.
+Package pdftex.def Info: ./Pics/abortion-3groups.png used on input line 176.
 (pdftex.def)             Requested size: 160.43689pt x 106.95792pt.
+ <./Pics/feminismXcatholic.png, id=68, 433.62pt x 289.08pt>
 File: ./Pics/feminismXcatholic.png Graphic file (type png)
  <use ./Pics/feminismXcatholic.png>
-Package pdftex.def Info: ./Pics/feminismXcatholic.png used on input line 163.
+Package pdftex.def Info: ./Pics/feminismXcatholic.png used on input line 176.
 (pdftex.def)             Requested size: 160.43689pt x 106.95792pt.
 
-Overfull \hbox (13.58391pt too wide) in paragraph at lines 163--163
+Overfull \hbox (13.58391pt too wide) in paragraph at lines 176--176
  [][] 
  []
 
 
-Overfull \vbox (17.30724pt too high) detected at line 163
+Overfull \vbox (0.63232pt too high) detected at line 176
  []
 
 [8
 
-] <./Pics/feminismXcatholic-normed.png, id=71, 433.62pt x 289.08pt>
-File: ./Pics/feminismXcatholic-normed.png Graphic file (type png)
- <use ./Pics/feminismXcatholic-normed.png>
-Package pdftex.def Info: ./Pics/feminismXcatholic-normed.png used on input line 177.
-(pdftex.def)             Requested size: 216.80946pt x 144.53964pt.
+ <./Pics/abortion-3groups.png> <./Pics/feminismXcatholic.png>]
+File: ./Pics/abortion-3groups.png Graphic file (type png)
+ <use ./Pics/abortion-3groups.png>
+Package pdftex.def Info: ./Pics/abortion-3groups.png used on input line 198.
+(pdftex.def)             Requested size: 160.43689pt x 106.95792pt.
+File: ./Pics/feminismXcatholic.png Graphic file (type png)
+ <use ./Pics/feminismXcatholic.png>
+Package pdftex.def Info: ./Pics/feminismXcatholic.png used on input line 198.
+(pdftex.def)             Requested size: 160.43689pt x 106.95792pt.
 
-Overfull \vbox (10.4407pt too high) detected at line 177
+Overfull \hbox (13.58391pt too wide) in paragraph at lines 198--198
+ [][] 
+ []
+
+
+Overfull \vbox (17.30724pt too high) detected at line 198
  []
 
 [9
 
- <./Pics/feminismXcatholic-normed.png>] <./Pics/biochem_petroleum-trump.png, id=78, 433.62pt x 289.08pt>
-File: ./Pics/biochem_petroleum-trump.png Graphic file (type png)
- <use ./Pics/biochem_petroleum-trump.png>
-Package pdftex.def Info: ./Pics/biochem_petroleum-trump.png used on input line 199.
-(pdftex.def)             Requested size: 160.43689pt x 106.95792pt.
- <./Pics/indiani-trump.png, id=79, 433.62pt x 289.08pt>
-File: ./Pics/indiani-trump.png Graphic file (type png)
- <use ./Pics/indiani-trump.png>
-Package pdftex.def Info: ./Pics/indiani-trump.png used on input line 199.
-(pdftex.def)             Requested size: 160.43689pt x 106.95792pt.
+] <./Pics/feminismXcatholic-normed.png, id=82, 433.62pt x 289.08pt>
+File: ./Pics/feminismXcatholic-normed.png Graphic file (type png)
+ <use ./Pics/feminismXcatholic-normed.png>
+Package pdftex.def Info: ./Pics/feminismXcatholic-normed.png used on input line 212.
+(pdftex.def)             Requested size: 216.80946pt x 144.53964pt.
 
-Overfull \hbox (13.58391pt too wide) in paragraph at lines 199--199
- [][] 
+Overfull \vbox (10.4407pt too high) detected at line 212
  []
 
 [10
 
- <./Pics/biochem_petroleum-trump.png> <./Pics/indiani-trump.png>]
+ <./Pics/feminismXcatholic-normed.png>] <./Pics/biochem_petroleum-trump.png, id=89, 433.62pt x 289.08pt>
 File: ./Pics/biochem_petroleum-trump.png Graphic file (type png)
  <use ./Pics/biochem_petroleum-trump.png>
-Package pdftex.def Info: ./Pics/biochem_petroleum-trump.png used on input line 214.
+Package pdftex.def Info: ./Pics/biochem_petroleum-trump.png used on input line 234.
 (pdftex.def)             Requested size: 160.43689pt x 106.95792pt.
+ <./Pics/indiani-trump.png, id=90, 433.62pt x 289.08pt>
 File: ./Pics/indiani-trump.png Graphic file (type png)
  <use ./Pics/indiani-trump.png>
-Package pdftex.def Info: ./Pics/indiani-trump.png used on input line 214.
+Package pdftex.def Info: ./Pics/indiani-trump.png used on input line 234.
 (pdftex.def)             Requested size: 160.43689pt x 106.95792pt.
 
-Overfull \hbox (13.58391pt too wide) in paragraph at lines 214--214
+Overfull \hbox (13.58391pt too wide) in paragraph at lines 234--234
  [][] 
- []
-
-
-Overfull \vbox (14.48878pt too high) detected at line 214
  []
 
 [11
 
-] [12
+ <./Pics/biochem_petroleum-trump.png> <./Pics/indiani-trump.png>]
+File: ./Pics/biochem_petroleum-trump.png Graphic file (type png)
+ <use ./Pics/biochem_petroleum-trump.png>
+Package pdftex.def Info: ./Pics/biochem_petroleum-trump.png used on input line 249.
+(pdftex.def)             Requested size: 160.43689pt x 106.95792pt.
+File: ./Pics/indiani-trump.png Graphic file (type png)
+ <use ./Pics/indiani-trump.png>
+Package pdftex.def Info: ./Pics/indiani-trump.png used on input line 249.
+(pdftex.def)             Requested size: 160.43689pt x 106.95792pt.
+
+Overfull \hbox (13.58391pt too wide) in paragraph at lines 249--249
+ [][] 
+ []
+
+
+Overfull \vbox (14.48878pt too high) detected at line 249
+ []
+
+[12
+
+] [13
 
 ]
 \tf@nav=\write6
@@ -2318,11 +2343,11 @@ Overfull \vbox (14.48878pt too high) detected at line 214
 \tf@snm=\write8
 \openout8 = `SOC-2017-presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 222.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 222.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 268.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 268.
  (./SOC-2017-presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 268.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 268.
 Package rerunfilecheck Info: File `SOC-2017-presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -2330,21 +2355,21 @@ Package rerunfilecheck Info: File `SOC-2017-presentation.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 268.
  ) 
 Here is how much of TeX's memory you used:
- 30092 strings out of 493014
- 589165 string characters out of 6133351
- 645230 words of memory out of 5000000
- 33030 multiletter control sequences out of 15000+600000
+ 30123 strings out of 493014
+ 589773 string characters out of 6133351
+ 645229 words of memory out of 5000000
+ 33056 multiletter control sequences out of 15000+600000
  19473 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,13n,88p,10429b,713s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb>
-Output written on SOC-2017-presentation.pdf (12 pages, 1217489 bytes).
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb>
+Output written on SOC-2017-presentation.pdf (13 pages, 1440817 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
- 25 named destinations out of 1000 (max. 500000)
- 78 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 145 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
+ 27 named destinations out of 1000 (max. 500000)
+ 93 words of extra memory for PDF output out of 10000 (max. 10000000)
 
