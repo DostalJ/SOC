@@ -12,7 +12,7 @@
 \let\openright=\clearpage
 
 %%% Additional useful packages
-% \usepackage{hyperref} % reference: (Figure 1) instead of (1)  <-- \autoref{}
+% \usepackage[colorlinks]{hyperref} % reference: (Figure 1) instead of (1)  <-- \autoref{}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amsthm}
@@ -26,8 +26,15 @@
 \usepackage{paralist}
 \usepackage{indentfirst}
 \usepackage[nottoc]{tocbibind}
-\usepackage[unicode]{hyperref}
 \usepackage{subfig} 	%subfloats.
+
+\usepackage[font=footnotesize,labelfont={bf,sc,small},figurename=Obrázek]{caption} % change the word 'Figure' in caption
+\usepackage[colorlinks=true,linkcolor=blue]{hyperref}
+\renewcommand{\figureautorefname}{Obr.} % change the word 'Figure' in text
+\newcommand{\subfigureautorefname}{\figureautorefname} % to make nice \autoref of the subfloats (from subfigrebui)
+
+
+
 
 %%% \subref*
 \captionsetup[subfigure]{subrefformat=simple,labelformat=simple,listofformat=subsimple}
@@ -40,6 +47,8 @@
 % ####################################################################
 % ####################################################################
 \begin{document}
+
+
 \include{TitulkaCZ}
 \newpage
 \section*{Úvod}
@@ -114,7 +123,7 @@ Metody, které se užívají pro sociální sítě a informační kanály~\cite{
 \subsection{Twitter}
 \noindent\textit{Twitter} je sociální síť se strukturou přátelských vztahů odlišnou od \textit{Facebooku}. Uživatel si může navolit téměř libovolné množství lidí, jejichž příspěvky se mu budou zobrazovat. To však neznamená, že lidem, které si navolil, se budou zobrazovat jeho příspěvky.
 
-Pro jednoduchost uveďme příklad. Pepa je nový uživatel \textit{Twitteru}. Jeho kamarád ze školy se jmenuje Jiří a politik, kterého viděl včera ve zprávách a zamlouval se mu, má jméno Alois. Pepa začne \textit{sledovat}\footnote{Jde přímo o pojem \textit{following} z této sociální sítě, něco jako \textit{přátelství} na Facebooku.} jak Jiřího, tak Aloise. Od té chvíle uvidí všechny příspěvky, jak od spolužáka Jiřího, tak od politika Aloise. Za nějaký čas začne i Jiří \textit{sledovat} Pepu. Od té chvíle i Jiří uvidí všechny Pepovy příspěvky. Politik Alois však Pepu nezná, proto ho \textit{sledovat} nezačne, a tedy neuvidí příspěvky sdílené Pepou. Tyto vztahy jsou přehledně zobrazeny v grafu~\ref{fig:pepa}.
+Pro jednoduchost uveďme příklad. Pepa je nový uživatel \textit{Twitteru}. Jeho kamarád ze školy se jmenuje Jiří a politik, kterého viděl včera ve zprávách a zamlouval se mu, má jméno Alois. Pepa začne \textit{sledovat}\footnote{Jde přímo o pojem \textit{following} z této sociální sítě, něco jako \textit{přátelství} na Facebooku.} jak Jiřího, tak Aloise. Od té chvíle uvidí všechny příspěvky, jak od spolužáka Jiřího, tak od politika Aloise. Za nějaký čas začne i Jiří \textit{sledovat} Pepu. Od té chvíle i Jiří uvidí všechny Pepovy příspěvky. Politik Alois však Pepu nezná, proto ho \textit{sledovat} nezačne, a tedy neuvidí příspěvky sdílené Pepou. Tyto vztahy jsou přehledně zobrazeny v grafu~\autoref{fig:pepa}.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.35]{./Pics/pepa.png}
@@ -221,19 +230,18 @@ Na rozdíl od těchto dvou podskupin potenciálních sympatizantů s potraty jsm
 \label{fig:abortion1}
 \end{figure}
 
-Na obrázcích~\ref{fig:abortion1} vidíme histogramy\footnote{Na svislé ose je v tomto případě vždy počet příspěvků s příslušnou naměřenou hodnotou sentimentu, která je vyznačena na vodorovné ose. Toto zobrazení nám umožňuje snadno nahlédnout na rozdělení sentimentu v příspěvcích i na počty příspěvků s daným tématem.} sentimentu příspěvků uvedených skupin. Měření probíhalo v době od 18.03.2017 17:00 do 19.03.2017 08:00.
-% TODO: jaky cas????
+Na obrázcích~\autoref{fig:abortion1} vidíme histogramy\footnote{Na svislé ose je v tomto případě vždy počet příspěvků s příslušnou naměřenou hodnotou sentimentu, která je vyznačena na vodorovné ose. Toto zobrazení nám umožňuje snadno nahlédnout na rozdělení sentimentu v příspěvcích i na počty příspěvků s daným tématem.} sentimentu příspěvků uvedených skupin. Měření probíhalo v době od 18.03.2017 17:00 do 19.03.2017 08:00.
 
-Překvapivě, z obrázku~\ref{fig:abortion-3groups} jde vidět, že tři skupiny \textit{Catholic News Svc}, \textit{Only Mormons} a \textit{LGBT foundation} mají rozdělení identické s průměrem na celém Twitteru. Rozdělení sentimentu i počty příspěvků s tímto tématem jsou naprosto shodné. Toto zjištění pro nás bylo poměrně překvapující. Můžeme říct, že komunity \textit{Catholic News Svc}, \textit{Only Mormons} a \textit{LGBT foundation} se v diskuzi okolo \textit{potratu} dostanou k obsahu, který je v rámci Twitteru absolutně vyvážený.
+Překvapivě, z obrázku~\autoref{fig:abortion-3groups} jde vidět, že tři skupiny \textit{Catholic News Svc}, \textit{Only Mormons} a \textit{LGBT foundation} mají rozdělení identické s průměrem na celém Twitteru. Rozdělení sentimentu i počty příspěvků s tímto tématem jsou naprosto shodné. Toto zjištění pro nás bylo poměrně překvapující. Můžeme říct, že komunity \textit{Catholic News Svc}, \textit{Only Mormons} a \textit{LGBT foundation} se v diskuzi okolo \textit{potratu} dostanou k obsahu, který je v rámci Twitteru absolutně vyvážený.
 
-Na rozdíl od toho, podíváme-li se na histogram~\ref{fig:feminismXcatholic} zobrazující rozdělení sentimentu u skupin \textit{Catholic News Svc} a \textit{Everyday Feminism} vidíme obrovský rozdíl\footnote{Rozdíl je ve dvou řádech, proto se může stát, že malé modré sloupce zobrazující počty tweetů skupiny okolo \textit{Catholic News Svc} nejsou dostatečně viditelné.} v samotném počtu často sídlených tweetů s tématem \textit{potratu}. Už tento fakt naznačuje poměrně silnou informační bublinu, ve které jsou pohlceni členové komunity \textit{Everyday Feminism}.
+Na rozdíl od toho, podíváme-li se na histogram~\autoref{fig:feminismXcatholic} zobrazující rozdělení sentimentu u skupin \textit{Catholic News Svc} a \textit{Everyday Feminism} vidíme obrovský rozdíl\footnote{Rozdíl je ve dvou řádech, proto se může stát, že malé modré sloupce zobrazující počty tweetů skupiny okolo \textit{Catholic News Svc} nejsou dostatečně viditelné.} v samotném počtu často sídlených tweetů s tématem \textit{potratu}. Už tento fakt naznačuje poměrně silnou informační bublinu, ve které jsou pohlceni členové komunity \textit{Everyday Feminism}.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.5]{./Pics/feminismXcatholic-normed.png}
 \caption{Normalizované rozdělení sentimentu příspěvků, které vidí komunity \textit{Catholic News Svc} a \textit{Everyday Feminism}.}
 \label{fig:feminismXcatholic-normed}
 \end{figure}
-Abychom mohli prostudovat i rozložení sentimentu a nejenom počet příspěvků vztahujících se k danému tématu, pohlédněme na histogram~\ref{fig:feminismXcatholic-normed}, který zobrazuje normalizované\footnote{V tomto případě se díváme na normalizovaný histogram. Na svislé ose tedy nejsou skutečné počty příspěvků s daným sentimentem vyneseným na vodorovné ose. Místo toho je na svislé ose podíl tweetů s daným sentimentem a celkovým počtem tweetů ve sledované skupině. Toto zobrazení nám dovoluje studovat rozložení sentimentu dvou skupin, bez ohledu na rozdíl mezi absolutními počty příspěvků.} rozdělení zmíněných dvou skupin.
+Abychom mohli prostudovat i rozložení sentimentu a nejenom počet příspěvků vztahujících se k danému tématu, pohlédněme na histogram~\autoref{fig:feminismXcatholic-normed}, který zobrazuje normalizované\footnote{V tomto případě se díváme na normalizovaný histogram. Na svislé ose tedy nejsou skutečné počty příspěvků s daným sentimentem vyneseným na vodorovné ose. Místo toho je na svislé ose podíl tweetů s daným sentimentem a celkovým počtem tweetů ve sledované skupině. Toto zobrazení nám dovoluje studovat rozložení sentimentu dvou skupin, bez ohledu na rozdíl mezi absolutními počty příspěvků.} rozdělení zmíněných dvou skupin.
 
 Při porovnání komunity \textit{Everyday Feminism} a komunity \textit{Catholic News Svc}, která v daném tématu není nijak postižena informační bublinou vidíme markantní rozdíl. Vidíme, že v levé části, kde jsou hodnoty sentimentu menší než $0.5$ lehce převažují příspěvky, které vidí komunita \textit{Catholic News Svc}. Kdežto v pravé části, kde jsou zobrazeny proporce příspěvků s velmi vysokým sentimentem naprosto jednoznačně převažuje komunita \textit{Everyday Feminism}. Uživatelé sledující \textit{Catholic News Svc} vidí $31~\%$ negativních\footnote{Pod pojmem negativní příspěvek rozumněj takový tweet, který má hodnotu sentimentu menší než $0.5$. Obdobně definujeme i positivní příspěvek.} příspěvků na téma \textit{potratu} a $69~\%$ kladných příspěvků. Tyto hodnoty jsou stejné i pro náhodný výběr z celého Twitteru. Narozdíl od toho uživatelé sledující \textit{Everyday Feminism} vidí $22~\%$ negativních a $78~\%$ positivních příspěvků.
 
@@ -248,7 +256,7 @@ Někdo by mohl namítat, že rozdíl nebyl dostatečně markantní. Je však pot
 Měření probíhalo v době od 18.03.2017 10:20 do 18.03.2017 16:00. Dá se předpokládat, že kvůli prohlášením Donalda Trumpa o vědě a jeho postojům k těžbě ropy, bude komunita \textit{biochemiků} zahlcována spíše negativními příspěvky, narozdíl od toho komunita okolo \textit{těžby ropy} spíše positivními.
 % TODO: jaky cas????
 
-Z histogramu~\ref{fig:biochem_petroleum-trump} vidíme, že naše očekávání nebyla správná. Počty tweetů u všech skupin, tj. \textit{BiochemSoc}, \textit{PetroleumEcon} a náhodného výběru z \textit{Twitteru}, jsou řádově naprosto stejné. I samotné rozdělení sentimentu je totožné. Z výsledku můžeme usuzovat, že komunita okolo \textit{BiochemSoc} je vystavena většímu počtu příspěvků na dané téma. Rozdíl je však velice nepatrný.
+Z histogramu~\autoref{fig:biochem_petroleum-trump} vidíme, že naše očekávání nebyla správná. Počty tweetů u všech skupin, tj. \textit{BiochemSoc}, \textit{PetroleumEcon} a náhodného výběru z \textit{Twitteru}, jsou řádově naprosto stejné. I samotné rozdělení sentimentu je totožné. Z výsledku můžeme usuzovat, že komunita okolo \textit{BiochemSoc} je vystavena většímu počtu příspěvků na dané téma. Rozdíl je však velice nepatrný.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.5]{./Pics/biochem_petroleum-trump.png}
