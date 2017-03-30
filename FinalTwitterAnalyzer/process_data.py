@@ -5,13 +5,9 @@ from matplotlib.style import use
 use('ggplot')
 
 
-
-
 def load_sent(name):
-
     # df = pd.read_csv(filepath_or_buffer='./measurements/sentiment/' + name + '.csv', header=None)
     # sent = df[1]
-
     path = './measurements/sentiment/' + name + '.csv'
     f = open(file=path, mode='r')
     sent = []

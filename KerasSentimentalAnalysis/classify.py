@@ -27,7 +27,12 @@ class Classifier:
         return sentiment
 
 TwitterClassifier = Classifier('HugeTwitter-classifier.h5', 'HugeTwitter-vocabulary.pickle')
-TwitterClassifier.sentiment("RT @narendramodi: Sonu Golkar has been an ardent cricket follower. He has played several matches &amp; also been awarded for his game. https://…")[0,0]
+
+
+# TwitterClassifier.sentiment('Donald Trump is the terrible person.')
+# TwitterClassifier.sentiment('Donald Trump is a great person.')
+
+
 
 # def play_with_sentiment_in_console():
 #     TwitterClassifier = Classifier('HugeTwitter-classifier.h5', 'HugeTwitter-vocabulary.pickle')
