@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  30 MAR 2017 17:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  2 APR 2017 13:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -738,7 +738,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--72
 
  []
 
-[3] [4] (./SOC.toc)
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 85--91
+
+ []
+
+[4] (./SOC.toc)
 \tf@toc=\write6
 \openout6 = `SOC.toc'.
 
@@ -748,12 +753,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--72
 l.56 \include{TitulkaCZ}
                          [1
 
-]
-Overfull \hbox (5.99312pt too wide) in paragraph at lines 65--66
-[]\OT1/cmr/m/n/12 C^^S^^Plem na^^Ts^^S^^P pr^^Sace je vy-vi-nut^^S^^P nov^^Se me-tody stu-dia fil-ter bubble, kter^^Sa by umo^^Tznila
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.71 \newpage
@@ -811,13 +811,8 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 (Font)              using `OT1/cmr/bx/n' instead on input line 142.
 
 [8 <./Pics/pepa.png>] [9]
-Underfull \hbox (badness 1400) in paragraph at lines 165--165
-[][][]\OT1/cmr/m/n/10 Na ta-kov^^Se re-pre-zen-taci slov m^^Wu^^Tzeme sle-do-vat za-chov^^San^^S^^P se-man-tick^^Sych vlast-nost^^S^^P a
- []
-
-
-Underfull \hbox (badness 1895) in paragraph at lines 165--165
-\OT1/cmr/m/n/10 do-konce i mo^^Tznost heu-ris-tick^^Seho u^^Tzit^^S^^P arit-me-tiky. M^^Wu^^Tzeme si v^^Tsimnout, ^^Tze nap^^Tr^^S^^Pklad
+Underfull \hbox (badness 3590) in paragraph at lines 165--165
+\OT1/cmr/m/n/10 konce i mo^^Tznost heu-ris-tick^^Seho u^^Tzit^^S^^P arit-me-tiky. M^^Wu^^Tzeme si v^^Tsimnout, ^^Tze nap^^Tr^^S^^Pklad
  []
 
 [10]
@@ -919,32 +914,7 @@ Package pdftex.def Info: ./Pics/indiani-trump.png used on input line 294.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \hbox (18.06938pt too wide) in paragraph at lines 302--303
-\OT1/cmr/m/n/12 p^^Tr^^S^^Pkladech pre-zen-to-vat jej^^S^^P klady i z^^Sapory, m^^Wu^^Tzeme si pov^^Tsimnout n^^Tekolika zaj^^S^^Pmav^^Sych
- []
-
-
-Overfull \hbox (9.90462pt too wide) in paragraph at lines 302--303
-\OT1/cmr/m/n/12 po-znatk^^Wu o sa-motn^^Se \OT1/cmr/m/it/12 fil-ter bubble\OT1/cmr/m/n/12 . V^^Sysledky v^^Tsech m^^Te^^Tren^^S^^P s kl^^S^^P^^Tcov^^Sym slo-vem []\OT1/cmr/m/it/12 Trump\
- []
-
-[17 <./Pics/biochem_petroleum-trump.png>]
-Overfull \hbox (8.73161pt too wide) in paragraph at lines 306--307
-[]\OT1/cmr/m/n/12 I z takto mal^^Seho mno^^Tzstv^^S^^P po-zo-rov^^San^^S^^P se odva^^Tzujeme vy-slo-vit hy-pot^^Sezu. Mysl^^S^^Pme
- []
-
-
-Overfull \hbox (13.43022pt too wide) in paragraph at lines 308--309
-\OT1/cmr/m/n/12 je do-state^^Tcn^^Te velk^^Sa ko-nek-ti-vita[][][][][] u^^Tzivatel^^Wu Twit-teru. Velmi je-dodu^^Tse ^^Tre^^Tceno, mysl^^S^^Pme
- []
-
-[18 <./Pics/indiani-trump.png>]
-Overfull \hbox (3.05565pt too wide) in paragraph at lines 317--318
-[]\OT1/cmr/m/n/12 Zp^^Wusob, kter^^Sym vyb^^S^^Prame ^^Tcleny r^^Wuzn^^Sych sku-pin je zalo^^Tzen na n^^Sahodn^^Sem v^^Syb^^Teru
- []
-
-[19]
+[17 <./Pics/biochem_petroleum-trump.png>] [18 <./Pics/indiani-trump.png>] [19]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
@@ -1002,14 +972,14 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 435.
 Here is how much of TeX's memory you used:
  9175 strings out of 493014
  135372 string characters out of 6133351
- 243174 words of memory out of 5000000
+ 243175 words of memory out of 5000000
  12434 multiletter control sequences out of 15000+600000
  19195 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,11n,49p,1840b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on SOC.pdf (27 pages, 1555160 bytes).
+Output written on SOC.pdf (27 pages, 1553060 bytes).
 PDF statistics:
  524 PDF objects out of 1000 (max. 8388607)
  457 compressed objects within 5 object streams
