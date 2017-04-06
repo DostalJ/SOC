@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  2 APR 2017 20:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  2 APR 2017 20:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -800,7 +800,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 131.
 
-<./Pics/pepa.png, id=203, 421.0932pt x 398.2077pt>
+<./Pics/pepa.png, id=201, 421.0932pt x 398.2077pt>
 File: ./Pics/pepa.png Graphic file (type png)
  <use ./Pics/pepa.png>
 Package pdftex.def Info: ./Pics/pepa.png used on input line 141.
@@ -831,12 +831,12 @@ Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 181.
 
-<./Pics/sets.png, id=273, 536.9661pt x 566.8377pt>
+<./Pics/sets.png, id=271, 536.9661pt x 566.8377pt>
 File: ./Pics/sets.png Graphic file (type png)
  <use ./Pics/sets.png>
 Package pdftex.def Info: ./Pics/sets.png used on input line 187.
 (pdftex.def)             Requested size: 144.98277pt x 153.04822pt.
- <./Pics/followers.png, id=275, 429.7656pt x 438.438pt>
+ <./Pics/followers.png, id=273, 429.7656pt x 438.438pt>
 File: ./Pics/followers.png Graphic file (type png)
  <use ./Pics/followers.png>
 Package pdftex.def Info: ./Pics/followers.png used on input line 195.
@@ -874,12 +874,12 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 246.
 
-<./Pics/abortion-3groups.png, id=317, 433.62pt x 289.08pt>
+<./Pics/abortion-3groups.png, id=315, 433.62pt x 289.08pt>
 File: ./Pics/abortion-3groups.png Graphic file (type png)
  <use ./Pics/abortion-3groups.png>
 Package pdftex.def Info: ./Pics/abortion-3groups.png used on input line 250.
 (pdftex.def)             Requested size: 216.80946pt x 144.53964pt.
- <./Pics/feminismXcatholic.png, id=318, 433.62pt x 289.08pt>
+ <./Pics/feminismXcatholic.png, id=316, 433.62pt x 289.08pt>
 File: ./Pics/feminismXcatholic.png Graphic file (type png)
  <use ./Pics/feminismXcatholic.png>
 Package pdftex.def Info: ./Pics/feminismXcatholic.png used on input line 251.
@@ -889,7 +889,7 @@ Overfull \hbox (21.05397pt too wide) in paragraph at lines 250--252
  [][][][] 
  []
 
-<./Pics/feminismXcatholic-normed.png, id=324, 433.62pt x 289.08pt>
+<./Pics/feminismXcatholic-normed.png, id=322, 433.62pt x 289.08pt>
 File: ./Pics/feminismXcatholic-normed.png Graphic file (type png)
  <use ./Pics/feminismXcatholic-normed.png>
 Package pdftex.def Info: ./Pics/feminismXcatholic-normed.png used on input line 263.
@@ -900,12 +900,12 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 276.
 
-<./Pics/biochem_petroleum-trump.png, id=351, 433.62pt x 289.08pt>
+<./Pics/biochem_petroleum-trump.png, id=349, 433.62pt x 289.08pt>
 File: ./Pics/biochem_petroleum-trump.png Graphic file (type png)
  <use ./Pics/biochem_petroleum-trump.png>
 Package pdftex.def Info: ./Pics/biochem_petroleum-trump.png used on input line 284.
 (pdftex.def)             Requested size: 216.80946pt x 144.53964pt.
- <./Pics/indiani-trump.png, id=352, 433.62pt x 289.08pt>
+ <./Pics/indiani-trump.png, id=350, 433.62pt x 289.08pt>
 File: ./Pics/indiani-trump.png Graphic file (type png)
  <use ./Pics/indiani-trump.png>
 Package pdftex.def Info: ./Pics/indiani-trump.png used on input line 294.
@@ -970,8 +970,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 435.
  ) 
 Here is how much of TeX's memory you used:
- 9175 strings out of 493014
- 135372 string characters out of 6133351
+ 9174 strings out of 493014
+ 135360 string characters out of 6133351
  243175 words of memory out of 5000000
  12434 multiletter control sequences out of 15000+600000
  19195 words of font info for 70 fonts, out of 8000000 for 9000
@@ -979,10 +979,10 @@ Here is how much of TeX's memory you used:
  44i,11n,49p,1840b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on SOC.pdf (27 pages, 1553050 bytes).
+Output written on SOC.pdf (27 pages, 1552718 bytes).
 PDF statistics:
- 524 PDF objects out of 1000 (max. 8388607)
- 457 compressed objects within 5 object streams
- 113 named destinations out of 1000 (max. 500000)
+ 522 PDF objects out of 1000 (max. 8388607)
+ 455 compressed objects within 5 object streams
+ 112 named destinations out of 1000 (max. 500000)
  209 words of extra memory for PDF output out of 10000 (max. 10000000)
 
