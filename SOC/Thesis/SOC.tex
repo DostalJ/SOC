@@ -40,7 +40,7 @@
 \captionsetup[subfigure]{subrefformat=simple,labelformat=simple,listofformat=subsimple}
 \renewcommand\thesubfigure{(\alph{subfigure})}
 \newcommand*{\fullref}[1]{\hyperref[{#1}]{\ref*{#1} \nameref*{#1}}} % cislo, nazev kapitoly
-e% \newcommand*{\fullref}[1]{\hyperref[{#1}]{\autoref*{#1} \nameref*{#1}}} % section/subsection/..., cislo, nazev kapitoly
+% \newcommand*{\fullref}[1]{\hyperref[{#1}]{\autoref*{#1} \nameref*{#1}}} % section/subsection/..., cislo, nazev kapitoly
 
 
 
@@ -146,7 +146,7 @@ Pro jednoduchost uveďme příklad. Pepa je nový uživatel \textit{Twitteru}. J
 \label{fig:pepa}
 \end{figure}
 
-uTakovouto strukturu můžeme chápat jako orientovaný graf, kde vrcholy před\-sta\-vu\-jí uživatelé \textit{Twitteru} a~orientované hrany mezi nimi proud příspěvků, tedy vztah \textit{following}, neboli \textit{sledující}. Pokud uživatele sleduje mnoho lidí, je směrem k němu připojeno více hran, mluvíme o~uživateli s vysokou konektivitou nebo s vysokým stupněm. Obdobně uživatel, který má malou konektivitu, je takový, k němuž směřuje málo hran, je málo \textit{sledován}.
+Takovouto strukturu můžeme chápat jako orientovaný graf, kde vrcholy před\-sta\-vu\-jí uživatelé \textit{Twitteru} a~orientované hrany mezi nimi proud příspěvků, tedy vztah \textit{following}, neboli \textit{sledující}. Pokud uživatele sleduje mnoho lidí, je směrem k němu připojeno více hran, mluvíme o~uživateli s vysokou konektivitou nebo s vysokým stupněm. Obdobně uživatel, který má malou konektivitu, je takový, k němuž směřuje málo hran, je málo \textit{sledován}.
 
 Příspěvky na \textit{Twitteru} mohou mít jakýkoliv textový tvar do délky $140$ znaků, doplněný obrázkem nebo videem, mnohdy také hypertextovým odkazem na externí článek. Obrázky, videa, ani články na jiných stránkách nejsme schopni analyzovat. Plně však zkoumáme textovou část příspěvků. Ty bývají doplněné o~tzv. \textit{hashtagy}. To jsou slova nebo krátká spojení slov, před kterými stojí znak \textit{\#~(křížek)}. Z pravidla se jedná o~slova, která jsou velmi aktuální, například různé reference na současné politické dění a~podobně. Mnohdy jsou \textit{hashtagy} užívány pouze pro zvětšení popularity příspěvku, jelikož častá forma vyhledávání je právě pomocí \textit{hashtagů}.
 
@@ -163,7 +163,7 @@ Sentimentální analýza textu se skládá z několika základních kroků, kter
 Pokud řekneme, že při měření bylo zjištěno, že za určitou dobu bylo v určité skupině $40~\%$ lidí proti a~$60~\%$ pro, je tím myšleno, že $40~\%$ tweetů mělo sentiment menší než $0.5$ a~naopak $60~\%$ větší než $0.5$.
 
 \subsection{Technické detaily sentimentální analýzy textu}
-i\noindent Pohlédneme-li do větších detailů našeho modelu na odhad sentimentu, prvním krokem po získání datasetu je vytvořit slovník s $V = 5000$ nejčastějšími slovy. Poté je každý datový bod, tedy každý \textit{tweet}, transformován ze seznamu slov do seznamu \textit{1-hot-encoding} vektorů\footnote{Kde každý vektro je reprezantací jednoho slova. Takové reprezantace mají velmi jednoduchý a~zároveň velmi nepraktický tvar. Je-li slovo ve slovníku na $k$-té pozici, bude jeho \textit{1-hot-encoding} reprezentací vektor plný nul, až na $k$-tou pozici, kde se bude nacházet číslo $1$. Každé slovo je tedy reprezentováno vektorem s dimenzí $5000$. Je zřejmé, že tato reprezentace není příliš efektivní.}.
+\noindent Pohlédneme-li do větších detailů našeho modelu na odhad sentimentu, prvním krokem po získání datasetu je vytvořit slovník s $V = 5000$ nejčastějšími slovy. Poté je každý datový bod, tedy každý \textit{tweet}, transformován ze seznamu slov do seznamu \textit{1-hot-encoding} vektorů\footnote{Kde každý vektro je reprezantací jednoho slova. Takové reprezantace mají velmi jednoduchý a~zároveň velmi nepraktický tvar. Je-li slovo ve slovníku na $k$-té pozici, bude jeho \textit{1-hot-encoding} reprezentací vektor plný nul, až na $k$-tou pozici, kde se bude nacházet číslo $1$. Každé slovo je tedy reprezentováno vektorem s dimenzí $5000$. Je zřejmé, že tato reprezentace není příliš efektivní.}.
 
 Následuje \textit{word embedding} vrstva~\cite{WordEmbedding1, WordEmbedding2}, která vytvoří novou reprezentaci slov. Ta je schopná mnohem lépe zachovávat semantické vlastnosti jednotlivých slov\footnote{Na takové reprezentaci slov můžeme sledovat zachování semantických vlastností a~dokonce i~možnost heuristického užití aritmetiky. Můžeme si všimnout, že například $vec(\textit{France})\nobreak\hspace{.16667em plus .08333em}-\nobreak\hspace{.16667em plus .08333em} vec(\textit{Paris})\,+\,vec(\textit{Italy})\,\approx\,vec(\textit{Rome})$. Takové vlastnosti jsme při užití \textit{1-hot-encoding} pozorovat nemohli.}. Vektory s dimenzí $V = 5000$ transformuje do vektorů s dimenzí $N = 32$, které se mnohem lépe hodí pro zpracování a~sentimentální analýzu, protože lépe reprezentují skutečný význam slov.
 
@@ -185,10 +185,9 @@ Jak jsme již zmiňovali v předešlých kapitolách, pro účely našeho výzku
 \noindent Našim cílem je pozorovat efekty a~sílu informační bubliny na vybrané skupině ve společnosti. V odstavcích výše jsme však shrnuli, proč to není vůbec přímočarý proces.
 
 Abychom vybrali určitou skupinu uživatelů \textit{Twitteru} co nejpřesněji, využijeme existujících stránek, které sdružují příznivce hledané skupiny. Chceme-li například studovat, jak jsou informační bublinou postiženi \textit{biochemici}, vybereme je z lidí, kteří sledují Twitterový profil \textit{Biochemical Society}. Ten se po našem průzkumu Twitteru ukázal jako nejvíce populární účet s tímto tématem, sleduje ho přibližně $15$ tis. lidí. Služby poskytované Twitterem na stahování dat nás bohužel omezují v počtu zkoumaných uživatelů, proto musíme ze všech $15$ tisíc vybrat pouze část. Abychom zajistili náhodnost tohoto procesu, o~výběr podmnožiny se stará jedna část softwaru~\cite{myRepo}, který jsme pro tyto účely vytvořili. Vybraná skupina sledovaných uživatelů je přehledně zobrazena na obrázku~\autoref{fig:sets}.
-\begin{figure}[h]
-\centering
+\begin{figure}[h]\centering
 \includegraphics[scale=0.27]{./Pics/sets.png}
-    \caption{Twitter vyobrazen jako množina, v níž je znázorněna skupina sledjících \textit{Biochemical Society}. Z této skupiny bylo následně vybráno 100 náhodných uživatelů.}
+    \caption{Twitter vyobrazen jako množina, v níž je znázorněna skupina sledujících \textit{Biochemical Society}. Z této skupiny bylo následně vybráno 100 náhodných uživatelů.}
 \label{fig:sets}
 \end{figure}
 
@@ -196,8 +195,7 @@ Nyní máme vybranou skupinu vzorků, na kterých chceme pozorovat efekty inform
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.35]{./Pics/followers.png}
-    \caption{\textit{Biochemici} znázorněni jako skupina, k níž proudí příspěvky od uživatelů, které sledují. U těchto příspěvků sledujeme diversitu sentimentu jejich obsahu vůči vybraným tématům.}
-\label{fig:followers}
+    \caption{\textit{Biochemici} znázorněni jako skupina, k níž proudí příspěvky od uživatelů, které sledují. U těchto příspěvků sledujeme diversitu sentimentu jejich obsahu vůči vybraným tématům.}\label{fig:followers}
 \end{figure}
 
 Pro přehlednost vyjádřeme tyto vztahy matematicky. Je-li $\mathbb{M}_{bio}$ množina všech uživatelů, kteří sledují stránku \textit{Biochemical Society}, našim prvním úkolem je náhodně vybrat podmnožinu $\mathbb{P}_{bio}$ takovou, že obsahuje námi zvolený počet prvků $\left\vert{\mathbb{P}_{bio}}\right\vert = n$ a~zároveň každý prvek je vybrán s pravděpodobností $p = \frac{1}{\left\vert{\mathbb{M}_{bio}}\right\vert}$. Nyní pomocí služeb poskytovaných Twitterem vybereme množinu $\mathbb{S}_{bio}$ takovou, že každý prvek je sledován alespoň jedním prvkem z $\mathbb{P}_{bio}$. Je-li $\mathbb{T}$ množina všech uživatelů Twitteru a~ $\mathbb{A}$ tzv. \textit{adjacency matrix} celého Twitteru, tedy matice, pro kterou platí:
@@ -230,15 +228,17 @@ V souvislosti s tímto vyvstává ještě jedna záležitost, která by mohla b�
 
 Z důvodu fungování naší metody v anglickém jazyce jsme nevolili témata lokální, kupříkladu z české politické sféry, jež by svým rozsahem a~především jazykem nevyhovovala měření, nýbrž jsme zvolili témata globálního rozsahu řešící se na sociálních sítích zejména v anglickém jazyce.
 
-Jako velmi rozporuplnou a~politicky zajímavou veřejně známou osobností jsme vybrali nedávno zvoleného prezidenta Spojených států amerických Donalda Trumpa. Nynější prezident Trump byl již ve své předvolební kampani zastáncem silné ekonomiky státu, heslo \uv{Make America Great Again} a~příslib zlepšení celkové finanční situace musel velice imponovat nižší a~střední vrstvě společnosti. Z tohoto důvodu se nám společnost \textit{příznivců těžby ropy} zdála být optimální volbou.
+Jako velmi rozporuplnou a~politicky zajímavou veřejně známou osobností jsme vybrali nedávno zvoleného prezidenta Spojených států amerických Donalda Trumpa. Nynější prezident Trump byl již ve své předvolební kampani zastáncem radikálních změn, heslo \uv{Make America Great Again} a~příslib zlepšení finanční situace musel velice imponovat nižší a~střední třídě společnosti. Z tohoto důvodu se nám společnost \textit{příznivců těžby ropy} zdála být optimální volbou.
 
 Jak se také Trump ve svých výrocích zmínil, hodlá snížit dotace na rozvoj vědy, proto usuzujeme, že právě vědecká společnost \textit{biochemiků} bude mít názor na prezidenta Trumpa poněkud negativnější než názor příznivců \textit{těžby ropy}. U těchto dvou skupin jsme proto vybrali jako klíčové slovo heslo \textit{\uv{Trump}}.
 
-Námi druhé zvolené heslo \textit{\uv{abortion}}\footnote{Slovo, jež v angličtině znamená \textit{\uv{potrat}}.} má také co dočinění s americkou politickou sférou. Trump se jako silný republikán a~zastánce progresivního státu s přáním stále rostoucího počtu amerických obyvatel vyjádřil velmi negativně o~problematice potratu. Zmínil se o~celoplošném zákazu potratů v USA, což vzbudilo v obyvatelstvu silné emoce, a~to jak positivní, tak negativní.
+Námi druhé zvolené heslo \textit{\uv{abortion}}\footnote{Slovo, jež v angličtině znamená \textit{\uv{potrat}}.} má také co dočinění s americkou politickou sférou. Trump se jako silný republikán s přáním stále rostoucího počtu amerických obyvatel vyjádřil velmi negativně o~problematice potratu. Zmínil se o~celoplošném zákazu potratů v USA, což vzbudilo v obyvatelstvu silné emoce, a~to jak positivní, tak negativní.
 
-Velký potenciál, co se týče příznivců potratů, jsme spatřovali v liberálnějších skupinách, které podporují velkou svobodu volby nejen politickou, ale i~morální. Proto jsme vybrali \textit{LGBT foundation} s názory liberálnějšími a~poté také feministickou skupinu \textit{Everyday Feminism}, jež tradičně podporuje rovnoprávnost žen ve všech oblastech společnosti.
+Velký potenciál, co se týče příznivců potratů, jsme spatřovali v organizaci \textit{Guttmacher Institute} podporující vzdělání, ochranu a stejné možnosti žen a můžů ve zdravotní péči. Další skupinu příznivců jsme identifikovali jako \textit{Planned Parenthood}. Hlavním cílem tétéo organizace je ochrana jak právní, tak i zdravotní bez ohledu na finance daných osob, převážně žen v těžkých situacích.  Třetí námi sledovanou výraznou komunitou byla feministická skupina \textit{Everyday Feminism}, jež tradičně podporuje rovnoprávnost žen ve všech oblastech společnosti.
 
-Na rozdíl od těchto dvou podskupin potenciálních sympatizantů s potraty jsme vyhledali skupinu lidí s přísnějšími etickými zásadami. Pro tyto účely byly zvoleny křesťanské komunity \textit{Catholic News Svc} a~\textit{Only Mormons}, u nichž bychom mohli očekávat názory na téma potrat mnohem negativnější, než u předchozích dvou.
+Na rozdíl od těchto dvou podskupin potenciálních sympatizantů s potraty jsme vyhledali skupiny lidí s odlišnými etickými zásadami. Pro tyto účely byla zvolena komunita \textit{Abolish Abortion USA}, která se zastává pozměnění ústavy, tedy zákazu potratů. Druhá skupina~\textit{Students fo Life}, orientující se spíše proti potratům, se snaží o sexuální vzdělání mladých lidí pomocí přednáškových cyklů.  
+
+U těchto dvou skupin bychom mohli očekávat výsledky na téma potrat výrazněji odlišné, než u předchozích tří.
 
 % ##############################################################################
 % ##############################################################################
