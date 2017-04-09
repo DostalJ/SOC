@@ -18,8 +18,8 @@ def load_sent(name, keyword):
         sent.append(float(line[1]))
     return sent
 
-def get_proportion(name):
-    df = pd.read_csv(filepath_or_buffer='./Data/sentiment/' + name + '.csv', header=None)
+def get_proportion(name, keyword):
+    df = pd.read_csv(filepath_or_buffer='./Data/sentiment/' + keyword + '-' + name + '.csv', header=None)
     sent = df[1]
     l = len(sent)
     p = [0,0]
@@ -30,9 +30,9 @@ def get_proportion(name):
             p[1] += 1/l
     return p
 
-pages = ['PPact', 'EvrydayFeminism, 'Students4LifeHQ', 'AmenditUSA']
+pages = ['PPact', 'EvrydayFeminism', 'Students4LifeHQ', 'AmenditUSA']
 for page in pages:
-    print(page, )
+    print(page, get_proportion(page, 'abortion'))
 
 
 def hist(names, legend, keyword, colors=['b', 'r', 'g', 'c', 'y', 'm'], num_bins=30, normed=False, out_name=None, exp=4):

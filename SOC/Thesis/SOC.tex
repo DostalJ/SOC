@@ -163,15 +163,31 @@ Sentimentální analýza textu se skládá z několika základních kroků, kter
 Pokud řekneme, že při měření bylo zjištěno, že za určitou dobu bylo v určité skupině $40~\%$ lidí proti a~$60~\%$ pro, je tím myšleno, že $40~\%$ tweetů mělo sentiment menší než $0.5$ a~naopak $60~\%$ větší než $0.5$.
 
 \subsection{Technické detaily sentimentální analýzy textu}
-\noindent Pohlédneme-li do větších detailů algoritmu na odhad sentimentu, nejprve vytvoříme slovník s $V = 5000$ nejčastějšími slovy\footnote{Toto číslo je jeden z~tzv. \textit{hyper parameters}, tedy parametr modelu, který volíme my sami tak, aby náš model měl co největší přesnost. Přitom užíváme spíše vlastních zkušeností a~uvážení.}. Poté je každý datový bod, tedy každý \textit{tweet}, transformován ze seznamu slov do seznamu \textit{1-hot-encoding} vektorů\footnote{Kde každý vektor je reprezantací jednoho slova. Takové reprezantace mají velmi jednoduchý a~zároveň velmi nepraktický tvar. Je-li slovo ve slovníku na $k$-té pozici, bude jeho \textit{1-hot-encoding} reprezentací vektor plný nul, až na $k$-tou pozici, kde se bude nacházet číslo $1$. Každé slovo je tedy reprezentováno vektorem s dimenzí $5000$. Je zřejmé, že tato reprezentace není příliš efektivní.}.
+\noindent Pohlédneme-li do větších detailů algoritmu na odhad sentimentu, nejprve vytvoříme slovník s $V = 5000$ nejčastějšími slovy\footnote{Toto číslo je jeden z~tzv. \textit{hyper parameters}, tedy parametr modelu, který volíme my sami tak, aby náš model měl co největší přesnost. Přitom užíváme spíše vlastních zkušeností a~uvážení.}. Poté je každý datový bod, tedy každý \textit{tweet}, transformován ze seznamu slov do seznamu \textit{1-hot-encoding} vektorů\footnote{Kde každý vektor je reprezantací jednoho slova. Takové reprezantace mají velmi jednoduchý a~zároveň velmi nepraktický tvar. Je-li slovo ve slovníku na $k$-té pozici, bude jeho \textit{1-hot-encoding} reprezentací vektor plný nul, až na $k$-tou pozici, kde se bude nacházet číslo $1$. Každé slovo je tedy reprezentováno vektorem o velikost $5000$. Je zřejmé, že tato reprezentace není příliš efektivní.}.
 
+Pro lepší představu uveďme triviální příklad. Mějme slovník o pěti slovech:
+\begin{equation}
+    \begin{bmatrix}
+    \text{les} \\
+    \text{mele} \\
+    \text{auto} \\
+    \text{maso} \\
+    \text{máma}
+    \end{bmatrix}.
+\end{equation}
+Jelikož slovo \textit{auto} je ve slovníku na pátém místě, jeho \textit{1-hot-encoding} reprezentace je $\text{\textit{auto}} = \left(0, 0, 1, 0, 0\right)$. Tedy vektor délky $5$ s jedničkou na indexu, který odpovídá pořadí ve slovníku a nulami všude jinde. Jeden tweet však není pouze jedno slovo. Více slov proto budeme vnitřně reprezentovat maticí, jejíž sloupce odpovídají jednotlivým slovům. Například věta \textit{Máma mele maso.} je reprezentována maticí:
+\begin{equation}
+    \text{Máma mele maso.} =
+    \begin{pmatrix}
+        0 & 0 & 0\\
+        0 & 1 & 0\\
+        0 & 0 & 0\\
+        0 & 0 & 1\\
+        1 & 0 & 0
+    \end{pmatrix}.
+\end{equation}
 
-
-\textbf{Tweet: máma mele maso}\\
-
-\noindent Pohlédneme-li do větších detailů našeho modelu na odhad sentimentu, prvním krokem po získání datasetu je vytvořit slovník s $V = 5000$ nejčastějšími slovy. Poté je každý datový bod, tedy každý \textit{tweet}, transformován ze seznamu slov do seznamu \textit{1-hot-encoding} vektorů\footnote{Kde každý vektro je reprezantací jednoho slova. Takové reprezantace mají velmi jednoduchý a~zároveň velmi nepraktický tvar. Je-li slovo ve slovníku na $k$-té pozici, bude jeho \textit{1-hot-encoding} reprezentací vektor plný nul, až na $k$-tou pozici, kde se bude nacházet číslo $1$. Každé slovo je tedy reprezentováno vektorem s dimenzí $5000$. Je zřejmé, že tato reprezentace není příliš efektivní.}.
-
-Následuje \textit{word embedding} vrstva~\cite{WordEmbedding1, WordEmbedding2}, která vytvoří novou reprezentaci slov. Ta je schopná mnohem lépe zachovávat semantické vlastnosti jednotlivých slov\footnote{Na takové reprezentaci slov můžeme sledovat zachování semantických vlastností a~dokonce i~možnost heuristického užití aritmetiky. Můžeme si všimnout, že například $vec(\textit{France})\nobreak\hspace{.16667em plus .08333em}-\nobreak\hspace{.16667em plus .08333em} vec(\textit{Paris})\,+\,vec(\textit{Italy})\,\approx\,vec(\textit{Rome})$. Takové vlastnosti jsme při užití \textit{1-hot-encoding} pozorovat nemohli.}. Vektory s dimenzí $V = 5000$ transformuje do vektorů s dimenzí $N = 32$, které se mnohem lépe hodí pro zpracování a~sentimentální analýzu, protože lépe reprezentují skutečný význam slov.
+Následuje \textit{word embedding} vrstva~\cite{WordEmbedding1, WordEmbedding2}, která vytvoří novou reprezentaci slov. Ta je schopná mnohem lépe zachovávat semantické vlastnosti jednotlivých slov\footnote{Na takové reprezentaci slov můžeme sledovat zachování semantických vlastností a~dokonce i~možnost heuristického užití aritmetiky. Můžeme si všimnout, že například $vec(\textit{France})\nobreak\hspace{.16667em plus .08333em}-\nobreak\hspace{.16667em plus .08333em} vec(\textit{Paris})\,+\,vec(\textit{Italy})\,\approx\,vec(\textit{Rome})$. Takové vlastnosti jsme při užití \textit{1-hot-encoding} pozorovat nemohli.}. Vektory s velikostí $V = 5000$ transformuje do vektorů s velikostí $N = 32$, které se mnohem lépe hodí pro zpracování a~sentimentální analýzu, protože lépe reprezentují skutečný význam slov.
 
 Na tuto vrstvu navazuje \textit{convolution} vrstva~\cite{CNN}, která je schopná prozkoumat postavení slov ve větě. Následuje \textit{fully connected} vrstva, která slouží ke správné interpretaci vlastností odvozených neuronovou sítí, ukončená \textit{relu aktivační jednotkou}. Ta se stará o~dodání nelinearity do modelu, což zajišťuje přesnější klasifikaci. Úplně poslední je další plně propojená vrstva zakončená aktivační funkcí \textit{sigmoid}, která se postará o~transformaci na pravděpodobnost, pro snazší budoucí interpretaci.
 
@@ -302,13 +318,6 @@ Naších očekáváním bylo, že u skupin, které neodporují potratům, tedy \
 Někdo by mohl namítat, že rozdíl nebyl dostatečně markantní. Je však potřeba si uvědomit, že díky velké konektivitě uživatelů Twitteru je alespoň základní přístup k různým názorům snado zajištěn. Při hledání informační bubliny je tedy třeba pozorovat i~zdánlivě malé rozdíly v rozdělení, nebo četnosti určitých příspěvků.
 
 Prokázali jsme, že odlišné skupiny uživatelů Twitteru jsou v rámci tématu \textit{potrat} vystaveny různě velkému množství příspěsků na dané téma. Rozdíl v rozložení sentimentu není velký, ale i přesto částečně potvrzuje naše předpoklady.
-
-
-
-
-
-
-
 
 
 \subsection{Shrnutí pozorování}
