@@ -29,8 +29,10 @@ def get_proportion(name):
         else:
             p[1] += 1/l
     return p
-# get_proportion('CatholicNewsSVC-abortion-2')
-# get_proportion('EvryDayFeminism-abortion-2')
+
+pages = ['PPact', 'EvrydayFeminism, 'Students4LifeHQ', 'AmenditUSA']
+for page in pages:
+    print(page, )
 
 
 def hist(names, legend, keyword, colors=['b', 'r', 'g', 'c', 'y', 'm'], num_bins=30, normed=False, out_name=None, exp=4):
@@ -87,6 +89,7 @@ hist(names=['PPact', 'EvrydayFeminism',
              'Students for Life (Proti)', 'Abolish Abortion USA (Proti)'],
      keyword='abortion',
      exp=2,
-     normed=False, num_bins=5,
+     normed=True, num_bins=5,
      out_name='abortion-normed.png')
+
 """

@@ -1,13 +1,9 @@
-# python3 collect_followers.py -p=PetroleumEcon -n=100 -o=./measurements/people_to_follow/PetroleumEcon.txt
-#
-# python3 collect_followers.py -p=OnlyMormons -n=100 -o=./measurements/people_to_follow/OnlyMormons.txt
-#
-# python3 collect_followers.py -p=CatholicNewsSvc -n=100 -o=./measurements/people_to_follow/CatholicNewsSvc.txt
-#
-# python3 collect_followers.py -p=EvrydayFeminism -n=100 -o=./measurements/people_to_follow/EvrydayFeminism.txt
-#
-# python3 collect_followers.py -p=LGBTfdn -n=100 -o=./measurements/people_to_follow/LGBTfdn.txt
-#
-# python3 collect_followers.py -p=BiochemSoc -n=100 -o=./measurements/people_to_follow/BiochemSoc.txt
-# 
-# python3 collect_followers.py -p=StandingRockST -n=100 -o=./measurements/people_to_follow/StandingRockST.txt
+# python3 collect_followers.py -p=PPact -n=50 -o=./data/people/PPact.txt
+# python3 collect_followers.py -p=Guttmacher -n=50 -o=./data/people/Guttmacher.txt
+# python3 collect_followers.py -p=Students4LifeHQ -n=50 -o=./data/people/Students4LifeHQ.txt
+# python3 collect_followers.py -p=AmenditUSA -n=50 -o=./data/people/AmenditUSA.txt
+# python3 collect_followers.py -p=EvrydayFeminism -n=50 -o=./data/people/EvrydayFeminism.txt
+
+
+python3 collect_followers.py -p=EvrydayFeminism -n=50 -o=./data/people/BiochemSoc.txt
+python3 collect_followers.py -p=EvrydayFeminism -n=50 -o=./data/people/TrumpStudents.txt
