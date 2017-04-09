@@ -175,9 +175,9 @@ Pro lepší představu uveďme triviální příklad. Mějme slovník o pěti sl
     \text{máma}
     \end{bmatrix}.
 \end{equation}
-Jelikož slovo \textit{auto} je ve slovníku na pátém místě, jeho \textit{1-hot-encoding} reprezentace je $\text{\textit{auto}} = \left(0, 0, 1, 0, 0\right)$. Tedy vektor délky $5$ s jedničkou na indexu, který odpovídá pořadí ve slovníku a nulami všude jinde. Jeden tweet však není pouze jedno slovo. Více slov proto budeme vnitřně reprezentovat maticí, jejíž sloupce odpovídají jednotlivým slovům. Například věta \textit{Máma mele maso.} je reprezentována maticí:
+Jelikož slovo \textit{auto} je ve slovníku na třetím místě, jeho \textit{1-hot-encoding} reprezentace je $\text{\textit{\uv{auto}}} = \left(0, 0, 1, 0, 0\right)$. Tedy vektor délky $5$ s jedničkou na indexu, který odpovídá pořadí ve slovníku a nulami na všech ostatních indexech. Jeden tweet však není pouze jedno slovo. Více slov budeme vnitřně reprezentovat maticí, jejíž sloupce odpovídají jednotlivým slovům. Například věta \textit{\uv{Máma mele maso.}} je reprezentována maticí:
 \begin{equation}
-    \text{Máma mele maso.} =
+    \text{\uv{Máma mele maso.}} =
     \begin{pmatrix}
         0 & 0 & 0\\
         0 & 1 & 0\\
