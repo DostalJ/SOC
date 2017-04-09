@@ -163,16 +163,13 @@ Sentimentální analýza textu se skládá z několika základních kroků, kter
 Pokud řekneme, že při měření bylo zjištěno, že za určitou dobu bylo v určité skupině $40~\%$ lidí proti a~$60~\%$ pro, je tím myšleno, že $40~\%$ tweetů mělo sentiment menší než $0.5$ a~naopak $60~\%$ větší než $0.5$.
 
 \subsection{Technické detaily sentimentální analýzy textu}
-<<<<<<< HEAD
 \noindent Pohlédneme-li do větších detailů algoritmu na odhad sentimentu, nejprve vytvoříme slovník s $V = 5000$ nejčastějšími slovy\footnote{Toto číslo je jeden z~tzv. \textit{hyper parameters}, tedy parametr modelu, který volíme my sami tak, aby náš model měl co největší přesnost. Přitom užíváme spíše vlastních zkušeností a~uvážení.}. Poté je každý datový bod, tedy každý \textit{tweet}, transformován ze seznamu slov do seznamu \textit{1-hot-encoding} vektorů\footnote{Kde každý vektor je reprezantací jednoho slova. Takové reprezantace mají velmi jednoduchý a~zároveň velmi nepraktický tvar. Je-li slovo ve slovníku na $k$-té pozici, bude jeho \textit{1-hot-encoding} reprezentací vektor plný nul, až na $k$-tou pozici, kde se bude nacházet číslo $1$. Každé slovo je tedy reprezentováno vektorem s dimenzí $5000$. Je zřejmé, že tato reprezentace není příliš efektivní.}.
 
 
 
 \textbf{Tweet: máma mele maso}\\
 
-=======
 \noindent Pohlédneme-li do větších detailů našeho modelu na odhad sentimentu, prvním krokem po získání datasetu je vytvořit slovník s $V = 5000$ nejčastějšími slovy. Poté je každý datový bod, tedy každý \textit{tweet}, transformován ze seznamu slov do seznamu \textit{1-hot-encoding} vektorů\footnote{Kde každý vektro je reprezantací jednoho slova. Takové reprezantace mají velmi jednoduchý a~zároveň velmi nepraktický tvar. Je-li slovo ve slovníku na $k$-té pozici, bude jeho \textit{1-hot-encoding} reprezentací vektor plný nul, až na $k$-tou pozici, kde se bude nacházet číslo $1$. Každé slovo je tedy reprezentováno vektorem s dimenzí $5000$. Je zřejmé, že tato reprezentace není příliš efektivní.}.
->>>>>>> 0da129d0966928a857d28affc05f924748b8df40
 
 Následuje \textit{word embedding} vrstva~\cite{WordEmbedding1, WordEmbedding2}, která vytvoří novou reprezentaci slov. Ta je schopná mnohem lépe zachovávat semantické vlastnosti jednotlivých slov\footnote{Na takové reprezentaci slov můžeme sledovat zachování semantických vlastností a~dokonce i~možnost heuristického užití aritmetiky. Můžeme si všimnout, že například $vec(\textit{France})\nobreak\hspace{.16667em plus .08333em}-\nobreak\hspace{.16667em plus .08333em} vec(\textit{Paris})\,+\,vec(\textit{Italy})\,\approx\,vec(\textit{Rome})$. Takové vlastnosti jsme při užití \textit{1-hot-encoding} pozorovat nemohli.}. Vektory s dimenzí $V = 5000$ transformuje do vektorů s dimenzí $N = 32$, které se mnohem lépe hodí pro zpracování a~sentimentální analýzu, protože lépe reprezentují skutečný význam slov.
 
@@ -200,11 +197,9 @@ Abychom vybrali určitou skupinu uživatelů \textit{Twitteru} co nejpřesněji,
 \label{fig:sets}
 \end{figure}
 
-<<<<<<< HEAD
 Nyní máme vybranou skupinu vzorků, na kterých chceme pozorovat efekty informační bubliny. Ta je však závislá na uživatelích, kteří vytvářejí obsah viditelný studovanými lidmi. To jsou ti uživatelé, které studované subjekty sledují. Vybereme několik \textit{biochemiků}, na kterých chceme sledovat informační bublinu. Nyní musíme studovat obsah, který tvoří uživatelé sledovaní \textit{biochemiky}. Vztah mezi sledovaným obsahem a~studovanými uživateli je přehledně zobrazen na obrázku~\autoref{fig:followers}.
-=======
+
 Nyní máme vybranou skupinu vzorků, na kterých chceme pozorovat efekty informační bubliny. Ta je však závislá na uživatelích, kteří vytvářejí obsah vditelný studovanými lidmi. To jsou ti uživatelé, které studované subjekty sledují. Vybereme několik \textit{biochemiků}, na kterých chceme sledovat informační bublinu. Nyní musíme studovat obsah, který tvoří uživatelé sledovaní \textit{biochemiky}. Vztah mezi sledovaným obsahem a~studovanými uživateli je přehledně zobrazen na obrázku~\autoref{fig:followers}.
->>>>>>> 0da129d0966928a857d28affc05f924748b8df40
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.35]{./Pics/followers.png}
@@ -249,7 +244,7 @@ Námi druhé zvolené heslo \textit{\uv{abortion}}\footnote{Slovo, jež v angli�
 
 Velký potenciál, co se týče příznivců potratů, jsme spatřovali v organizaci \textit{Guttmacher Institute} podporující vzdělání, ochranu a stejné možnosti žen a můžů ve zdravotní péči. Další skupinu příznivců jsme identifikovali jako \textit{Planned Parenthood}. Hlavním cílem tétéo organizace je ochrana jak právní, tak i zdravotní bez ohledu na finance daných osob, převážně žen v těžkých situacích.  Třetí námi sledovanou výraznou komunitou byla feministická skupina \textit{Everyday Feminism}, jež tradičně podporuje rovnoprávnost žen ve všech oblastech společnosti.
 
-Na rozdíl od těchto dvou podskupin potenciálních sympatizantů s potraty jsme vyhledali skupiny lidí s odlišnými etickými zásadami. Pro tyto účely byla zvolena komunita \textit{Abolish Abortion USA}, která se zastává pozměnění ústavy, tedy zákazu potratů. Druhá skupina~\textit{Students fo Life}, orientující se spíše proti potratům, se snaží o sexuální vzdělání mladých lidí pomocí přednáškových cyklů.  
+Na rozdíl od těchto dvou podskupin potenciálních sympatizantů s potraty jsme vyhledali skupiny lidí s odlišnými etickými zásadami. Pro tyto účely byla zvolena komunita \textit{Abolish Abortion USA}, která se zastává pozměnění ústavy, tedy zákazu potratů. Druhá skupina~\textit{Students fo Life}, orientující se spíše proti potratům, se snaží o sexuální vzdělání mladých lidí pomocí přednáškových cyklů.
 
 U těchto dvou skupin bychom mohli očekávat výsledky na téma potrat výrazněji odlišné, než u předchozích tří.
 
