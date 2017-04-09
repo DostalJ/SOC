@@ -5,10 +5,12 @@ from matplotlib.style import use
 use('ggplot')
 
 
-def load_sent(name):
-    # df = pd.read_csv(filepath_or_buffer='./measurements/sentiment/' + name + '.csv', header=None)
+def load_sent(name, keyword):
+
+    # df = pd.read_csv(filepath_or_buffer='./Data/sentiment/' + name + '.csv', header=None)
     # sent = df[1]
-    path = './measurements/sentiment/' + name + '.csv'
+
+    path = './Data/sentiment/' + keyword + '-' + name + '.csv'
     f = open(file=path, mode='r')
     sent = []
     for line in f.readlines():
@@ -17,8 +19,7 @@ def load_sent(name):
     return sent
 
 def get_proportion(name):
-    df = pd.read_csv(filepath_or_buffer='./measurements/sentiment/' + name + '.csv', header=None)
-    # df = pd.read_csv(filepath_or_buffer='./measurements/sentiment/' + name + '.txt', header=None)
+    df = pd.read_csv(filepath_or_buffer='./Data/sentiment/' + name + '.csv', header=None)
     sent = df[1]
     l = len(sent)
     p = [0,0]
@@ -31,21 +32,22 @@ def get_proportion(name):
 # get_proportion('CatholicNewsSVC-abortion-2')
 # get_proportion('EvryDayFeminism-abortion-2')
 
-def hist(names, legends, keyword, colors=['b', 'r', 'g', 'c', 'y'], num_bins=30, normed=False, out_name=None, exp=4):
+
+def hist(names, legend, keyword, colors=['b', 'r', 'g', 'c', 'y', 'm'], num_bins=30, normed=False, out_name=None, exp=4):
     plt.clf()
 
     data = []
     for name in names:
-        sent = load_sent(name)
+        sent = load_sent(name, keyword)
         data.append(sent)
 
     if normed == True:
         weights = [np.ones_like(array)/float(len(array)) for array in data]
-        plt.hist(x=data, bins=num_bins, color=colors[:len(data)], label=legends, weights=weights)
+        plt.hist(x=data, bins=num_bins, color=colors[:len(data)], label=legend, weights=weights)
         plt.ylabel(r'Proportion of tweets')
 
     else:
-        plt.hist(x=data, bins=num_bins, color=colors[:len(data)], label=legends)
+        plt.hist(x=data, bins=num_bins, color=colors[:len(data)], label=legend)
         plt.ylabel(r'Number of tweets [$10^{}$]'.format(exp))
         plt.ticklabel_format(style='sci', axis='y', scilimits=(0,0))
 
@@ -68,35 +70,23 @@ def hist(names, legends, keyword, colors=['b', 'r', 'g', 'c', 'y'], num_bins=30,
 
 
 
+
 """
-hist(names=['CatholicNewsSVC-abortion-2', 'OnlyMormons-abortion-2', 'LGBTfdn-abortion-2', 'abortion-3'],
-     legends=['CatholicNewsSVC', 'OnlyMormons', 'LGBTfdn', 'Twitter'],
-     colors = ['b', 'm', 'g', 'c', 'y'],
+hist(names=['PPact', 'EvrydayFeminism',
+            'Students4LifeHQ', 'AmenditUSA'],
+     legend=['Planned Parenthood (Pro)', 'Everyday Feminism (Pro)',
+             'Students for Life (Proti)', 'Abolish Abortion USA (Proti)'],
      keyword='abortion',
-     exp=3,
-     normed=False, num_bins=15,
-     out_name='abortion-3groups.png')
+     exp=2,
+     normed=False, num_bins=5,
+     out_name='abortion.png')
 
-hist(names=['CatholicNewsSVC-abortion-2', 'EvryDayFeminism-abortion-2'],
-     legends=['CatholicNewsSVC', 'EvryDayFeminism'],
+hist(names=['PPact', 'EvrydayFeminism',
+            'Students4LifeHQ', 'AmenditUSA'],
+     legend=['Planned Parenthood (Pro)', 'Everyday Feminism (Pro)',
+             'Students for Life (Proti)', 'Abolish Abortion USA (Proti)'],
      keyword='abortion',
-     normed=False,
-     exp=5,
-     out_name='feminismXcatholic.png')
-
-hist(names=['CatholicNewsSVC-abortion-2', 'EvryDayFeminism-abortion-2'],
-     legends=['CatholicNewsSVC', 'EvryDayFeminism'],
-     keyword='abortion',
-     normed=True,
-     out_name='feminismXcatholic-normed.png')
-
-hist(names=['BiochemSoc-trump-3', 'PetroleumEcon-trump-3', 'trump-3'],
-     legends=['BiochemSoc', 'PetroleumEcon', 'Twitter'],
-     keyword='Trump', num_bins=20,
-     out_name='biochem_petroleum-trump.png')
-
-hist(names=['StandingRockST-trump-4', 'trump-4'],
-     legends=['StandingRockST', 'Twitter'],
-     keyword='Trump', num_bins=30,
-     out_name='indiani-trump.png')
+     exp=2,
+     normed=False, num_bins=5,
+     out_name='abortion-normed.png')
 """
