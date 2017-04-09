@@ -1,8 +1,7 @@
 keys.py
 __pycache__/
 .DS_Store
-data/
-
+HugeTwitterDataset/
 *.pickle
 *.h5
 
