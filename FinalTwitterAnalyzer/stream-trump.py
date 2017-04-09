@@ -21,7 +21,7 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
-pages = []
+pages = ['BiochemSoc', 'TrumpStudents']
 
 def load_people(page):
     try:
@@ -55,7 +55,7 @@ def save_followed(people, file_path):
     f.close()
     print('Successfully saved to:', file_path)
 
-# for page in pages[4:]:
+# for page in pages:
 #     people = load_people(page)
 #     save_followed(people[:10], './Data/followed/{}-followed.txt'.format(page))
 
