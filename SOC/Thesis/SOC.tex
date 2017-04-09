@@ -175,9 +175,9 @@ Pro lepší představu uveďme triviální příklad. Mějme slovník o pěti sl
     \text{máma}
     \end{bmatrix}.
 \end{equation}
-Jelikož slovo \textit{auto} je ve slovníku na pátém místě, jeho \textit{1-hot-encoding} reprezentace je $\text{\textit{auto}} = \left(0, 0, 1, 0, 0\right)$. Tedy vektor délky $5$ s jedničkou na indexu, který odpovídá pořadí ve slovníku a nulami všude jinde. Jeden tweet však není pouze jedno slovo. Více slov proto budeme vnitřně reprezentovat maticí, jejíž sloupce odpovídají jednotlivým slovům. Například věta \textit{Máma mele maso.} je reprezentována maticí:
+Jelikož slovo \textit{auto} je ve slovníku na třetím místě, jeho \textit{1-hot-encoding} reprezentace je $\text{\textit{\uv{auto}}} = \left(0, 0, 1, 0, 0\right)$. Tedy vektor délky $5$ s jedničkou na indexu, který odpovídá pořadí ve slovníku a nulami na všech ostatních indexech. Jeden tweet však není pouze jedno slovo. Více slov budeme vnitřně reprezentovat maticí, jejíž sloupce odpovídají jednotlivým slovům. Například věta \textit{\uv{Máma mele maso.}} je reprezentována maticí:
 \begin{equation}
-    \text{Máma mele maso.} =
+    \text{\uv{Máma mele maso.}} =
     \begin{pmatrix}
         0 & 0 & 0\\
         0 & 1 & 0\\
@@ -271,32 +271,31 @@ U těchto dvou skupin bychom mohli očekávat výsledky na téma potrat výrazn�
 
 
 \subsection{Klíčové slovo: Trump}\label{subsec:Trump}
-% \noindent Donald Trump, prezident Spojených států amerických, je v dnešní době sám o~sobě velké téma snad všude na světě. Proto byla předmětem několika z našich pozorování.
-%
-% Nejprve jsme pozorovali, zda se nevyskytuje efekt informační bubliny v komunitě \textit{biochemiků} okolo twitterové skupiny \textit{BiochemSoc} a~lidí zajímajících se o~\textit{těžbu ropy} sdružujících se okolu skupiny \textit{PetroleumEcon}. Měření probíhalo v době od 18.03.2017 10:20 do 18.03.2017 16:00. Dá se předpokládat, že kvůli prohlášením Donalda Trumpa o~vědě a~jeho postojům k těžbě ropy, bude komunita \textit{biochemiků} zahlcována spíše negativními příspěvky, narozdíl od toho komunita okolo \textit{těžby ropy} spíše positivními.
-%
-% Z histogramu~\autoref{fig:biochem_petroleum-trump} vidíme, že naše očekávání nebyla správná. Počty tweetů u obou skupin, tj. \textit{BiochemSoc}, \textit{PetroleumEcon} a~náhodného výběru z \textit{Twitteru}, jsou řádově naprosto stejné. i~samotné rozdělení sentimentu je totožné. Z výsledku můžeme usuzovat, že komunita okolo \textit{BiochemSoc} je vystavena nepatrně většímu počtu příspěvků na dané téma. Rozdíl je však zanedbatelný.
-% \begin{figure}[h]
-% \centering
-% \includegraphics[scale=0.5]{./Pics/biochem_petroleum-trump.png}
-% \caption{Histogramy počtu tweetů u skupin s klíčovým slovem \textit{\uv{Trump}}.}
-% \label{fig:biochem_petroleum-trump}
-% \end{figure}
-%
-% Narozdíl od našeho očekávání můžeme konstatovat, že skupiny \textit{BiochemSoc} a~\textit{PetroleumEcon} jsou vystaveny dostatečně vyváženému obsahu na dané téma a~nejsou tedy ohroženi informační bublinou. To je pravděpodobně způsobeno velkou konektivitou uživatelů Twitteru, která je spojuje s dostatečně velkým množstvím lidí opačných názorů.
-%
-% Další skupinou, která by mohla být postižena nedostatečně vyváženým obsahem v tématu \textit{\uv{Trump}} jsou potomci indiánů a~jejich podpůrci. Tuto komunitu jsme identifikovali jako uživatele sledující Twitterovou stránku \textit{StandingRockST}. Porovnávali jsme je s náhodným výběrem z Twitteru. Měření probíhalo v době od 19.03.2017 18:00 do 19.03.2017 22:00.
-% \begin{figure}[h]
-% \centering
-% \includegraphics[scale=0.5]{./Pics/indiani-trump.png}
-% \caption{Histogramy počtu tweetů u skupin s klíčovým slovem \textit{\uv{Trump}}.}
-% \label{fig:indiani-trump}
-% \end{figure}
-%
-% Ať jsme očekávali spíše kladné, nebo záporné příspěvky viditelné uživateli sledující Twitterovou stránku \textit{StandingRockST}, ani k jedné z těchto dvou variant nedošlo. Místo toho je z histogramu \autoref{fig:indiani-trump} patrné, že mají viditelné příspěvky s klíčovým slovem \textit{\uv{Trump}} u \textit{StandingRockST} stejné množství a~sentiment jako pří náhodném výběru z \textit{Twitteru}.
+\noindent Donald Trump, prezident Spojených států amerických, je v dnešní době sám o~sobě velké téma snad všude na světě. Proto byla předmětem jedhono z našich pozorování.
+
+Pozorovali jsme, zda se nevyskytuje efekt informační bubliny v komunitě okolo twitterové skupiny \textit{Biochemical Society} a~lidí ze skupiny \textit{Students For Trump}. Předpokládáme, že uživatelé sledující skupinu \textit{Biochemical Society} se budou dostávat spíše k negativním příspěvkům s klíčovým slovem \textit{\uv{Trump}}. Naopak uživatelé z \textit{Students For Trump} budou mít, dle našich předpokladů, přístup spíše k positivním příspěvkům.
+
+Na obrázcích~\autoref{fig:trump-all} vidíme histogramy\footnote{Na svislé ose je v tomto případě počet nebo proporce příspěvků s příslušnou naměřenou hodnotou sentimentu, která je vyznačena na vodorovné ose. Toto zobrazení nám umožňuje snadno nahlédnout na rozdělení sentimentu v příspěvcích i~na počty příspěvků s daným tématem.} sentimentu příspěvků uvedených skupin. Měření probíhalo v době od 09.04.2017 16:15 (GMT+2) do 09.04.2017 16:15 (GMT+2).
+\begin{figure}[!h]
+\centering
+\subfloat[Histogram počtu tweetů.]{\label{fig:trump}\includegraphics[scale=0.37]{./Pics/trump.png}}
+\subfloat[Normalizavaný histogram.]{\label{fig:trump-normed}\includegraphics[scale=0.37]{./Pics/trump-normed.png}}
+\caption[]{Histogramy počtu tweetů s klíčovým slovem \textit{\uv{Trump}}.}
+\label{fig:trump-all}
+\end{figure}
+
+Z histogramu~\autoref{fig:trump} si nejprve všimněme, že uživatelé ze skupiny \textit{Students For Trump} se dostávají k částečně většímu počtu tweetů než uživatelé z druhé skupiny. I přes to je zde zřejmé, že větší počet příspěvků je způseben převážně větším množstvím tweetů se sentimentem větším než $0.5$, tedy positivních tweetů.
+
+Abychom mohli prostudovat i~rozložení sentimentu a~nejenom počet příspěvků vztahujících se k danému tématu, pohlédněme na histogram~\autoref{fig:trump-normed}, který zobrazuje normalizované\footnote{V tomto případě se díváme na normalizovaný histogram. Na svislé ose tedy nejsou skutečné počty příspěvků s daným sentimentem vyneseným na vodorovné ose. Místo toho je na svislé ose podíl tweetů s daným sentimentem a~celkovým počtem tweetů ve sledované skupině. Toto zobrazení nám dovoluje studovat rozložení sentimentu dvou skupin, bez ohledu na rozdíl mezi absolutními počty příspěvků.} rozdělení zmíněných dvou skupin.
+
+Při pohledu na~\autoref{fig:trump-normed} vidíme, že proporce tweetů s negativním sentimentem jsou větší u skupiny \textit{Biochemical Society}, přesně podle našich očekávání. Relativní zastoupení positivních tweetů je naopak větší u skupiny \textit{Students For Trump} i když rozdíl není příliš výrazný.
+
+Někdo by mohl namítat, že rozdíl nebyl dostatečně markantní. Je však potřeba si uvědomit, že díky velké konektivitě uživatelů Twitteru je alespoň základní přístup k různým názorům snado zajištěn. Při hledání informační bubliny je tedy třeba pozorovat i~zdánlivě malé rozdíly v rozdělení, nebo četnosti určitých příspěvků.
+
+Ukázali jsme existenci informační bubliny na poměrně jasném případě dvou skupin s opačným názorem na Donalda Trumpa. \textit{Filter bubble} se projevila jak rozdílným počtem příspěvků na dané téma, tak rozdílným sentimentem jednotlivých příspěvků.
 
 \subsection{Klíčové slovo: potrat}\label{subsec:abortion}
-\noindent Začněme s případem, kdy jsme se zabývali diversitou názorů na \textit{\uv{potrat}}. Hledali jsme příspěvky s klíčovým slovem \textit{\uv{abortion}} a~sledovali, zda se sentiment takovýchto příspevků liší v různých skupinách\footnote{Konkrétně šlo o~skupiny \textit{Planned Parenthood}, \textit{Everyday Feminism}, \textit{Students for Life} a~\textit{Abolish Abortion USA}.}. Předpokládali jsme, že \textit{Students for Life} a~\textit{Abolish Abortion USA} budou spíše proti potratům, jejich sentiment bude tedy spíše nižší. Narozdíl od toho u \textit{Planned Parenthood} a~uživatelů sledujících \textit{Everyday Feminism} jsme očekávali vyšší sentiment.
+\noindent Začněme s případem, kdy jsme se zabývali diversitou názorů na \textit{\uv{potrat}}. Hledali jsme příspěvky s klíčovým slovem \textit{\uv{abortion}} a~sledovali, zda se sentiment takovýchto příspevků liší v různých skupinách\footnote{Konkrétně šlo o~skupiny \textit{Planned Parenthood}, \textit{Everyday Feminism}, \textit{Students for Life} a~\textit{Abolish Abortion USA}.}. Předpokládali jsme, že \textit{Students for Life} a~\textit{Abolish Abortion USA} budou spíše proti potratům, jejich sentiment bude tedy spíše nižší. Narozdíl od toho u \textit{Planned Parenthood} a~uživatelů sledujících \textit{Everyday Feminism} jsme očekávali vyšší sentiment. Měření probíhalo v době od 06.04.2017 23:15 (GMT+2) do 07.04.2017 19:30 (GMT+2).
 \begin{figure}[!h]
 \centering
 \subfloat[Histogram počtu tweetů.]{\label{fig:abortion}\includegraphics[scale=0.37]{./Pics/abortion.png}}
@@ -305,38 +304,18 @@ U těchto dvou skupin bychom mohli očekávat výsledky na téma potrat výrazn�
 \label{fig:abortion-all}
 \end{figure}
 
-Na obrázcích~\autoref{fig:abortion-all} vidíme histogramy\footnote{Na svislé ose je v tomto případě vždy počet příspěvků s příslušnou naměřenou hodnotou sentimentu, která je vyznačena na vodorovné ose. Toto zobrazení nám umožňuje snadno nahlédnout na rozdělení sentimentu v příspěvcích i~na počty příspěvků s daným tématem.} sentimentu příspěvků uvedených skupin. Měření probíhalo v době od 06.04.2017 23:15 (GMT+2) do 07.04.2017 19:30 (GMT+2).
-
 Ihned na první pohled jde z histogramu~\autoref{fig:abortion} vidět, že uživatelé ze skupiny \textit{Abolish Abortion USA} jsou vystaveni tématu potratu výrazně více než ostatní pozorované skupiny. I toto je důležitým znakem informační bubliny. Uživatel vystavený zvětšenému počtu příspěvku na dané téma má pocit, že společnost toto téma řeší velmi intenzivně. To však může být pouze klamné přesvědčení vzniklé působením \textit{filter bubble}.
 
 Opačný efekt vidíme u uživatelů skupiny \textit{Planned Parenthood}, kteří vidí výrazně menší počet tweetů než rovnocené\footnote{Rovnocené ve smyslu téměř stejného počtu tweetů zabývajících se tématem potratu.} skupiny \textit{Everyday Feminism} a \textit{Students for Life}. Výrazně menší počet tweetů k danému tématu může obdobně vést k tomu, že je uživatel přesvědčen o nedůležitosti, nebo alespoň nezájmu společnosti k danému tématu.
 
-Abychom mohli prostudovat i~rozložení sentimentu a~nejenom počet příspěvků vztahujících se k danému tématu, pohlédněme na histogram~\autoref{fig:abortion-normed}, který zobrazuje normalizované\footnote{V tomto případě se díváme na normalizovaný histogram. Na svislé ose tedy nejsou skutečné počty příspěvků s daným sentimentem vyneseným na vodorovné ose. Místo toho je na svislé ose podíl tweetů s daným sentimentem a~celkovým počtem tweetů ve sledované skupině. Toto zobrazení nám dovoluje studovat rozložení sentimentu dvou skupin, bez ohledu na rozdíl mezi absolutními počty příspěvků.} rozdělení zmíněných dvou skupin.
-
 Naších očekáváním bylo, že u skupin, které neodporují potratům, tedy \textit{Planned Parenthood} a~\textit{Everyday Feminism} uvidíme větší počet kladných tweetů než u skupin, které se potratům snaží zabránit, tedy \textit{Students for Life} a~\textit{Abolish Abortion USA}. Tato zákonitost není z~\autoref{fig:abortion-normed} naprotsto zřejmá. I přesto si lze povšimnout, že největší proporci tweetů se sentimentem větším než $0.5$ mají právě skupiny \textit{Planned Parenthood} a~\textit{Everyday Feminism}.
-
-Někdo by mohl namítat, že rozdíl nebyl dostatečně markantní. Je však potřeba si uvědomit, že díky velké konektivitě uživatelů Twitteru je alespoň základní přístup k různým názorům snado zajištěn. Při hledání informační bubliny je tedy třeba pozorovat i~zdánlivě malé rozdíly v rozdělení, nebo četnosti určitých příspěvků.
 
 Prokázali jsme, že odlišné skupiny uživatelů Twitteru jsou v rámci tématu \textit{potrat} vystaveny různě velkému množství příspěsků na dané téma. Rozdíl v rozložení sentimentu není velký, ale i přesto částečně potvrzuje naše předpoklady.
 
+\subsection{Diskuze}
+\noindent V předchozích částech jsme představili novou metodu~\cite{myRepo} studia informační bubliny, kterou bychom chtěli zajistit přesnější a~přímější měření tohoto efektu. Samozřejmě má však své nedostatky, které se cítíme býti povinni sdělit.
 
-\subsection{Shrnutí pozorování}
-\noindent i~přesto, že účelem našich měření bylo spíše ukázat funkce nové metody a~na příkladech prezentovat její klady i~zápory, můžeme si povšimnout několika za\-jí\-ma\-vých poznatků o~samotné \textit{filter bubble}. Výsledky všech měření s klíčovým slovem \textit{\uv{Trump}} v kapitole \fullref{subsec:Trump} pro nás byly velmi překvapující a~v rozporu s naším očekáváním. Počet příspěvků i~rozložení jejich sentimentu byli totožné ve všech měřených skupinách. To i~přes to, že u některých jsme očekávali velkou diversitu a~ohrožení objektivity.
-
-Narozdíl od toho, měření s klíčovým slovem \textit{\uv{abortion}} v kapitole \fullref{subsec:abortion} ukázalo ohrožení informační bublinou u skupiny \textit{Everyday Feminism}. Ta příjmala mnohem větší množství příspěvků s daným klíčovým slovem a~zároveň rozložení sentimentu těchto příspěvků bylo rozdílné od ostatních měřených skupin.
-
-I z takto malého množství pozorování se odvažujeme vyslovit hypotézu. My\-slí\-me si, že \textit{filter bubble} nemůže vzniknout v případě, kdy hovoříme o~obecně velmi diskutovaném tématu. Zato u témat, která nejsou rozšířená dostatečně toto riziko hrozí.
-
-Dle našeho názoru, důvod, proč u velmi rozšířených témat nehrozí \textit{filter bubble} je dostatečně velká konektivita\footnote{Slovem \textit{\uv{dostatečně}} je myšlena takové konektivita, která zaručí dostatečnou ochranu před \textit{filter bubble}.} uživatelů Twitteru. Velmi jedoduše řečeno, my\-slí\-me si, že každý uživatel Twitteru sleduje takové množství lidí, že jsou mezi nimi tací, kteří podporují \textit{Trumpa} i~tací, kteří ho nepodporují. Zato u témat, která jsou méně rozšířená hrozí ohrožení \textit{informační bublinou} právě proto, že nejsou diskutována ve všech skupinách společnosti.
-
-Takovouto domněnku jsme v literatuře zatím nezaznamenali. Je naprosto zřejmé, že vyžaduje ještě další zkoumání a~několika málo měřeními jsme ji dostatečně neobhájili. Jistě se stane předmětem našeho dalšího vyzkumu, jak po praktické stránce měření, tak teoretické stránce, kde bychom rádi zakomponovali myšlenku o~tzv. \textit{assortative mixing}~\cite{AssortativeMixing-soc, AssortativeMixing-E}.
-
-Při užívání nové metody se také ukázalo, že \textit{informační bublinou} je zavislá také na tématu. Ukázali jsme, že existují různé oblasti společenského zájmu, které nemusí být zasaženy \textit{homogenitou} do stejné míry.
-
-\subsection{Diskuze metody}
-\noindent V předchozích částech jsme představili novou metodu studia informační bubliny, kterou bychom chtěli zajistit přesnější a~přímější měření tohoto efektu. Samozřejmě má však své nedostatky, které se cítíme být povinni zde sdělit.
-
-Způsob, kterým vybírame členy různých skupin je založen na náhodném vý\-bě\-ru uživatelů sledujicích dominantní stránky sdružující uživatele s podobnými zájmy. Tato metoda může být velmi nespolehlivá hned z několika důvodů. Pře\-váž\-ně je tomu tak proto, že jistě existuje mnoho uživatelů, kteří stránku sledují a~zároveň nejsou jejími přímými podporovateli. Bohužel jsme nepřišli na způsob jak tomuto zabránit. Částečně tomu však předcházíme tím, že veškeré měření je na relativně velkém vzorku uživatelů. Proto stačí předpokládat, že statisticky významnější množství splňuje naše nároky, což není nijak nereálný předpoklad.
+Způsob, kterým vybírame členy různých skupin je založen na náhodném vý\-bě\-ru uživatelů sledujicích dominantní stránky sdružující uživatele s podobnými zájmy. Tato metoda může být velmi nespolehlivá hned z několika důvodů. Pře\-váž\-ně je tomu tak proto, že jistě existuje mnoho uživatelů, kteří stránku sledují a~zároveň nejsou jejími přímými podporovately. Bohužel jsme nepřišli na způsob jak tomuto zabránit. Částečně tomu však předcházíme tím, že veškeré měření je na relativně velkém vzorku uživatelů. Proto stačí předpokládat, že statisticky významnější množství splňuje naše nároky, což není nijak nereálný předpoklad.
 
 Někdo by mohl poukázat na to, že ve skutečnosti neměříme \textit{filter bubble}, ale pouze sentiment příspěvků viditelných danou skupinou. Toto tvrzení je samozřejmě naprosto pravdivé. Je však třeba uvědomit si, že zatím nikdo nepříšel s dostatečně rozumnou mírou \textit{informační bubliny}, není proto možné ji přímo měřit. Předmětem našeho měření je spíše původce \textit{informační bublinou}.
 
@@ -344,15 +323,19 @@ Z kladných vlastností je jistě velmi podstatné to, že při použití naší
 
 Dále jiště stojí za zmínku, že \textit{filter bubble} měříme přímo v místě jejího výskytu a~ne v uměle vytvořeném prostředí, jako většina z přechozích studií. Je nám také umožněno studium pouze v rámci určitého tématu.
 
+Výzvou do budoucna bude jistě nalezení vhodné míry \textit{informační bubliny}, kterou bude brát v úvahu jak rozdílný počat příspěvků, tak rozdílné rozložení sentimentu. K tomu by mohlo pomoci srovnávání jednotlivých skupin s náhodným výběrem z celého Twitteru.
+
+Zřejmě existuje významná spojitost mezi \textit{filter bubble} a tzv. \textit{assortative mixing}~\cite{AssortativeMixing-soc, AssortativeMixing-E}, kterou bychom v budoucnu rádi prozkoumali.
+
 % ##############################################################################
 % ##############################################################################
 \newpage
 \section{Závěr}
-\noindent V první části práce jsme přiblížili problematiku informační bubliny, její dopady na společnost v makroskopickém měřítku a~dosud provedené studie.  Odtud jsme se přesunuli na technickou složku práce, kde jsme rozebrali veškeré detaily od stahování dat ze sociální sítě Twitter, přes aplikaci sentimentální analýzy v praxi až po samotnou konstrukci celého měření.
+\noindent V první části práce jsme přiblížili problematiku informační bubliny, její dopady na společnost v makroskopickém měřítku a~dosud provedené studie.  Odtud jsme se přesunuli na technickou složku práce, kde jsme rozebrali veškeré detaily od stahování dat ze sociální sítě Twitter, přes aplikaci sentimentální analýzy až po samotnou konstrukci celého měření.
 
-Jak jsme se v úvodu zmínili, cílem naší práce bylo vyvinutí metody, za pomocí které bychom mohli analyzovat míru postižení společnosti informační bublinou. Tohoto cíle jsme dosáhli, podařilo se nám vyvinout zmíněnou metodu. Výsledky měření dopadly, navzdory naším předpokladům, polarizovaně jen v některých případech. V souvislosti s tím jsme vyslovili hypotézu o~vzniku a~ohrožení \textit{informační bublinou}.
+Jak jsme se v úvodu zmínili, cílem naší práce bylo vyvinutí metody, za pomocí které bychom mohli analyzovat míru postižení společnosti \textit{informační bublinou}. Tohoto cíle jsme dosáhli, podařilo se nám vyvinout zmíněnou metodu. Na několika příkladech jsme ukázali její funkčnost a schopnost podávat relevantní sociologické výsledky.
 
-Novou metodu volně zpřístupňujeme, abychom umožnili její snadné užití ve výzkumu. Dále budeme provádět více měření a~pokusíme se obhájit, případně vyvrátit naši hypotézu. Výzvou je také nalezení vztahu mezi tzv. \textit{assortative mixing} a~\textit{filter bubble} ve smyslu, ve kterém ji prezentujeme v naší hypotéze.
+Novou metodu volně zpřístupňujeme, abychom umožnili její snadné užití ve výzkumu. Dále budeme provádět více měření a~pokusíme se zmapovat postižení \textit{informační bublinou} u vybraných témat. Výzvou je také nalezení vztahu mezi tzv. \textit{assortative mixing} a~\textit{filter bubble}.
 
 Při žádné části výzkumu nebylo nijak porušeno právo a~soukromí žádného ze zkoumaných uživatelů.
 

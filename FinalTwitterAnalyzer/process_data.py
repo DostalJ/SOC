@@ -30,9 +30,9 @@ def get_proportion(name, keyword):
             p[1] += 1/l
     return p
 
-pages = ['PPact', 'EvrydayFeminism', 'Students4LifeHQ', 'AmenditUSA']
-for page in pages:
-    print(page, get_proportion(page, 'abortion'))
+# pages = ['PPact', 'EvrydayFeminism', 'Students4LifeHQ', 'AmenditUSA']
+# for page in pages:
+#     print(page, get_proportion(page, 'abortion'))
 
 
 def hist(names, legend, keyword, colors=['b', 'r', 'g', 'c', 'y', 'm'], num_bins=30, normed=False, out_name=None, exp=4):
@@ -69,7 +69,18 @@ def hist(names, legend, keyword, colors=['b', 'r', 'g', 'c', 'y', 'm'], num_bins
 
 
 
-
+hist(names=['BiochemSoc', 'TrumpStudents'],
+     legend=['Biochemical Society', 'Students For Trump'],
+     keyword='Trump',
+     exp=2,
+     normed=False, num_bins=10,
+     out_name='trump.png')
+hist(names=['BiochemSoc', 'TrumpStudents'],
+     legend=['Biochemical Society', 'Students For Trump'],
+     keyword='Trump',
+     exp=2,
+     normed=True, num_bins=10,
+     out_name='trump-normed.png')
 
 
 
