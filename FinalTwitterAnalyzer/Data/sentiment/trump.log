@@ -52,3 +52,8 @@
 2017-04-09 21:54:30.420099,('Connection broken: IncompleteRead(5434 bytes read)', IncompleteRead(5434 bytes read))
 2017-04-09 21:57:32.598243,('Connection broken: IncompleteRead(0 bytes read)', IncompleteRead(0 bytes read))
 2017-04-09 22:00:34.621064,('Connection broken: IncompleteRead(1482 bytes read)', IncompleteRead(1482 bytes read))
+2017-04-09 22:19:19.145764,('Connection broken: IncompleteRead(3900 bytes read)', IncompleteRead(3900 bytes read))
+2017-04-09 22:19:35.842979,('Connection broken: IncompleteRead(0 bytes read)', IncompleteRead(0 bytes read))
+2017-04-09 22:19:53.822152,('Connection broken: IncompleteRead(7578 bytes read)', IncompleteRead(7578 bytes read))
+2017-04-09 22:28:43.370565,('Connection broken: IncompleteRead(0 bytes read)', IncompleteRead(0 bytes read))
+2017-04-09 22:48:11.298243,('Connection broken: IncompleteRead(0 bytes read)', IncompleteRead(0 bytes read))
