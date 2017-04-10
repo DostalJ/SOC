@@ -131,7 +131,7 @@ Metody, které se užívají pro sociální sítě a~informační kanály~\cite{
 % ##############################################################################
 % ##############################################################################
 \newpage
-\section{Metoda sběru dat}
+\section{Zpracování dat}
 \noindent S pokrokem v oblasti technologie probíhá i~obrovský pokrok v oblasti čerpání zpráv a~informací. Narozdíl od minulosti drtivá většina obyvatel vyspělých států má přístup k aktualitám v průběhu celého dne. Denní počet příspěvků na \textit{Twitteru} dosahoval v roce 2010 neskutečných 6 milionů~\cite{Mathioudakis2010}. Je zřejmé, že není možné používat stejné postupy pro analýzu takto rozsáhlého množství dat jako dříve. Naštěstí se již nějakou dobu významným tempem posouvá i~oblast \textit{Big Data, Machine Learningu} a~jejich podoblastí. Tyto obory nacházejí uplatnění téměř ve všech oblastech dnešní vědy~\cite{Huberman2012-2-15} a~stále větší pozornosti se jim dostává i~v sociologii~\cite{Tinati2014, McFarland2016, Shah2015-04-09}.
 
 
@@ -269,11 +269,11 @@ U těchto dvou skupin bychom mohli očekávat výsledky na téma potrat výrazn�
 
 
 \subsection{Klíčové slovo: Trump}\label{subsec:Trump}
-\noindent Donald Trump, prezident Spojených států amerických, je v dnešní době sám o~sobě velké téma snad všude na světě. Proto byla předmětem jedhono z našich pozorování.
+\noindent Donald Trump, prezident Spojených států amerických, je v dnešní době sám o~sobě velké téma snad všude na světě. Proto byla předmětem jednoho z našich pozorování.
 
-Pozorovali jsme, zda se nevyskytuje efekt informační bubliny v komunitě okolo twitterové skupiny \textit{Biochemical Society} a~lidí ze skupiny \textit{Students For Trump}. Předpokládáme, že uživatelé sledující skupinu \textit{Biochemical Society} se budou dostávat spíše k negativním příspěvkům s klíčovým slovem \textit{\uv{Trump}}. Naopak uživatelé z \textit{Students For Trump} budou mít, dle našich předpokladů, přístup spíše k positivním příspěvkům.
+Pozorovali jsme, zda se nevyskytuje efekt informační bubliny v komunitě okolo twitterové skupiny \textit{Biochemical Society} a~lidí ze skupiny \textit{Students For Trump}. Předpokládáme, že uživatelé sledující skupinu \textit{Biochemical Society} se budou dostávat spíše k negativním příspěvkům s klíčovým slovem \textit{\uv{Trump}}. Naopak uživatelé ze \textit{Students For Trump} budou mít, dle našich předpokladů, přístup spíše k positivním příspěvkům.
 
-Na obrázcích~\autoref{fig:trump-all} vidíme histogramy\footnote{Na svislé ose je v tomto případě počet nebo proporce příspěvků s příslušnou naměřenou hodnotou sentimentu, která je vyznačena na vodorovné ose. Toto zobrazení nám umožňuje snadno nahlédnout na rozdělení sentimentu v příspěvcích i~na počty příspěvků s daným tématem.} sentimentu příspěvků uvedených skupin. Měření probíhalo v době od 09.04.2017 16:15 (GMT+2) do 09.04.2017 16:15 (GMT+2).
+Na obrázcích~\autoref{fig:trump-all} vidíme histogramy\footnote{Na svislé ose je v tomto případě počet nebo proporce příspěvků s příslušnou naměřenou hodnotou sentimentu, která je vyznačena na vodorovné ose. Toto zobrazení nám umožňuje snadno nahlédnout na rozdělení sentimentu v příspěvcích i~na počty příspěvků s daným tématem.} sentimentu příspěvků uvedených skupin. Měření probíhalo v době od 09.04.2017 16:15 (GMT+2) do 10.04.2017 14:45 (GMT+2).
 \begin{figure}[!h]
 \centering
 \subfloat[Histogram počtu tweetů.]{\label{fig:trump}\includegraphics[scale=0.37]{./Pics/trump.png}}
@@ -306,9 +306,9 @@ Ihned na první pohled jde z histogramu~\autoref{fig:abortion} vidět, že uživ
 
 Opačný efekt vidíme u uživatelů skupiny \textit{Planned Parenthood}, kteří vidí výrazně menší počet tweetů než rovnocené\footnote{Rovnocené ve smyslu téměř stejného počtu tweetů zabývajících se tématem potratu.} skupiny \textit{Everyday Feminism} a \textit{Students for Life}. Výrazně menší počet tweetů k danému tématu může obdobně vést k tomu, že je uživatel přesvědčen o nedůležitosti, nebo alespoň nezájmu společnosti k danému tématu.
 
-Naších očekáváním bylo, že u skupin, které neodporují potratům, tedy \textit{Planned Parenthood} a~\textit{Everyday Feminism} uvidíme větší počet kladných tweetů než u skupin, které se potratům snaží zabránit, tedy \textit{Students for Life} a~\textit{Abolish Abortion USA}. Tato zákonitost není z~\autoref{fig:abortion-normed} naprotsto zřejmá. I přesto si lze povšimnout, že největší proporci tweetů se sentimentem větším než $0.5$ mají právě skupiny \textit{Planned Parenthood} a~\textit{Everyday Feminism}.
+Naších očekáváním bylo, že u skupin, které neodporují potratům, tedy \textit{Planned Parenthood} a~\textit{Everyday Feminism} uvidíme větší počet kladných tweetů než u skupin, které se potratům snaží zabránit, tedy \textit{Students for Life} a~\textit{Abolish Abortion USA}. Tato zákonitost není z~\autoref{fig:abortion-normed} naprosto zřejmá. I přesto si lze povšimnout, že největší proporci tweetů se sentimentem větším než $0.5$ mají právě skupiny \textit{Planned Parenthood} a~\textit{Everyday Feminism}.
 
-Prokázali jsme, že odlišné skupiny uživatelů Twitteru jsou v rámci tématu \textit{potrat} vystaveny různě velkému množství příspěsků na dané téma. Rozdíl v rozložení sentimentu není velký, ale i přesto částečně potvrzuje naše předpoklady.
+Prokázali jsme, že odlišné skupiny uživatelů Twitteru jsou v rámci tématu \textit{potrat} vystaveny různě velkému množství příspěvků na dané téma. Rozdíl v rozložení sentimentu není velký, ale i přesto částečně potvrzuje naše předpoklady.
 
 \subsection{Diskuze}
 \noindent V předchozích částech jsme představili novou metodu~\cite{myRepo} studia informační bubliny, kterou bychom chtěli zajistit přesnější a~přímější měření tohoto efektu. Samozřejmě má však své nedostatky, které se cítíme býti povinni sdělit.
@@ -317,7 +317,7 @@ Způsob, kterým vybírame členy různých skupin je založen na náhodném vý
 
 Někdo by mohl poukázat na to, že ve skutečnosti neměříme \textit{filter bubble}, ale pouze sentiment příspěvků viditelných danou skupinou. Toto tvrzení je samozřejmě naprosto pravdivé. Je však třeba uvědomit si, že zatím nikdo nepříšel s dostatečně rozumnou mírou \textit{informační bubliny}, není proto možné ji přímo měřit. Předmětem našeho měření je spíše původce \textit{informační bublinou}.
 
-Z kladných vlastností je jistě velmi podstatné to, že při použití naší metody je možné užití velké množství vzorků. To kladně příspívá k rozeznávání šumu v datech od skutečně významných poznatků.
+Z kladných vlastností je jistě velmi podstatné to, že při použití naší metody je možné užití velkého množství vzorků. To kladně příspívá k rozeznávání šumu v datech od skutečně významných poznatků.
 
 Dále jiště stojí za zmínku, že \textit{filter bubble} měříme přímo v místě jejího výskytu a~ne v uměle vytvořeném prostředí, jako většina z přechozích studií. Je nám také umožněno studium pouze v rámci určitého tématu.
 

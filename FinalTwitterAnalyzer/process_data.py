@@ -67,25 +67,25 @@ def hist(names, legend, keyword, colors=['b', 'r', 'g', 'c', 'y', 'm'], num_bins
 
 
 
+# hist(names=['BiochemSoc', 'TrumpStudents'],
+#      legend=['Biochemical Society', 'Students For Trump'],
+#      keyword='Trump',
+#      exp=2,
+#      normed=False, num_bins=10)
+
+
 hist(names=['BiochemSoc', 'TrumpStudents'],
      legend=['Biochemical Society', 'Students For Trump'],
      keyword='Trump',
      exp=2,
-     normed=True, num_bins=10)
-
-
-# hist(names=['BiochemSoc', 'TrumpStudents'],
-#      legend=['Biochemical Society', 'Students For Trump'],
-#      keyword='Trump',
-#      exp=2,
-#      normed=False, num_bins=10,
-#      out_name='trump.png')
-# hist(names=['BiochemSoc', 'TrumpStudents'],
-#      legend=['Biochemical Society', 'Students For Trump'],
-#      keyword='Trump',
-#      exp=2,
-#      normed=True, num_bins=10,
-#      out_name='trump-normed.png')
+     normed=False, num_bins=10,
+     out_name='trump.png')
+hist(names=['BiochemSoc', 'TrumpStudents'],
+     legend=['Biochemical Society', 'Students For Trump'],
+     keyword='Trump',
+     exp=2,
+     normed=True, num_bins=10,
+     out_name='trump-normed.png')
 
 
 
