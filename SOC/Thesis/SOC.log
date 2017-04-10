@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 APR 2017 22:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  10 APR 2017 07:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -841,30 +841,30 @@ File: ./Pics/sets.png Graphic file (type png)
  <use ./Pics/sets.png>
 Package pdftex.def Info: ./Pics/sets.png used on input line 211.
 (pdftex.def)             Requested size: 144.98277pt x 153.04822pt.
- [12 <./Pics/sets.png>] <./Pics/followers.png, id=291, 429.7656pt x 438.438pt>
+ <./Pics/followers.png, id=283, 429.7656pt x 438.438pt>
 File: ./Pics/followers.png Graphic file (type png)
  <use ./Pics/followers.png>
-Package pdftex.def Info: ./Pics/followers.png used on input line 221.
+Package pdftex.def Info: ./Pics/followers.png used on input line 219.
 (pdftex.def)             Requested size: 150.42021pt x 153.4556pt.
-
+ [12 <./Pics/sets.png>]
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 235.
+(hyperref)                removing `\textring' on input line 233.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 235.
+(hyperref)                removing `\textasciicaron' on input line 233.
 
 [13 <./Pics/followers.png>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 248.
+(hyperref)                removing `\textasciicaron' on input line 246.
 
 [14]
-Overfull \hbox (6.31273pt too wide) in paragraph at lines 263--264
+Overfull \hbox (6.31273pt too wide) in paragraph at lines 261--262
 []\OT1/cmr/m/n/12 U t^^Techto dvou sku-pin bychom mohli o^^Tcek^^Savat v^^Sysledky na t^^Sema po-trat v^^Syrazn^^Teji
  []
 
@@ -872,30 +872,30 @@ Overfull \hbox (6.31273pt too wide) in paragraph at lines 263--264
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 268.
+(hyperref)                removing `\textasciicaron' on input line 266.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 268.
+(hyperref)                removing `\textasciicaron' on input line 266.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 273.
+(hyperref)                removing `\textasciicaron' on input line 271.
 
-<./Pics/trump.png, id=322, 578.16pt x 433.62pt>
+<./Pics/trump.png, id=321, 578.16pt x 433.62pt>
 File: ./Pics/trump.png Graphic file (type png)
  <use ./Pics/trump.png>
-Package pdftex.def Info: ./Pics/trump.png used on input line 281.
+Package pdftex.def Info: ./Pics/trump.png used on input line 279.
 (pdftex.def)             Requested size: 213.91585pt x 160.43689pt.
- <./Pics/trump-normed.png, id=323, 578.16pt x 433.62pt>
+ <./Pics/trump-normed.png, id=322, 578.16pt x 433.62pt>
 File: ./Pics/trump-normed.png Graphic file (type png)
  <use ./Pics/trump-normed.png>
-Package pdftex.def Info: ./Pics/trump-normed.png used on input line 282.
+Package pdftex.def Info: ./Pics/trump-normed.png used on input line 280.
 (pdftex.def)             Requested size: 213.91585pt x 160.43689pt.
 
-Overfull \hbox (15.26674pt too wide) in paragraph at lines 281--283
+Overfull \hbox (15.26674pt too wide) in paragraph at lines 279--281
  [][][][] 
  []
 
@@ -903,25 +903,25 @@ Overfull \hbox (15.26674pt too wide) in paragraph at lines 281--283
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 297.
+(hyperref)                removing `\textasciicaron' on input line 295.
 
-<./Pics/abortion.png, id=339, 578.16pt x 433.62pt>
+<./Pics/abortion.png, id=338, 578.16pt x 433.62pt>
 File: ./Pics/abortion.png Graphic file (type png)
  <use ./Pics/abortion.png>
-Package pdftex.def Info: ./Pics/abortion.png used on input line 301.
+Package pdftex.def Info: ./Pics/abortion.png used on input line 299.
 (pdftex.def)             Requested size: 213.91585pt x 160.43689pt.
- <./Pics/abortion-normed.png, id=340, 578.16pt x 433.62pt>
+ <./Pics/abortion-normed.png, id=339, 578.16pt x 433.62pt>
 File: ./Pics/abortion-normed.png Graphic file (type png)
  <use ./Pics/abortion-normed.png>
-Package pdftex.def Info: ./Pics/abortion-normed.png used on input line 302.
+Package pdftex.def Info: ./Pics/abortion-normed.png used on input line 300.
 (pdftex.def)             Requested size: 213.91585pt x 160.43689pt.
 
-Overfull \hbox (15.26674pt too wide) in paragraph at lines 301--303
+Overfull \hbox (15.26674pt too wide) in paragraph at lines 299--301
  [][][][] 
  []
 
 [17 <./Pics/abortion.png> <./Pics/abortion-normed.png>]
-Overfull \hbox (6.37425pt too wide) in paragraph at lines 309--310
+Overfull \hbox (6.37425pt too wide) in paragraph at lines 307--308
 []\OT1/cmr/m/n/12 Opa^^Tcn^^Sy efekt vid^^S^^Pme u u^^Tzivatel^^Wu sku-piny \OT1/cmr/m/it/12 Plan-ned Paren-thood\OT1/cmr/m/n/12 , kte^^Tr^^S^^P vid^^S^^P v^^Syrazn^^Te
  []
 
@@ -929,56 +929,56 @@ Overfull \hbox (6.37425pt too wide) in paragraph at lines 309--310
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 333.
+(hyperref)                removing `\textasciicaron' on input line 331.
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
 []\OT1/cmr/m/n/12 BARTHEL, Mi-chael, Elisa SHEARER, Je-ffrey GOTTF-RIED
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
 \OT1/cmr/m/n/12 a Amy MIT-CHELL. \OT1/cmr/m/it/12 The Evol-ving Role of News on Twit-ter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
 \OT1/cmr/m/it/12 and Fa-ce-book \OT1/cmr/m/n/12 [on-line]. Pew Re-search Cen-ter, 2015 [cit. 2017-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
 \OT1/cmr/m/n/12 01-22]. Do-stupn^^Se z: [][]$\OT1/cmtt/m/n/12 http : / / www . journalism . org / 2015 / 07 / 14 /
  []
 
 
-Underfull \hbox (badness 1231) in paragraph at lines 362--363
+Underfull \hbox (badness 1231) in paragraph at lines 360--361
 []\OT1/cmr/m/n/12 DAVIDSON, Ja-mes, et al. The You-Tube vi-deo re-com-men-dation sys-
  []
 
 [21]
-Underfull \hbox (badness 1803) in paragraph at lines 386--387
+Underfull \hbox (badness 1803) in paragraph at lines 384--385
 \OT1/cmr/m/n/12 tem for Twit-ter Using Pro-ba-bi-lis-tic Mo-de-ling. \OT1/cmr/m/it/12 2011 IEEE 11th In-
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 410--411
+Underfull \hbox (badness 10000) in paragraph at lines 408--409
 \OT1/cmr/m/n/12 z [][]$\OT1/cmtt/m/n/12 https : / / www . ted . com / talks / eli _ pariser _ beware _ online _ filter _
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 440.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 438.
 [23]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 440.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 438.
  (./SOC.aux (./TitulkaCZ.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 440.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 440.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 438.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 438.
 Package rerunfilecheck Info: File `SOC.out' has not changed.
 (rerunfilecheck)             Checksum: 29461F9FB6906C0B3CD7FADC001C1C78;1428.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 440.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 438.
  ) 
 Here is how much of TeX's memory you used:
  9173 strings out of 493014
@@ -990,10 +990,10 @@ Here is how much of TeX's memory you used:
  44i,11n,49p,1840b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ti12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on SOC.pdf (27 pages, 1672012 bytes).
+Output written on SOC.pdf (27 pages, 1671747 bytes).
 PDF statistics:
- 508 PDF objects out of 1000 (max. 8388607)
- 445 compressed objects within 5 object streams
+ 507 PDF objects out of 1000 (max. 8388607)
+ 444 compressed objects within 5 object streams
  112 named destinations out of 1000 (max. 500000)
  204 words of extra memory for PDF output out of 10000 (max. 10000000)
 
