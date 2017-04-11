@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  11 APR 2017 13:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  11 APR 2017 19:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2242,18 +2242,18 @@ Overfull \hbox (1.18666pt too wide) in paragraph at lines 153--153
 
 [7
 
- <./Pics/followers.png>] <./Pics/trump.png, id=67, 578.16pt x 433.62pt>
+ <./Pics/followers.png>] <./Pics/trump.png, id=67, 514.99602pt x 400.52034pt>
 File: ./Pics/trump.png Graphic file (type png)
  <use ./Pics/trump.png>
-Package pdftex.def Info: ./Pics/trump.png used on input line 169.
-(pdftex.def)             Requested size: 185.01497pt x 138.76123pt.
- <./Pics/trump-normed.png, id=68, 578.16pt x 433.62pt>
+Package pdftex.def Info: ./Pics/trump.png used on input line 170.
+(pdftex.def)             Requested size: 159.64711pt x 124.16002pt.
+ <./Pics/trump-normed.png, id=68, 518.75406pt x 400.95396pt>
 File: ./Pics/trump-normed.png Graphic file (type png)
  <use ./Pics/trump-normed.png>
-Package pdftex.def Info: ./Pics/trump-normed.png used on input line 169.
-(pdftex.def)             Requested size: 185.01497pt x 138.76123pt.
+Package pdftex.def Info: ./Pics/trump-normed.png used on input line 170.
+(pdftex.def)             Requested size: 160.81209pt x 124.29443pt.
 
-Overfull \hbox (62.74007pt too wide) in paragraph at lines 169--169
+Overfull \hbox (13.16933pt too wide) in paragraph at lines 170--170
  [][] 
  []
 
@@ -2262,57 +2262,47 @@ Overfull \hbox (62.74007pt too wide) in paragraph at lines 169--169
  <./Pics/trump.png> <./Pics/trump-normed.png>]
 File: ./Pics/trump.png Graphic file (type png)
  <use ./Pics/trump.png>
-Package pdftex.def Info: ./Pics/trump.png used on input line 183.
-(pdftex.def)             Requested size: 185.01497pt x 138.76123pt.
-
-Overfull \vbox (29.61719pt too high) detected at line 183
- []
-
-[9
+Package pdftex.def Info: ./Pics/trump.png used on input line 182.
+(pdftex.def)             Requested size: 190.54553pt x 148.1902pt.
+ [9
 
 ]
 File: ./Pics/trump-normed.png Graphic file (type png)
  <use ./Pics/trump-normed.png>
-Package pdftex.def Info: ./Pics/trump-normed.png used on input line 197.
-(pdftex.def)             Requested size: 185.01497pt x 138.76123pt.
+Package pdftex.def Info: ./Pics/trump-normed.png used on input line 196.
+(pdftex.def)             Requested size: 191.93599pt x 148.35065pt.
+ [10
 
-Overfull \vbox (29.61719pt too high) detected at line 197
- []
-
-[10
-
-] <./Pics/abortion-normed.png, id=87, 578.16pt x 433.62pt>
+] <./Pics/abortion.png, id=90, 515.42964pt x 402.68845pt>
+File: ./Pics/abortion.png Graphic file (type png)
+ <use ./Pics/abortion.png>
+Package pdftex.def Info: ./Pics/abortion.png used on input line 222.
+(pdftex.def)             Requested size: 159.78152pt x 124.83212pt.
+ <./Pics/abortion-normed.png, id=91, 514.85149pt x 401.53212pt>
 File: ./Pics/abortion-normed.png Graphic file (type png)
  <use ./Pics/abortion-normed.png>
-Package pdftex.def Info: ./Pics/abortion-normed.png used on input line 219.
-(pdftex.def)             Requested size: 185.01497pt x 138.76123pt.
+Package pdftex.def Info: ./Pics/abortion-normed.png used on input line 222.
+(pdftex.def)             Requested size: 159.60231pt x 124.47366pt.
 
-Overfull \vbox (15.76073pt too high) detected at line 219
+Overfull \hbox (12.09396pt too wide) in paragraph at lines 222--222
+ [][] 
  []
 
 [11
 
- <./Pics/abortion-normed.png>] <./Pics/abortion.png, id=94, 578.16pt x 433.62pt>
+ <./Pics/abortion.png> <./Pics/abortion-normed.png>]
 File: ./Pics/abortion.png Graphic file (type png)
  <use ./Pics/abortion.png>
 Package pdftex.def Info: ./Pics/abortion.png used on input line 241.
-(pdftex.def)             Requested size: 185.01497pt x 138.76123pt.
+(pdftex.def)             Requested size: 190.70598pt x 148.99239pt.
+ [12
+
+]
 File: ./Pics/abortion-normed.png Graphic file (type png)
  <use ./Pics/abortion-normed.png>
-Package pdftex.def Info: ./Pics/abortion-normed.png used on input line 241.
-(pdftex.def)             Requested size: 185.01497pt x 138.76123pt.
-
-Overfull \hbox (62.74007pt too wide) in paragraph at lines 241--241
- [][] 
- []
-
-
-Overfull \vbox (49.11055pt too high) detected at line 241
- []
-
-[12
-
- <./Pics/abortion.png>] [13
+Package pdftex.def Info: ./Pics/abortion-normed.png used on input line 255.
+(pdftex.def)             Requested size: 190.49207pt x 148.56454pt.
+ [13
 
 ] [14
 
@@ -2343,16 +2333,16 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 274.
 Here is how much of TeX's memory you used:
  30122 strings out of 493014
  589476 string characters out of 6133351
- 644230 words of memory out of 5000000
+ 643230 words of memory out of 5000000
  33054 multiletter control sequences out of 15000+600000
  19473 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,13n,88p,10429b,713s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb>
-Output written on SOC-2017-presentation.pdf (14 pages, 1564906 bytes).
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb>
+Output written on SOC-2017-presentation.pdf (14 pages, 1532990 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
+ 157 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
  29 named destinations out of 1000 (max. 500000)
  88 words of extra memory for PDF output out of 10000 (max. 10000000)
 

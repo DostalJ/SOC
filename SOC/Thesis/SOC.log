@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  11 APR 2017 15:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  11 APR 2017 22:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -866,20 +866,20 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 270.
+(hyperref)                removing `\textasciicaron' on input line 268.
 
 <./Pics/trump.png, id=323, 578.16pt x 433.62pt>
 File: ./Pics/trump.png Graphic file (type png)
  <use ./Pics/trump.png>
-Package pdftex.def Info: ./Pics/trump.png used on input line 278.
+Package pdftex.def Info: ./Pics/trump.png used on input line 276.
 (pdftex.def)             Requested size: 213.91585pt x 160.43689pt.
  <./Pics/trump-normed.png, id=324, 578.16pt x 433.62pt>
 File: ./Pics/trump-normed.png Graphic file (type png)
  <use ./Pics/trump-normed.png>
-Package pdftex.def Info: ./Pics/trump-normed.png used on input line 279.
+Package pdftex.def Info: ./Pics/trump-normed.png used on input line 277.
 (pdftex.def)             Requested size: 213.91585pt x 160.43689pt.
 
-Overfull \hbox (15.26674pt too wide) in paragraph at lines 278--280
+Overfull \hbox (15.26674pt too wide) in paragraph at lines 276--278
  [][][][] 
  []
 
@@ -887,20 +887,20 @@ Overfull \hbox (15.26674pt too wide) in paragraph at lines 278--280
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 294.
+(hyperref)                removing `\textasciicaron' on input line 292.
 
 <./Pics/abortion.png, id=340, 578.16pt x 433.62pt>
 File: ./Pics/abortion.png Graphic file (type png)
  <use ./Pics/abortion.png>
-Package pdftex.def Info: ./Pics/abortion.png used on input line 298.
+Package pdftex.def Info: ./Pics/abortion.png used on input line 296.
 (pdftex.def)             Requested size: 213.91585pt x 160.43689pt.
  <./Pics/abortion-normed.png, id=341, 578.16pt x 433.62pt>
 File: ./Pics/abortion-normed.png Graphic file (type png)
  <use ./Pics/abortion-normed.png>
-Package pdftex.def Info: ./Pics/abortion-normed.png used on input line 299.
+Package pdftex.def Info: ./Pics/abortion-normed.png used on input line 297.
 (pdftex.def)             Requested size: 213.91585pt x 160.43689pt.
 
-Overfull \hbox (15.26674pt too wide) in paragraph at lines 298--300
+Overfull \hbox (15.26674pt too wide) in paragraph at lines 296--298
  [][][][] 
  []
 
@@ -969,10 +969,10 @@ Here is how much of TeX's memory you used:
  44i,11n,49p,1840b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ti12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on SOC.pdf (27 pages, 1661655 bytes).
+Output written on SOC.pdf (27 pages, 1662829 bytes).
 PDF statistics:
- 509 PDF objects out of 1000 (max. 8388607)
- 446 compressed objects within 5 object streams
+ 511 PDF objects out of 1000 (max. 8388607)
+ 448 compressed objects within 5 object streams
  113 named destinations out of 1000 (max. 500000)
  204 words of extra memory for PDF output out of 10000 (max. 10000000)
 
