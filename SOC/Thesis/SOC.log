@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  10 APR 2017 22:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  11 APR 2017 15:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -768,7 +768,7 @@ Overfull \hbox (3.84029pt too wide) in paragraph at lines 79--80
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.86 
+l.88 
       [3]
 Overfull \hbox (2.40288pt too wide) in paragraph at lines 92--93
 \OT1/cmr/m/n/12 stra-chu a hrozby z t^^Sematu, byly p^^Tr^^S^^Psp^^Tevky ma-ni-pu-lov^^Sany nap^^Tr^^S^^Pklad zv^^Syraz^^Tnov^^San^^S^^Pm
@@ -782,8 +782,8 @@ Overfull \hbox (3.37787pt too wide) in paragraph at lines 96--97
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 
-      [4] [5]
+l.104 
+       [4] [5]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
@@ -794,7 +794,7 @@ Overfull \hbox (1.4968pt too wide) in paragraph at lines 125--126
 \OT1/cmr/m/n/12 b^^Syt jak velk^^Sym probl^^Semem, tak vel-kou v^^Syhodou. []Cemu jsme v^^Tsak do-sud nev^^Tenovali
  []
 
-[6] [7] <./Pics/pepa.png, id=203, 421.0932pt x 398.2077pt>
+[6] [7] <./Pics/pepa.png, id=202, 421.0932pt x 398.2077pt>
 File: ./Pics/pepa.png Graphic file (type png)
  <use ./Pics/pepa.png>
 Package pdftex.def Info: ./Pics/pepa.png used on input line 144.
@@ -825,12 +825,12 @@ Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 206.
 
-<./Pics/sets.png, id=282, 536.9661pt x 566.8377pt>
+<./Pics/sets.png, id=281, 536.9661pt x 566.8377pt>
 File: ./Pics/sets.png Graphic file (type png)
  <use ./Pics/sets.png>
 Package pdftex.def Info: ./Pics/sets.png used on input line 211.
 (pdftex.def)             Requested size: 144.98277pt x 153.04822pt.
- <./Pics/followers.png, id=284, 429.7656pt x 438.438pt>
+ <./Pics/followers.png, id=283, 429.7656pt x 438.438pt>
 File: ./Pics/followers.png Graphic file (type png)
  <use ./Pics/followers.png>
 Package pdftex.def Info: ./Pics/followers.png used on input line 218.
@@ -852,12 +852,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 245.
 
-[14]
-Overfull \hbox (6.31273pt too wide) in paragraph at lines 260--261
-[]\OT1/cmr/m/n/12 U t^^Techto dvou sku-pin bychom mohli o^^Tcek^^Savat v^^Sysledky na t^^Sema po-trat v^^Syrazn^^Teji
- []
-
-[15]
+[14] [15]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
@@ -873,12 +868,12 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 270.
 
-<./Pics/trump.png, id=324, 578.16pt x 433.62pt>
+<./Pics/trump.png, id=323, 578.16pt x 433.62pt>
 File: ./Pics/trump.png Graphic file (type png)
  <use ./Pics/trump.png>
 Package pdftex.def Info: ./Pics/trump.png used on input line 278.
 (pdftex.def)             Requested size: 213.91585pt x 160.43689pt.
- <./Pics/trump-normed.png, id=325, 578.16pt x 433.62pt>
+ <./Pics/trump-normed.png, id=324, 578.16pt x 433.62pt>
 File: ./Pics/trump-normed.png Graphic file (type png)
  <use ./Pics/trump-normed.png>
 Package pdftex.def Info: ./Pics/trump-normed.png used on input line 279.
@@ -894,12 +889,12 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 294.
 
-<./Pics/abortion.png, id=341, 578.16pt x 433.62pt>
+<./Pics/abortion.png, id=340, 578.16pt x 433.62pt>
 File: ./Pics/abortion.png Graphic file (type png)
  <use ./Pics/abortion.png>
 Package pdftex.def Info: ./Pics/abortion.png used on input line 298.
 (pdftex.def)             Requested size: 213.91585pt x 160.43689pt.
- <./Pics/abortion-normed.png, id=342, 578.16pt x 433.62pt>
+ <./Pics/abortion-normed.png, id=341, 578.16pt x 433.62pt>
 File: ./Pics/abortion-normed.png Graphic file (type png)
  <use ./Pics/abortion-normed.png>
 Package pdftex.def Info: ./Pics/abortion-normed.png used on input line 299.
@@ -909,12 +904,7 @@ Overfull \hbox (15.26674pt too wide) in paragraph at lines 298--300
  [][][][] 
  []
 
-[17 <./Pics/abortion.png> <./Pics/abortion-normed.png>]
-Overfull \hbox (6.37425pt too wide) in paragraph at lines 306--307
-[]\OT1/cmr/m/n/12 Opa^^Tcn^^Sy efekt vid^^S^^Pme u u^^Tzivatel^^Wu sku-piny \OT1/cmr/m/it/12 Plan-ned Paren-thood\OT1/cmr/m/n/12 , kte^^Tr^^S^^P vid^^S^^P v^^Syrazn^^Te
- []
-
-[18] [19]
+[17 <./Pics/abortion.png> <./Pics/abortion-normed.png>] [18] [19]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
@@ -972,17 +962,17 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 437.
 Here is how much of TeX's memory you used:
  9174 strings out of 493014
  135042 string characters out of 6133351
- 244038 words of memory out of 5000000
+ 242037 words of memory out of 5000000
  12433 multiletter control sequences out of 15000+600000
  19896 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,11n,49p,1972b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,11n,49p,1840b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ti12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on SOC.pdf (27 pages, 1661802 bytes).
+Output written on SOC.pdf (27 pages, 1661655 bytes).
 PDF statistics:
- 510 PDF objects out of 1000 (max. 8388607)
- 447 compressed objects within 5 object streams
+ 509 PDF objects out of 1000 (max. 8388607)
+ 446 compressed objects within 5 object streams
  113 named destinations out of 1000 (max. 500000)
  204 words of extra memory for PDF output out of 10000 (max. 10000000)
 
