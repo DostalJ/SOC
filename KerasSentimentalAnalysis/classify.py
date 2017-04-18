@@ -34,19 +34,19 @@ TwitterClassifier = Classifier('HugeTwitter-classifier.h5', 'HugeTwitter-vocabul
 
 
 
-# def play_with_sentiment_in_console():
-#     TwitterClassifier = Classifier('HugeTwitter-classifier.h5', 'HugeTwitter-vocabulary.pickle')
-#
-#     end = False
-#     while not end:
-#         print("Enter your sentence ('end' to quit()):")
-#         text = input()
-#         if text == 'end':
-#             end = True
-#         else:
-#             sentiment = TwitterClassifier.sentiment(text)[0][0]
-#             print('Sentiment: {:.4f}'.format(sentiment))
-#             print('-'*20)
-#
-# if __name__ == '__main__':
-#     play_with_sentiment_in_console()
+def play_with_sentiment_in_console():
+    TwitterClassifier = Classifier('HugeTwitter-classifier.h5', 'HugeTwitter-vocabulary.pickle')
+
+    end = False
+    while not end:
+        print("Enter your sentence ('end' to quit()):")
+        text = input()
+        if text == 'end':
+            end = True
+        elif text != "":
+            sentiment = TwitterClassifier.sentiment(text)[0][0]
+            print('Sentiment: {:.4f}'.format(sentiment))
+            print('-'*20)
+
+if __name__ == '__main__':
+    play_with_sentiment_in_console()
