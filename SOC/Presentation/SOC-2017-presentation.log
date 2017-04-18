@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  14 APR 2017 19:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  18 APR 2017 08:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1048,7 +1048,16 @@ Package beamerthememetropolis Warning: You need to compile with XeLaTeX or LuaLa
 
 )) (/usr/local/texlive/2016/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemebeaver.sty
 Package: beamercolorthemebeaver 2010/06/17  (rcs-revision d02a7cf4d8ae)
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/units/units.sty
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+)) (/usr/local/texlive/2016/texmf-dist/tex/latex/units/units.sty
 Package: units 1998/08/04 v0.9b Typesetting units
  (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -2061,25 +2070,25 @@ Package: beamerfontthemeserif 2010/06/17  (rcs-revision d02a7cf4d8ae)
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 40.
+(hyperref)                removing `\\' on input line 59.
 
 (./SOC-2017-presentation.aux)
 \openout1 = `SOC-2017-presentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2140,7 +2149,7 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box77
-Package hyperref Info: Link coloring OFF on input line 44.
+Package hyperref Info: Link coloring OFF on input line 63.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
  (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -2148,9 +2157,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count275
 )
-LaTeX Info: Redefining \ref on input line 44.
-LaTeX Info: Redefining \pageref on input line 44.
-LaTeX Info: Redefining \nameref on input line 44.
+LaTeX Info: Redefining \ref on input line 63.
+LaTeX Info: Redefining \pageref on input line 63.
+LaTeX Info: Redefining \nameref on input line 63.
  (./SOC-2017-presentation.out) (./SOC-2017-presentation.out)
 \@outlinefile=\write5
 \openout5 = `SOC-2017-presentation.out'.
@@ -2169,142 +2178,153 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/beamer/translator/dicts/translator-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 44.
+LaTeX Info: Redefining \includegraphics on input line 63.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
  (./SOC-2017-presentation.nav)
-Overfull \vbox (16.67491pt too high) detected at line 45
+Overfull \vbox (16.67491pt too high) detected at line 64
  []
 
 [1
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 67.
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] <./Pics/twitter.png, id=21, 274.3851pt x 223.0734pt>
+File: ./Pics/twitter.png Graphic file (type png)
+ <use ./Pics/twitter.png>
+Package pdftex.def Info: ./Pics/twitter.png used on input line 89.
+(pdftex.def)             Requested size: 109.75209pt x 89.22777pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 89.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 67.
+LaTeX Font Info:    Try loading font information for U+msb on input line 89.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) <./Pics/fb.png, id=21, 2007.5pt x 2007.5pt>
+) <./Pics/fb.png, id=23, 2007.5pt x 2007.5pt>
 File: ./Pics/fb.png Graphic file (type png)
  <use ./Pics/fb.png>
-Package pdftex.def Info: ./Pics/fb.png used on input line 67.
-(pdftex.def)             Requested size: 100.38087pt x 100.38087pt.
- <./Pics/twitter.png, id=23, 274.3851pt x 223.0734pt>
-File: ./Pics/twitter.png Graphic file (type png)
- <use ./Pics/twitter.png>
-Package pdftex.def Info: ./Pics/twitter.png used on input line 67.
-(pdftex.def)             Requested size: 109.75209pt x 89.22777pt.
+Package pdftex.def Info: ./Pics/fb.png used on input line 89.
+(pdftex.def)             Requested size: 120.4448pt x 120.4448pt.
 
-Overfull \vbox (5.529pt too high) detected at line 67
+Overfull \vbox (2.64586pt too high) detected at line 89
  []
 
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 67.
+(Font)              size <5> substituted on input line 89.
 
 [2
 
- <./Pics/fb.png> <./Pics/twitter.png>] [3
+ <./Pics/twitter.png> <./Pics/fb.png>] [3
 
 ] [4
 
-] <./Pics/pepa.png, id=44, 421.0932pt x 398.2077pt>
-File: ./Pics/pepa.png Graphic file (type png)
- <use ./Pics/pepa.png>
-Package pdftex.def Info: ./Pics/pepa.png used on input line 122.
-(pdftex.def)             Requested size: 147.38483pt x 139.37477pt.
- [5
-
- <./Pics/pepa.png>] <./Pics/sets.png, id=51, 536.9661pt x 566.8377pt>
+] <./Pics/sets.png, id=45, 536.9661pt x 566.8377pt>
 File: ./Pics/sets.png Graphic file (type png)
  <use ./Pics/sets.png>
-Package pdftex.def Info: ./Pics/sets.png used on input line 138.
+Package pdftex.def Info: ./Pics/sets.png used on input line 149.
 (pdftex.def)             Requested size: 171.83266pt x 181.39177pt.
 
-Overfull \hbox (1.11613pt too wide) in paragraph at lines 138--138
+Overfull \hbox (1.11613pt too wide) in paragraph at lines 149--149
  [] 
  []
 
-[6
+[5
 
- <./Pics/sets.png>] <./Pics/followers.png, id=59, 429.7656pt x 438.438pt>
+ <./Pics/sets.png>] [6
+
+] <./Pics/pepa.png, id=58, 421.0932pt x 398.2077pt>
+File: ./Pics/pepa.png Graphic file (type png)
+ <use ./Pics/pepa.png>
+Package pdftex.def Info: ./Pics/pepa.png used on input line 182.
+(pdftex.def)             Requested size: 147.38483pt x 139.37477pt.
+ [7
+
+ <./Pics/pepa.png>] <./Pics/followers.png, id=66, 429.7656pt x 438.438pt>
 File: ./Pics/followers.png Graphic file (type png)
  <use ./Pics/followers.png>
-Package pdftex.def Info: ./Pics/followers.png used on input line 153.
+Package pdftex.def Info: ./Pics/followers.png used on input line 197.
 (pdftex.def)             Requested size: 171.90318pt x 175.37209pt.
 
-Overfull \hbox (1.18666pt too wide) in paragraph at lines 153--153
+Overfull \hbox (1.18666pt too wide) in paragraph at lines 197--197
  [] 
- []
-
-[7
-
- <./Pics/followers.png>] <./Pics/trump.png, id=67, 514.99602pt x 400.52034pt>
-File: ./Pics/trump.png Graphic file (type png)
- <use ./Pics/trump.png>
-Package pdftex.def Info: ./Pics/trump.png used on input line 170.
-(pdftex.def)             Requested size: 159.64711pt x 124.16002pt.
- <./Pics/trump-normed.png, id=68, 518.75406pt x 400.95396pt>
-File: ./Pics/trump-normed.png Graphic file (type png)
- <use ./Pics/trump-normed.png>
-Package pdftex.def Info: ./Pics/trump-normed.png used on input line 170.
-(pdftex.def)             Requested size: 160.81209pt x 124.29443pt.
-
-Overfull \hbox (13.16933pt too wide) in paragraph at lines 170--170
- [][] 
  []
 
 [8
 
+ <./Pics/followers.png>] [9
+
+] [10
+
+] [11
+
+] [12
+
+] [13
+
+] <./Pics/trump.png, id=101, 514.99602pt x 400.52034pt>
+File: ./Pics/trump.png Graphic file (type png)
+ <use ./Pics/trump.png>
+Package pdftex.def Info: ./Pics/trump.png used on input line 296.
+(pdftex.def)             Requested size: 159.64711pt x 124.16002pt.
+ <./Pics/trump-normed.png, id=102, 518.75406pt x 400.95396pt>
+File: ./Pics/trump-normed.png Graphic file (type png)
+ <use ./Pics/trump-normed.png>
+Package pdftex.def Info: ./Pics/trump-normed.png used on input line 296.
+(pdftex.def)             Requested size: 160.81209pt x 124.29443pt.
+
+Overfull \hbox (13.16933pt too wide) in paragraph at lines 296--296
+ [][] 
+ []
+
+[14
+
  <./Pics/trump.png> <./Pics/trump-normed.png>]
 File: ./Pics/trump.png Graphic file (type png)
  <use ./Pics/trump.png>
-Package pdftex.def Info: ./Pics/trump.png used on input line 182.
+Package pdftex.def Info: ./Pics/trump.png used on input line 308.
 (pdftex.def)             Requested size: 190.54553pt x 148.1902pt.
- [9
+ [15
 
 ]
 File: ./Pics/trump-normed.png Graphic file (type png)
  <use ./Pics/trump-normed.png>
-Package pdftex.def Info: ./Pics/trump-normed.png used on input line 196.
+Package pdftex.def Info: ./Pics/trump-normed.png used on input line 322.
 (pdftex.def)             Requested size: 191.93599pt x 148.35065pt.
- [10
+ [16
 
-] <./Pics/abortion.png, id=90, 515.42964pt x 402.68845pt>
+] <./Pics/abortion.png, id=123, 515.42964pt x 402.68845pt>
 File: ./Pics/abortion.png Graphic file (type png)
  <use ./Pics/abortion.png>
-Package pdftex.def Info: ./Pics/abortion.png used on input line 222.
+Package pdftex.def Info: ./Pics/abortion.png used on input line 348.
 (pdftex.def)             Requested size: 159.78152pt x 124.83212pt.
- <./Pics/abortion-normed.png, id=91, 514.85149pt x 401.53212pt>
+ <./Pics/abortion-normed.png, id=124, 514.85149pt x 401.53212pt>
 File: ./Pics/abortion-normed.png Graphic file (type png)
  <use ./Pics/abortion-normed.png>
-Package pdftex.def Info: ./Pics/abortion-normed.png used on input line 222.
+Package pdftex.def Info: ./Pics/abortion-normed.png used on input line 348.
 (pdftex.def)             Requested size: 159.60231pt x 124.47366pt.
 
-Overfull \hbox (12.09396pt too wide) in paragraph at lines 222--222
+Overfull \hbox (12.09396pt too wide) in paragraph at lines 348--348
  [][] 
  []
 
-[11
+[17
 
  <./Pics/abortion.png> <./Pics/abortion-normed.png>]
 File: ./Pics/abortion.png Graphic file (type png)
  <use ./Pics/abortion.png>
-Package pdftex.def Info: ./Pics/abortion.png used on input line 241.
+Package pdftex.def Info: ./Pics/abortion.png used on input line 367.
 (pdftex.def)             Requested size: 190.70598pt x 148.99239pt.
- [12
+ [18
 
 ]
 File: ./Pics/abortion-normed.png Graphic file (type png)
  <use ./Pics/abortion-normed.png>
-Package pdftex.def Info: ./Pics/abortion-normed.png used on input line 255.
+Package pdftex.def Info: ./Pics/abortion-normed.png used on input line 381.
 (pdftex.def)             Requested size: 190.49207pt x 148.56454pt.
- [13
+ [19
 
-] [14
+] [20
 
 ]
 \tf@nav=\write6
@@ -2316,11 +2336,11 @@ Package pdftex.def Info: ./Pics/abortion-normed.png used on input line 255.
 \tf@snm=\write8
 \openout8 = `SOC-2017-presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 274.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 274.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 400.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 400.
  (./SOC-2017-presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 274.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 274.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 400.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 400.
 Package rerunfilecheck Info: File `SOC-2017-presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -2328,21 +2348,21 @@ Package rerunfilecheck Info: File `SOC-2017-presentation.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 274.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 400.
  ) 
 Here is how much of TeX's memory you used:
- 30122 strings out of 493014
- 589476 string characters out of 6133351
- 643230 words of memory out of 5000000
- 33054 multiletter control sequences out of 15000+600000
- 19473 words of font info for 47 fonts, out of 8000000 for 9000
+ 30225 strings out of 493014
+ 591176 string characters out of 6133351
+ 643942 words of memory out of 5000000
+ 33132 multiletter control sequences out of 15000+600000
+ 23535 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,13n,88p,10429b,717s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb>
-Output written on SOC-2017-presentation.pdf (14 pages, 1535620 bytes).
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on SOC-2017-presentation.pdf (20 pages, 1556049 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 500000)
+ 200 PDF objects out of 1000 (max. 8388607)
+ 140 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
  88 words of extra memory for PDF output out of 10000 (max. 10000000)
 
