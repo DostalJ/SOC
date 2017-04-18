@@ -68,22 +68,19 @@
     \center
     \vspace{-0.1cm}
     \begin{large}\textbf{Izolace od dostatečně širokého spektra informací.}\end{large}
-    \vspace{0.7cm}
+    \vspace{0.8cm}
     \begin{columns}
     \column{5cm}
     \begin{itemize}
         \item Eli Pariser (2011)
         \item sociální sítě
         \item preferenční algoritmy
-        \vspace{0.1cm}
-        \begin{figure}
-            \includegraphics[scale=0.4]{./Pics/twitter.png}
-        \end{figure}
     \end{itemize}
     \column{6cm}
         \begin{figure}
             \centering
-            \includegraphics[scale=0.06]{./Pics/fb.png}
+            % \subfloat{\includegraphics[scale=0.035]{./Pics/fb.png}}\\
+            \includegraphics[scale=0.4]{./Pics/twitter.png}
         \end{figure}
     \end{columns}
 \end{frame}
@@ -96,7 +93,7 @@
 		\begin{itemize}
 			\item \textbf{homogenita} obsahu
             \item ztráta objektivity
-            \item radikalizace
+            \item \textbf{radikalizace}
             \item ohrožení demokracie
 		\end{itemize}
 	\end{block}
@@ -115,7 +112,9 @@
 \begin{frame}{Metoda}
     \begin{enumerate}
         \begin{large}
-        \onslide<1>\item\bfseries výběr studované skupiny
+        \onslide<1>\item\bfseries sběr dat
+        \vspace{0.25cm}
+        \onslide<0>\item výběr studované skupiny
         \vspace{0.25cm}
         \onslide<0>\item příspěvky sledované studovanými lidmi
         \vspace{0.25cm}
@@ -123,44 +122,7 @@
         \vspace{0.25cm}
         \onslide<0>\item analýza vybraných příspěvků
         \vspace{0.25cm}
-        \onslide<0>\item srovnání dat s odlišnými skupinami
-        \end{large}
-    \end{enumerate}
-\end{frame}
-% ############################################
-% ############################################
-\begin{frame}{Výběr studované skupiny}
-    \vspace{-0.7cm}
-    \begin{columns}
-    \column{5cm}
-    	\begin{itemize}
-    		\item pozorovaná skupina
-    		\item příslušnost ke komunitě
-    		\item
-    	\end{itemize}
-    \column{6cm}
-    	\center
-    	\includegraphics[scale=0.32]{./Pics/sets.png}
-    \end{columns}
-    \center
-    \begin{large}
-        $\text{studovaní lidé} \subset \text{Biochemical Society} \subset \text{Twitter}$
-    \end{large}
-\end{frame}
-% ############################################
-% ############################################
-\begin{frame}{Metoda}
-    \begin{enumerate}
-        \begin{large}
-        \onslide<1>\item výběr studované skupiny
-        \vspace{0.25cm}
-        \onslide<1>\item\bfseries příspěvky sledované studovanými lidmi
-        \vspace{0.25cm}
-        \onslide<0>\item filtrace příspěvků na dané téma
-        \vspace{0.25cm}
-        \onslide<0>\item analýza vybraných příspěvků
-        \vspace{0.25cm}
-        \onslide<0>\item srovnání dat s odlišnými skupinami
+        \onslide<0>\item srovnání dat různých skupin
         \end{large}
     \end{enumerate}
 \end{frame}
@@ -173,12 +135,70 @@
     		\item sociální síť
     		\item informační kanál
             \item \textbf{following, followers}
-    		\item \# hashtag
+    		\item Twitter API
     	\end{itemize}
     \column{6cm}
     	\center
     	\includegraphics[scale=0.35]{./Pics/pepa.png}
     \end{columns}
+\end{frame}
+% ############################################
+% ############################################
+\begin{frame}{Metoda}
+    \begin{enumerate}
+        \begin{large}
+        \onslide<1>\item sběr dat
+        \vspace{0.25cm}
+        \onslide<1>\item\bfseries výběr studované skupiny
+        \vspace{0.25cm}
+        \onslide<0>\item příspěvky sledované studovanými lidmi
+        \vspace{0.25cm}
+        \onslide<0>\item filtrace příspěvků na dané téma
+        \vspace{0.25cm}
+        \onslide<0>\item analýza vybraných příspěvků
+        \vspace{0.25cm}
+        \onslide<0>\item srovnání dat různých skupin
+        \end{large}
+    \end{enumerate}
+\end{frame}
+% ############################################
+% ############################################
+\begin{frame}{Výběr studované skupiny}
+    \vspace{-0.7cm}
+    \begin{columns}
+    \column{5cm}
+    	\begin{itemize}
+    		\item pozorovaná skupina
+    		\item \textbf{příslušnost ke komunitě}
+    		\item náhodný výběr ze sledujících
+    	\end{itemize}
+    \column{6cm}
+    	\center
+    	\includegraphics[scale=0.32]{./Pics/sets.png}
+    \end{columns}
+    \center
+    \begin{large}
+        $\text{Twitter} \rightarrow \text{Biochemical Society} \rightarrow \text{\textbf{studovaní lidé}}$
+    \end{large}
+\end{frame}
+% ############################################
+% ############################################
+\begin{frame}{Metoda}
+    \begin{enumerate}
+        \begin{large}
+        \onslide<1>\item sběr dat
+        \vspace{0.25cm}
+        \onslide<1>\item výběr studované skupiny
+        \vspace{0.25cm}
+        \onslide<1>\item\bfseries příspěvky sledované studovanými lidmi
+        \vspace{0.25cm}
+        \onslide<0>\item filtrace příspěvků na dané téma
+        \vspace{0.25cm}
+        \onslide<0>\item analýza vybraných příspěvků
+        \vspace{0.25cm}
+        \onslide<0>\item srovnání dat různých skupin
+        \end{large}
+    \end{enumerate}
 \end{frame}
 % ############################################
 % ############################################
@@ -188,7 +208,7 @@
     	\begin{itemize}
             \item příspěvky viditelné studovanými
     		\item \textbf{okolí uživatele}
-    		\item většina od nich samotných
+    		\item vzájemné příspěvky
     	\end{itemize}
     \column{6cm}
     	\center
@@ -200,6 +220,8 @@
 \begin{frame}{Metoda}
     \begin{enumerate}
         \begin{large}
+        \onslide<1>\item sběr dat
+        \vspace{0.25cm}
         \onslide<1>\item výběr studované skupiny
         \vspace{0.25cm}
         \onslide<1>\item příspěvky sledované studovanými lidmi
@@ -208,7 +230,7 @@
         \vspace{0.25cm}
         \onslide<0>\item analýza vybraných příspěvků
         \vspace{0.25cm}
-        \onslide<0>\item srovnání dat s odlišnými skupinami
+        \onslide<0>\item srovnání dat různých skupin
         \end{large}
     \end{enumerate}
 \end{frame}
@@ -221,17 +243,19 @@
 \end{itemize}
 % \vspace{0.7cm}
 \center
-Jsem velmi rád, že Donald \begin{color}{red}Trump\end{color} je prezidentem USA. \cmark\\
-\vspace{0.2cm}
 Na snídani jsem měl vločky s mlékem. \xmark\\
 \vspace{0.2cm}
-USA mají nejlepšího prezidenta. \xmark\\
+Jsem velmi rád, že Donald \textbf{Trump} je prezidentem USA. \cmark\\
+\vspace{0.2cm}
+V USA mají nejlepšího prezidenta. \xmark\\
 \end{frame}
 % ############################################
 % ############################################
 \begin{frame}{Metoda}
     \begin{enumerate}
         \begin{large}
+        \onslide<1>\item sběr dat
+        \vspace{0.25cm}
         \onslide<1>\item výběr studované skupiny
         \vspace{0.25cm}
         \onslide<1>\item příspěvky sledované studovanými lidmi
@@ -240,7 +264,7 @@ USA mají nejlepšího prezidenta. \xmark\\
         \vspace{0.25cm}
         \onslide<1>\item\bfseries analýza vybraných příspěvků
         \vspace{0.25cm}
-        \onslide<0>\item srovnání dat s odlišnými skupinami
+        \onslide<0>\item srovnání dat různých skupin
         \end{large}
     \end{enumerate}
 \end{frame}
@@ -248,23 +272,25 @@ USA mají nejlepšího prezidenta. \xmark\\
 % ############################################
 \begin{frame}{Sentimentální analýza}
 \begin{itemize}
-    \item machine learning, big data
-    \item klasifikace
     \item \textbf{positivní} vs. \textbf{negativní} text
+    \item klasifikace
+    \item machine learning, big data
 \end{itemize}
 % \vspace{0.7cm}
 \center
-Donald Trump je hrozný člověk.\\
-\begin{color}{red}(0.14)\end{color}\\
+\textit{Donald Trump je hrozný člověk.}\\
+\textbf{(0.14)}\\
 \vspace{0.5cm}
-Donald Trump je skvělý člověk.\\
-\begin{color}{blue}(0.95)\end{color}
+\textit{Donald Trump je skvělý člověk.}\\
+\textbf{(0.95)}
 \end{frame}
 % ############################################
 % ############################################
 \begin{frame}{Metoda}
     \begin{enumerate}
         \begin{large}
+        \onslide<1>\item sběr dat
+        \vspace{0.25cm}
         \onslide<1>\item výběr studované skupiny
         \vspace{0.25cm}
         \onslide<1>\item příspěvky sledované studovanými lidmi
@@ -273,7 +299,7 @@ Donald Trump je skvělý člověk.\\
         \vspace{0.25cm}
         \onslide<1>\item analýza vybraných příspěvků
         \vspace{0.25cm}
-        \onslide<1>\item\bfseries srovnání dat s odlišnými skupinami
+        \onslide<1>\item\bfseries srovnání dat různých skupin
         \end{large}
     \end{enumerate}
 \end{frame}
@@ -384,50 +410,31 @@ Donald Trump je skvělý člověk.\\
 \begin{frame}{Závěr}
     \begin{block}{Nová metoda:}
         \begin{itemize}
-            \item velké množství dat - potlačení šumu
-            \item přímější než tradiční výzkum
-            \item výzkum přímo na sociálních sítích
+            \item velké množství dat - \textbf{potlačení šumu}
+            \item \textbf{přímější} než tradiční výzkum
+            \item první krok ke kvantitativnímu výzkumu
+            \item volně přístupný software
         \end{itemize}
     \end{block}
 
     \begin{block}{Měření:}
     	\begin{itemize}
             \item Trump $\rightarrow$ slabá homogenita obsahu
-            \item potrat $\rightarrow$ ohrožení objektivity
+            \item potrat $\rightarrow$ \textbf{ohrožení} objektivity
     	\end{itemize}
     \end{block}
 \end{frame}
 % ############################################
 % ############################################
 \begin{frame}
-    % \begin{columns}
-    % \column{\dimexpr\paperwidth-20pt}
-        \center
-        \includegraphics[scale=0.4]{./Pics/filterbubble.png}\\
-    % \end{columns}
+
 \end{frame}
-% ############################################
-% ############################################
-% ############################################
-% ############################################
-% \begin{frame}{Příklady tweetů}
-%     \begin{block}{Biochemical Society:}
-%         \begin{itemize}
-%             \item \begin{footnotesize} \uv{\textit{Trump's travel expenses in 10 weeks cost U.S. taxpayers as much as Obama spent in 2 years, @Independent estimates}}\end{footnotesize} (0.2855)
-%         \end{itemize}
-%     \end{block}
-%     \begin{block}{Abolish Abortion USA:}
-%         \begin{itemize}
-%             \item \begin{footnotesize} \uv{\textit{And look at the Planned parenthood abortion rooms.....887 babies killed a day and 300,000 dead babies a year....!!!}} \end{footnotesize} (0.2255)
-%         \end{itemize}
-%     \end{block}
-% \end{frame}
 % ############################################
 % ############################################
 \begin{frame}{Příklady tweetů}
     \begin{block}{Everyday Feminism:}
         \begin{itemize}
-            \item \begin{footnotesize} \uv{\textit{We're proud of all of the abortion providers in this room - thank you for your brave \&amp; compassionate care. \#Proud2Provide \#LifesWork}}\end{footnotesize} (0.9776)
+            \item \begin{footnotesize} \uv{\textit{We're proud of all of the abortion providers in this room - thank you for your brave; compassionate care. \#Proud2Provide \#LifesWork}}\end{footnotesize} (0.9776)
         \end{itemize}
     \end{block}
     \begin{block}{Abolish Abortion USA:}
