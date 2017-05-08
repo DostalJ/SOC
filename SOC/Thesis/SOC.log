@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  20 APR 2017 13:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  30 APR 2017 08:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -647,20 +647,20 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 ) (./SOC.aux (./TitulkaCZ.aux))
 \openout1 = `SOC.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
  (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count129
@@ -697,7 +697,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 144.
 )
-Package hyperref Info: Link coloring ON on input line 53.
+Package hyperref Info: Link coloring ON on input line 51.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
  (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -705,9 +705,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count135
 )
-LaTeX Info: Redefining \ref on input line 53.
-LaTeX Info: Redefining \pageref on input line 53.
-LaTeX Info: Redefining \nameref on input line 53.
+LaTeX Info: Redefining \ref on input line 51.
+LaTeX Info: Redefining \pageref on input line 51.
+LaTeX Info: Redefining \nameref on input line 51.
  (./SOC.out) (./SOC.out)
 \@outlinefile=\write5
 \openout5 = `SOC.out'.
@@ -745,67 +745,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--74
 )pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.56 \include{TitulkaCZ}
+l.54 \include{TitulkaCZ}
                          [1
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.71 \newpage
+l.69 \newpage
               [2
 
 ]
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 72.
+(hyperref)                removing `\textasciicaron' on input line 70.
 
 
-Overfull \hbox (3.84029pt too wide) in paragraph at lines 79--80
+Overfull \hbox (3.84029pt too wide) in paragraph at lines 77--78
 []\OT1/cmr/m/n/12 Chodili do stejn^^Se hosp^^Wudky, nav^^Tst^^Tevovali jed-noho ml^^Seka^^Tre, znali jednu ^^Tsvadlenu.
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.88 
+l.86 
       [3]
-Overfull \hbox (2.40288pt too wide) in paragraph at lines 92--93
+Overfull \hbox (2.40288pt too wide) in paragraph at lines 90--91
 \OT1/cmr/m/n/12 stra-chu a hrozby z t^^Sematu, byly p^^Tr^^S^^Psp^^Tevky ma-ni-pu-lov^^Sany nap^^Tr^^S^^Pklad zv^^Syraz^^Tnov^^San^^S^^Pm
  []
 
 
-Overfull \hbox (3.37787pt too wide) in paragraph at lines 96--97
+Overfull \hbox (3.37787pt too wide) in paragraph at lines 94--95
 []\OT1/cmr/m/n/12 Ukazuj^^S^^P nap^^Tr^^S^^Pklad, ^^Tze p^^Trij^^S^^Pm^^San^^S^^P n^^Sazor^^Wu z r^^Wuzn^^Sych ^^Suhl^^Wu po-hled^^Wu z^^Savis^^S^^P p^^Tredev^^Ts^^S^^Pm
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.104 
+l.102 
        [4] [5]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 124.
+(hyperref)                removing `\textasciicaron' on input line 122.
 
 
-Overfull \hbox (1.4968pt too wide) in paragraph at lines 125--126
+Overfull \hbox (1.4968pt too wide) in paragraph at lines 123--124
 \OT1/cmr/m/n/12 b^^Syt jak velk^^Sym probl^^Semem, tak vel-kou v^^Syhodou. []Cemu jsme v^^Tsak do-sud nev^^Tenovali
  []
 
 [6] [7] <./Pics/pepa.png, id=202, 421.0932pt x 398.2077pt>
 File: ./Pics/pepa.png Graphic file (type png)
  <use ./Pics/pepa.png>
-Package pdftex.def Info: ./Pics/pepa.png used on input line 144.
+Package pdftex.def Info: ./Pics/pepa.png used on input line 142.
 (pdftex.def)             Requested size: 147.38483pt x 139.37477pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 145.
+(Font)              using `OT1/cmr/bx/n' instead on input line 143.
 
 [8 <./Pics/pepa.png>] [9]
-Underfull \hbox (badness 3590) in paragraph at lines 190--190
+Underfull \hbox (badness 3590) in paragraph at lines 188--188
 \OT1/cmr/m/n/10 konce i mo^^Tznost heu-ris-tick^^Seho u^^Tzit^^S^^P arit-me-tiky. M^^Wu^^Tzeme si v^^Tsimnout, ^^Tze nap^^Tr^^S^^Pklad
  []
 
@@ -813,73 +813,73 @@ Underfull \hbox (badness 3590) in paragraph at lines 190--190
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 199.
+(hyperref)                removing `\textasciicaron' on input line 197.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 199.
+(hyperref)                removing `\textasciicaron' on input line 197.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 206.
+(hyperref)                removing `\textasciicaron' on input line 204.
 
 <./Pics/sets.png, id=281, 536.9661pt x 566.8377pt>
 File: ./Pics/sets.png Graphic file (type png)
  <use ./Pics/sets.png>
-Package pdftex.def Info: ./Pics/sets.png used on input line 211.
+Package pdftex.def Info: ./Pics/sets.png used on input line 209.
 (pdftex.def)             Requested size: 144.98277pt x 153.04822pt.
  <./Pics/followers.png, id=283, 429.7656pt x 438.438pt>
 File: ./Pics/followers.png Graphic file (type png)
  <use ./Pics/followers.png>
-Package pdftex.def Info: ./Pics/followers.png used on input line 218.
+Package pdftex.def Info: ./Pics/followers.png used on input line 216.
 (pdftex.def)             Requested size: 150.42021pt x 153.4556pt.
  [12 <./Pics/sets.png>]
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 232.
+(hyperref)                removing `\textring' on input line 230.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 232.
+(hyperref)                removing `\textasciicaron' on input line 230.
 
 [13 <./Pics/followers.png>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 245.
+(hyperref)                removing `\textasciicaron' on input line 243.
 
 [14] [15]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 265.
+(hyperref)                removing `\textasciicaron' on input line 263.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 265.
+(hyperref)                removing `\textasciicaron' on input line 263.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 268.
+(hyperref)                removing `\textasciicaron' on input line 266.
 
 <./Pics/trump.png, id=323, 578.16pt x 433.62pt>
 File: ./Pics/trump.png Graphic file (type png)
  <use ./Pics/trump.png>
-Package pdftex.def Info: ./Pics/trump.png used on input line 276.
+Package pdftex.def Info: ./Pics/trump.png used on input line 274.
 (pdftex.def)             Requested size: 213.91585pt x 160.43689pt.
  <./Pics/trump-normed.png, id=324, 578.16pt x 433.62pt>
 File: ./Pics/trump-normed.png Graphic file (type png)
  <use ./Pics/trump-normed.png>
-Package pdftex.def Info: ./Pics/trump-normed.png used on input line 277.
+Package pdftex.def Info: ./Pics/trump-normed.png used on input line 275.
 (pdftex.def)             Requested size: 213.91585pt x 160.43689pt.
 
-Overfull \hbox (15.26674pt too wide) in paragraph at lines 276--278
+Overfull \hbox (15.26674pt too wide) in paragraph at lines 274--276
  [][][][] 
  []
 
@@ -887,20 +887,20 @@ Overfull \hbox (15.26674pt too wide) in paragraph at lines 276--278
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 292.
+(hyperref)                removing `\textasciicaron' on input line 290.
 
 <./Pics/abortion.png, id=340, 578.16pt x 433.62pt>
 File: ./Pics/abortion.png Graphic file (type png)
  <use ./Pics/abortion.png>
-Package pdftex.def Info: ./Pics/abortion.png used on input line 296.
+Package pdftex.def Info: ./Pics/abortion.png used on input line 294.
 (pdftex.def)             Requested size: 213.91585pt x 160.43689pt.
  <./Pics/abortion-normed.png, id=341, 578.16pt x 433.62pt>
 File: ./Pics/abortion-normed.png Graphic file (type png)
  <use ./Pics/abortion-normed.png>
-Package pdftex.def Info: ./Pics/abortion-normed.png used on input line 297.
+Package pdftex.def Info: ./Pics/abortion-normed.png used on input line 295.
 (pdftex.def)             Requested size: 213.91585pt x 160.43689pt.
 
-Overfull \hbox (15.26674pt too wide) in paragraph at lines 296--298
+Overfull \hbox (15.26674pt too wide) in paragraph at lines 294--296
  [][][][] 
  []
 
@@ -908,56 +908,56 @@ Overfull \hbox (15.26674pt too wide) in paragraph at lines 296--298
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 330.
+(hyperref)                removing `\textasciicaron' on input line 328.
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 347--348
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 []\OT1/cmr/m/n/12 BARTHEL, Mi-chael, Elisa SHEARER, Je-ffrey GOTTF-RIED
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--348
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 \OT1/cmr/m/n/12 a Amy MIT-CHELL. \OT1/cmr/m/it/12 The Evol-ving Role of News on Twit-ter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--348
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 \OT1/cmr/m/it/12 and Fa-ce-book \OT1/cmr/m/n/12 [on-line]. Pew Re-search Cen-ter, 2015 [cit. 2017-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--348
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 \OT1/cmr/m/n/12 01-22]. Do-stupn^^Se z: [][]$\OT1/cmtt/m/n/12 http : / / www . journalism . org / 2015 / 07 / 14 /
  []
 
 
-Underfull \hbox (badness 1231) in paragraph at lines 359--360
+Underfull \hbox (badness 1231) in paragraph at lines 357--358
 []\OT1/cmr/m/n/12 DAVIDSON, Ja-mes, et al. The You-Tube vi-deo re-com-men-dation sys-
  []
 
 [21]
-Underfull \hbox (badness 1803) in paragraph at lines 383--384
+Underfull \hbox (badness 1803) in paragraph at lines 381--382
 \OT1/cmr/m/n/12 tem for Twit-ter Using Pro-ba-bi-lis-tic Mo-de-ling. \OT1/cmr/m/it/12 2011 IEEE 11th In-
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 407--408
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
 \OT1/cmr/m/n/12 z [][]$\OT1/cmtt/m/n/12 https : / / www . ted . com / talks / eli _ pariser _ beware _ online _ filter _
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 437.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 435.
 [23]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 437.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 435.
  (./SOC.aux (./TitulkaCZ.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 437.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 437.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 435.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 435.
 Package rerunfilecheck Info: File `SOC.out' has not changed.
-(rerunfilecheck)             Checksum: 5A4AF9617E1B4D27D3570E1576301B8B;1432.
+(rerunfilecheck)             Checksum: 236F24AA0EC0979E1158E8C09E4891B8;1424.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 437.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 435.
  ) 
 Here is how much of TeX's memory you used:
  9174 strings out of 493014
@@ -969,7 +969,7 @@ Here is how much of TeX's memory you used:
  44i,11n,49p,1840b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ti12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on SOC.pdf (27 pages, 1663085 bytes).
+Output written on SOC.pdf (27 pages, 1663325 bytes).
 PDF statistics:
  511 PDF objects out of 1000 (max. 8388607)
  448 compressed objects within 5 object streams

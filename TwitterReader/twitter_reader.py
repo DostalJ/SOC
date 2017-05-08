@@ -9,6 +9,7 @@ class MyStreamListener(StreamListener):
     def on_status(self, status):
 
         print(status.text)
+        print(status.lang)
         # print('-'*40)
         # sleep(5)
 
@@ -29,4 +30,4 @@ api = tweepy.API(auth)
 myStreamListener = MyStreamListener
 myStream = tweepy.Stream(auth = api.auth, listener=myStreamListener())
 
-myStream.filter(track=['abortion'],)
+myStream.filter(track=['a'],)
