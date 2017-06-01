@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 MAY 2017 16:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  1 JUN 2017 07:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**SOC-2017-presentation.tex
-(./SOC-2017-presentation.tex
+**SOC-2017-EN-presentation.tex
+(./SOC-2017-EN-presentation.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/beamer/beamer.cls (/usr/local/texlive/2016/texmf-dist/tex/latex/beamer/beamerbasercs.sty
@@ -559,21 +559,7 @@ Package: beamerinnerthemedefault 2014/06/30  (rcs-revision 580088513a67)
 \beamer@dimb=\dimen187
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthemedefault.sty
 Package: beamerouterthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
-))) (/usr/local/texlive/2016/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2016/04/23 3.9r The Babel package
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/babel-czech/czech.ldf
-Language: czech 2008/07/06 v3.1a Czech support from the babel system
- (/usr/local/texlive/2016/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2016/04/23 3.9r Babel common definitions
-\babel@savecnt=\count152
-\U@D=\dimen188
-LaTeX Info: Redefining \textlatin on input line 1448.
-)
-Package babel Info: Making " an active character on input line 172.
-\cs@wordlen=\count153
-Package babel Info: Making - an active character on input line 226.
-)) (/usr/local/texlive/2016/texmf-dist/tex/latex/base/inputenc.sty
+))) (/usr/local/texlive/2016/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks43
 \inpenc@posthook=\toks44
@@ -583,7 +569,7 @@ Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
- (/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1enc.dfu
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -892,20 +878,20 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 )) (/usr/local/texlive/2016/texmf-dist/tex/generic/epsf/epsf.sty
 This is `epsf.tex' v2.7.4 <14 February 2011>
 \epsffilein=\read2
-\epsfframemargin=\dimen189
-\epsfframethickness=\dimen190
-\epsfrsize=\dimen191
-\epsftmp=\dimen192
-\epsftsize=\dimen193
-\epsfxsize=\dimen194
-\epsfysize=\dimen195
-\pspoints=\dimen196
+\epsfframemargin=\dimen188
+\epsfframethickness=\dimen189
+\epsfrsize=\dimen190
+\epsftmp=\dimen191
+\epsftsize=\dimen192
+\epsfxsize=\dimen193
+\epsfysize=\dimen194
+\pspoints=\dimen195
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
  (/usr/local/texlive/2016/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen197
-\extrarowheight=\dimen198
+\col@sep=\dimen196
+\extrarowheight=\dimen197
 \NC@list=\toks45
 \extratabsurround=\skip57
 \backup@length=\skip58
@@ -914,7 +900,7 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \minrowclearance=\skip59
 ) (/usr/local/texlive/2016/texmf-dist/tex/generic/dvips/colordvi.sty) (/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count154
+\c@float@type=\count152
 \float@exts=\toks47
 \float@box=\box53
 \@float@everytoks=\toks48
@@ -926,38 +912,38 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
  (/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen199
-\captionmargin@=\dimen256
-\captionwidth=\dimen257
-\caption@tempdima=\dimen258
-\caption@indent=\dimen259
-\caption@parindent=\dimen260
-\caption@hangindent=\dimen261
+\captionmargin=\dimen198
+\captionmargin@=\dimen199
+\captionwidth=\dimen256
+\caption@tempdima=\dimen257
+\caption@indent=\dimen258
+\caption@parindent=\dimen259
+\caption@hangindent=\dimen260
 )
-\c@ContinuedFloat=\count155
+\c@ContinuedFloat=\count153
 Package caption Info: beamer document class.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: Hyperref support is turned off
 (caption)             because hyperref has stopped early.
 )
-\c@KVtest=\count156
+\c@KVtest=\count154
 \sf@farskip=\skip60
-\sf@captopadj=\dimen262
+\sf@captopadj=\dimen261
 \sf@capskip=\skip61
 \sf@nearskip=\skip62
-\c@subfigure=\count157
-\c@subfigure@save=\count158
-\c@depth=\count159
-\c@subtable=\count160
-\c@subtable@save=\count161
+\c@subfigure=\count155
+\c@subfigure@save=\count156
+\c@depth=\count157
+\c@subtable=\count158
+\c@subtable@save=\count159
 \sf@top=\skip63
 \sf@bottom=\skip64
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/beamertheme-metropolis/beamerthememetropolis.sty
 Package: beamerthememetropolis 2016/03/14 v1.1 Metropolis Beamer theme
  (/usr/local/texlive/2016/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count162
+\etb@tempcnta=\count160
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/pgfopts/pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
  (/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
@@ -968,15 +954,15 @@ Package: beamerinnerthememetropolis 2016/03/14 Metropolis inner theme
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count163
-\calc@Bcount=\count164
-\calc@Adimen=\dimen263
-\calc@Bdimen=\dimen264
+\calc@Acount=\count161
+\calc@Bcount=\count162
+\calc@Adimen=\dimen262
+\calc@Bdimen=\dimen263
 \calc@Askip=\skip65
 \calc@Bskip=\skip66
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count165
+\calc@Ccount=\count163
 \calc@Cskip=\skip67
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
@@ -987,15 +973,15 @@ File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen265
-\pgf@nodesepend=\dimen266
+\pgf@nodesepstart=\dimen264
+\pgf@nodesepend=\dimen265
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 )) (/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
  (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen267
-\pgffor@skip=\dimen268
+\pgffor@iter=\dimen266
+\pgffor@skip=\dimen267
 \pgffor@stack=\toks51
 \pgffor@toks=\toks52
 ))
@@ -1003,30 +989,30 @@ Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
  (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count166
-\pgfplotmarksize=\dimen269
+\pgf@plot@mark@count=\count164
+\pgfplotmarksize=\dimen268
 )
-\tikz@lastx=\dimen270
-\tikz@lasty=\dimen271
-\tikz@lastxsaved=\dimen272
-\tikz@lastysaved=\dimen273
-\tikzleveldistance=\dimen274
-\tikzsiblingdistance=\dimen275
+\tikz@lastx=\dimen269
+\tikz@lasty=\dimen270
+\tikz@lastxsaved=\dimen271
+\tikz@lastysaved=\dimen272
+\tikzleveldistance=\dimen273
+\tikzsiblingdistance=\dimen274
 \tikz@figbox=\box56
 \tikz@figbox@bg=\box57
 \tikz@tempbox=\box58
 \tikz@tempbox@bg=\box59
-\tikztreelevel=\count167
-\tikznumberofchildren=\count168
-\tikznumberofcurrentchild=\count169
-\tikz@fig@count=\count170
+\tikztreelevel=\count165
+\tikznumberofchildren=\count166
+\tikznumberofcurrentchild=\count167
+\tikz@fig@count=\count168
  (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count171
-\pgfmatrixcurrentcolumn=\count172
-\pgf@matrix@numberofcolumns=\count173
+\pgfmatrixcurrentrow=\count169
+\pgfmatrixcurrentcolumn=\count170
+\pgf@matrix@numberofcolumns=\count171
 )
-\tikz@expandcount=\count174
+\tikz@expandcount=\count172
  (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
@@ -1080,31 +1066,31 @@ L3 Module: l3tl 2016/03/26 v6465 L3 Token lists
 L3 Module: l3str 2016/03/24 v6441 L3 Strings
 L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
 L3 Module: l3int 2016/03/24 v6441 L3 Integers
-\c_max_int=\count175
-\l_tmpa_int=\count176
-\l_tmpb_int=\count177
-\g_tmpa_int=\count178
-\g_tmpb_int=\count179
+\c_max_int=\count173
+\l_tmpa_int=\count174
+\l_tmpb_int=\count175
+\g_tmpa_int=\count176
+\g_tmpb_int=\count177
 L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
 L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
-\g__prg_map_int=\count180
+\g__prg_map_int=\count178
 L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
 L3 Module: l3token 2016/04/03 v6470 L3 Experimental token manipulation
 L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
 L3 Module: l3msg 2016/03/26 v6464 L3 Messages
 L3 Module: l3file 2016/03/25 v6458 L3 File and I/O operations
-\l_iow_line_count_int=\count181
-\l__iow_target_count_int=\count182
-\l__iow_current_line_int=\count183
-\l__iow_current_word_int=\count184
-\l__iow_current_indentation_int=\count185
+\l_iow_line_count_int=\count179
+\l__iow_target_count_int=\count180
+\l__iow_current_line_int=\count181
+\l__iow_current_word_int=\count182
+\l__iow_current_indentation_int=\count183
 L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
-\c_zero_dim=\dimen276
-\c_max_dim=\dimen277
-\l_tmpa_dim=\dimen278
-\l_tmpb_dim=\dimen279
-\g_tmpa_dim=\dimen280
-\g_tmpb_dim=\dimen281
+\c_zero_dim=\dimen275
+\c_max_dim=\dimen276
+\l_tmpa_dim=\dimen277
+\l_tmpb_dim=\dimen278
+\g_tmpa_dim=\dimen279
+\g_tmpb_dim=\dimen280
 \c_zero_skip=\skip77
 \c_max_skip=\skip78
 \l_tmpa_skip=\skip79
@@ -1118,18 +1104,18 @@ L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
 L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
-\g__keyval_level_int=\count186
-\l_keys_choice_int=\count187
+\g__keyval_level_int=\count184
+\l_keys_choice_int=\count185
 L3 Module: l3fp 2016/03/26 v6465 L3 Floating points
-\c__fp_leading_shift_int=\count188
-\c__fp_middle_shift_int=\count189
-\c__fp_trailing_shift_int=\count190
-\c__fp_big_leading_shift_int=\count191
-\c__fp_big_middle_shift_int=\count192
-\c__fp_big_trailing_shift_int=\count193
-\c__fp_Bigg_leading_shift_int=\count194
-\c__fp_Bigg_middle_shift_int=\count195
-\c__fp_Bigg_trailing_shift_int=\count196
+\c__fp_leading_shift_int=\count186
+\c__fp_middle_shift_int=\count187
+\c__fp_trailing_shift_int=\count188
+\c__fp_big_leading_shift_int=\count189
+\c__fp_big_middle_shift_int=\count190
+\c__fp_big_trailing_shift_int=\count191
+\c__fp_Bigg_leading_shift_int=\count192
+\c__fp_Bigg_middle_shift_int=\count193
+\c__fp_Bigg_trailing_shift_int=\count194
 L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
 \c_empty_box=\box60
 \l_tmpa_box=\box61
@@ -1138,13 +1124,13 @@ L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
 \g_tmpb_box=\box64
 L3 Module: l3coffins 2016/05/17 v6508 L3 Coffin code layer
 \l__coffin_internal_box=\box65
-\l__coffin_internal_dim=\dimen282
-\l__coffin_offset_x_dim=\dimen283
-\l__coffin_offset_y_dim=\dimen284
-\l__coffin_x_dim=\dimen285
-\l__coffin_y_dim=\dimen286
-\l__coffin_x_prime_dim=\dimen287
-\l__coffin_y_prime_dim=\dimen288
+\l__coffin_internal_dim=\dimen281
+\l__coffin_offset_x_dim=\dimen282
+\l__coffin_offset_y_dim=\dimen283
+\l__coffin_x_dim=\dimen284
+\l__coffin_y_dim=\dimen285
+\l__coffin_x_prime_dim=\dimen286
+\l__coffin_y_prime_dim=\dimen287
 \c_empty_coffin=\box66
 \l__coffin_aligned_coffin=\box67
 \l__coffin_aligned_internal_coffin=\box68
@@ -1153,40 +1139,40 @@ L3 Module: l3coffins 2016/05/17 v6508 L3 Coffin code layer
 \l__coffin_display_coffin=\box71
 \l__coffin_display_coord_coffin=\box72
 \l__coffin_display_pole_coffin=\box73
-\l__coffin_display_offset_dim=\dimen289
-\l__coffin_display_x_dim=\dimen290
-\l__coffin_display_y_dim=\dimen291
+\l__coffin_display_offset_dim=\dimen288
+\l__coffin_display_x_dim=\dimen289
+\l__coffin_display_y_dim=\dimen290
 L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
 L3 Module: l3sys 2015/09/25 v6087 L3 Experimental system/runtime functions
 L3 Module: l3candidates 2016/05/13 v6484 L3 Experimental additions to l3kernel
-\l__box_top_dim=\dimen292
-\l__box_bottom_dim=\dimen293
-\l__box_left_dim=\dimen294
-\l__box_right_dim=\dimen295
-\l__box_top_new_dim=\dimen296
-\l__box_bottom_new_dim=\dimen297
-\l__box_left_new_dim=\dimen298
-\l__box_right_new_dim=\dimen299
+\l__box_top_dim=\dimen291
+\l__box_bottom_dim=\dimen292
+\l__box_left_dim=\dimen293
+\l__box_right_dim=\dimen294
+\l__box_top_new_dim=\dimen295
+\l__box_bottom_new_dim=\dimen296
+\l__box_left_new_dim=\dimen297
+\l__box_right_new_dim=\dimen298
 \l__box_internal_box=\box74
-\l__coffin_bounding_shift_dim=\dimen300
-\l__coffin_left_corner_dim=\dimen301
-\l__coffin_right_corner_dim=\dimen302
-\l__coffin_bottom_corner_dim=\dimen303
-\l__coffin_top_corner_dim=\dimen304
-\l__coffin_scaled_total_height_dim=\dimen305
-\l__coffin_scaled_width_dim=\dimen306
+\l__coffin_bounding_shift_dim=\dimen299
+\l__coffin_left_corner_dim=\dimen300
+\l__coffin_right_corner_dim=\dimen301
+\l__coffin_bottom_corner_dim=\dimen302
+\l__coffin_top_corner_dim=\dimen303
+\l__coffin_scaled_total_height_dim=\dimen304
+\l__coffin_scaled_width_dim=\dimen305
 L3 Module: l3luatex 2016/03/26 v6465 L3 Experimental LuaTeX-specific functions
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2016/03/26 v6465 L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count197
+\l__driver_color_stack_int=\count195
 \l__driver_tmp_box=\box75
 ))
 Package: xparse 2016/05/18 v6512 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count198
-\l__xparse_m_args_int=\count199
-\l__xparse_mandatory_args_int=\count266
-\l__xparse_processor_int=\count267
-\l__xparse_v_nesting_int=\count268
+\l__xparse_current_arg_int=\count196
+\l__xparse_m_args_int=\count197
+\l__xparse_mandatory_args_int=\count198
+\l__xparse_processor_int=\count199
+\l__xparse_v_nesting_int=\count266
 )
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -2072,8 +2058,8 @@ Package: beamerfontthemeserif 2010/06/17  (rcs-revision d02a7cf4d8ae)
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 59.
 
-(./SOC-2017-presentation.aux)
-\openout1 = `SOC-2017-presentation.aux'.
+(./SOC-2017-EN-presentation.aux)
+\openout1 = `SOC-2017-EN-presentation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
@@ -2126,16 +2112,16 @@ LaTeX Font Info:    ... okay on input line 63.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count269
-\scratchdimen=\dimen307
+\scratchcounter=\count267
+\scratchdimen=\dimen306
 \scratchbox=\box76
-\nofMPsegments=\count270
-\nofMParguments=\count271
+\nofMPsegments=\count268
+\nofMParguments=\count269
 \everyMPshowfont=\toks53
-\MPscratchCnt=\count272
-\MPscratchDim=\dimen308
-\MPnumerator=\count273
-\makeMPintoPDFobject=\count274
+\MPscratchCnt=\count270
+\MPscratchDim=\dimen307
+\MPnumerator=\count271
+\makeMPintoPDFobject=\count272
 \everyMPtoPDFconversion=\toks54
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -2155,14 +2141,14 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
  (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count275
+\c@section@level=\count273
 )
 LaTeX Info: Redefining \ref on input line 63.
 LaTeX Info: Redefining \pageref on input line 63.
 LaTeX Info: Redefining \nameref on input line 63.
- (./SOC-2017-presentation.out) (./SOC-2017-presentation.out)
+ (./SOC-2017-EN-presentation.out) (./SOC-2017-EN-presentation.out)
 \@outlinefile=\write5
-\openout5 = `SOC-2017-presentation.out'.
+\openout5 = `SOC-2017-EN-presentation.out'.
 
  (/usr/local/texlive/2016/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
@@ -2182,7 +2168,7 @@ LaTeX Info: Redefining \includegraphics on input line 63.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
- (./SOC-2017-presentation.nav)
+ (./SOC-2017-EN-presentation.nav)
 Overfull \vbox (16.67491pt too high) detected at line 64
  []
 
@@ -2327,20 +2313,20 @@ Package pdftex.def Info: ./Pics/abortion-normed.png used on input line 406.
 
 ]
 \tf@nav=\write6
-\openout6 = `SOC-2017-presentation.nav'.
+\openout6 = `SOC-2017-EN-presentation.nav'.
 
 \tf@toc=\write7
-\openout7 = `SOC-2017-presentation.toc'.
+\openout7 = `SOC-2017-EN-presentation.toc'.
 
 \tf@snm=\write8
-\openout8 = `SOC-2017-presentation.snm'.
+\openout8 = `SOC-2017-EN-presentation.snm'.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 444.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 444.
- (./SOC-2017-presentation.aux)
+ (./SOC-2017-EN-presentation.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 444.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 444.
-Package rerunfilecheck Info: File `SOC-2017-presentation.out' has not changed.
+Package rerunfilecheck Info: File `SOC-2017-EN-presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
@@ -2350,16 +2336,16 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 444.
  ) 
 Here is how much of TeX's memory you used:
- 30238 strings out of 493014
- 591279 string characters out of 6133351
- 643942 words of memory out of 5000000
- 33137 multiletter control sequences out of 15000+600000
+ 29767 strings out of 493014
+ 585414 string characters out of 6133351
+ 624717 words of memory out of 5000000
+ 32679 multiletter control sequences out of 15000+600000
  25884 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,13n,88p,10429b,717s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,13n,88p,10432b,717s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1440
 .pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on SOC-2017-presentation.pdf (23 pages, 1538039 bytes).
+Output written on SOC-2017-EN-presentation.pdf (23 pages, 1529389 bytes).
 PDF statistics:
  222 PDF objects out of 1000 (max. 8388607)
  159 compressed objects within 2 object streams
