@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  1 JUN 2017 07:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  5 JUN 2017 15:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2207,27 +2207,22 @@ Package pdftex.def Info: ./Pics/pepa.png used on input line 143.
 
  <./Pics/pepa.png>] [6
 
-] <./Pics/sets.png, id=55, 536.9661pt x 566.8377pt>
+] <./Pics/sets.png, id=55, 532.389pt x 533.192pt>
 File: ./Pics/sets.png Graphic file (type png)
  <use ./Pics/sets.png>
-Package pdftex.def Info: ./Pics/sets.png used on input line 182.
-(pdftex.def)             Requested size: 171.83266pt x 181.39177pt.
-
-Overfull \hbox (1.11613pt too wide) in paragraph at lines 182--182
- [] 
- []
-
-[7
+Package pdftex.def Info: ./Pics/sets.png used on input line 183.
+(pdftex.def)             Requested size: 170.36795pt x 170.62492pt.
+ [7
 
  <./Pics/sets.png>] [8
 
-] <./Pics/followers.png, id=69, 429.7656pt x 438.438pt>
+] <./Pics/followers.png, id=69, 443.256pt x 387.046pt>
 File: ./Pics/followers.png Graphic file (type png)
  <use ./Pics/followers.png>
-Package pdftex.def Info: ./Pics/followers.png used on input line 216.
-(pdftex.def)             Requested size: 171.90318pt x 175.37209pt.
+Package pdftex.def Info: ./Pics/followers.png used on input line 217.
+(pdftex.def)             Requested size: 181.73613pt x 158.68988pt.
 
-Overfull \hbox (1.18666pt too wide) in paragraph at lines 216--216
+Overfull \hbox (11.0196pt too wide) in paragraph at lines 217--217
  [] 
  []
 
@@ -2246,15 +2241,15 @@ Overfull \hbox (1.18666pt too wide) in paragraph at lines 216--216
 ] <./Pics/trump.png, id=104, 514.99602pt x 400.52034pt>
 File: ./Pics/trump.png Graphic file (type png)
  <use ./Pics/trump.png>
-Package pdftex.def Info: ./Pics/trump.png used on input line 321.
+Package pdftex.def Info: ./Pics/trump.png used on input line 322.
 (pdftex.def)             Requested size: 159.64711pt x 124.16002pt.
  <./Pics/trump-normed.png, id=105, 518.75406pt x 400.95396pt>
 File: ./Pics/trump-normed.png Graphic file (type png)
  <use ./Pics/trump-normed.png>
-Package pdftex.def Info: ./Pics/trump-normed.png used on input line 321.
+Package pdftex.def Info: ./Pics/trump-normed.png used on input line 322.
 (pdftex.def)             Requested size: 160.81209pt x 124.29443pt.
 
-Overfull \hbox (13.16933pt too wide) in paragraph at lines 321--321
+Overfull \hbox (13.16933pt too wide) in paragraph at lines 322--322
  [][] 
  []
 
@@ -2263,29 +2258,29 @@ Overfull \hbox (13.16933pt too wide) in paragraph at lines 321--321
  <./Pics/trump.png> <./Pics/trump-normed.png>]
 File: ./Pics/trump.png Graphic file (type png)
  <use ./Pics/trump.png>
-Package pdftex.def Info: ./Pics/trump.png used on input line 333.
+Package pdftex.def Info: ./Pics/trump.png used on input line 334.
 (pdftex.def)             Requested size: 190.54553pt x 148.1902pt.
  [16
 
 ]
 File: ./Pics/trump-normed.png Graphic file (type png)
  <use ./Pics/trump-normed.png>
-Package pdftex.def Info: ./Pics/trump-normed.png used on input line 347.
+Package pdftex.def Info: ./Pics/trump-normed.png used on input line 348.
 (pdftex.def)             Requested size: 191.93599pt x 148.35065pt.
  [17
 
 ] <./Pics/abortion.png, id=126, 515.42964pt x 402.68845pt>
 File: ./Pics/abortion.png Graphic file (type png)
  <use ./Pics/abortion.png>
-Package pdftex.def Info: ./Pics/abortion.png used on input line 373.
+Package pdftex.def Info: ./Pics/abortion.png used on input line 374.
 (pdftex.def)             Requested size: 159.78152pt x 124.83212pt.
  <./Pics/abortion-normed.png, id=127, 514.85149pt x 401.53212pt>
 File: ./Pics/abortion-normed.png Graphic file (type png)
  <use ./Pics/abortion-normed.png>
-Package pdftex.def Info: ./Pics/abortion-normed.png used on input line 373.
+Package pdftex.def Info: ./Pics/abortion-normed.png used on input line 374.
 (pdftex.def)             Requested size: 159.60231pt x 124.47366pt.
 
-Overfull \hbox (12.09396pt too wide) in paragraph at lines 373--373
+Overfull \hbox (12.09396pt too wide) in paragraph at lines 374--374
  [][] 
  []
 
@@ -2294,14 +2289,14 @@ Overfull \hbox (12.09396pt too wide) in paragraph at lines 373--373
  <./Pics/abortion.png> <./Pics/abortion-normed.png>]
 File: ./Pics/abortion.png Graphic file (type png)
  <use ./Pics/abortion.png>
-Package pdftex.def Info: ./Pics/abortion.png used on input line 392.
+Package pdftex.def Info: ./Pics/abortion.png used on input line 393.
 (pdftex.def)             Requested size: 190.70598pt x 148.99239pt.
  [19
 
 ]
 File: ./Pics/abortion-normed.png Graphic file (type png)
  <use ./Pics/abortion-normed.png>
-Package pdftex.def Info: ./Pics/abortion-normed.png used on input line 406.
+Package pdftex.def Info: ./Pics/abortion-normed.png used on input line 407.
 (pdftex.def)             Requested size: 190.49207pt x 148.56454pt.
  [20
 
@@ -2321,11 +2316,11 @@ Package pdftex.def Info: ./Pics/abortion-normed.png used on input line 406.
 \tf@snm=\write8
 \openout8 = `SOC-2017-EN-presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 444.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 444.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 445.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 445.
  (./SOC-2017-EN-presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 444.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 444.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 445.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 445.
 Package rerunfilecheck Info: File `SOC-2017-EN-presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -2333,19 +2328,19 @@ Package rerunfilecheck Info: File `SOC-2017-EN-presentation.out' has not changed
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 444.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 445.
  ) 
 Here is how much of TeX's memory you used:
  29767 strings out of 493014
  585414 string characters out of 6133351
- 624717 words of memory out of 5000000
+ 624718 words of memory out of 5000000
  32679 multiletter control sequences out of 15000+600000
  25884 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,13n,88p,10432b,717s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1440
 .pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on SOC-2017-EN-presentation.pdf (23 pages, 1529389 bytes).
+Output written on SOC-2017-EN-presentation.pdf (23 pages, 1262637 bytes).
 PDF statistics:
  222 PDF objects out of 1000 (max. 8388607)
  159 compressed objects within 2 object streams
