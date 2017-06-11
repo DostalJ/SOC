@@ -20,7 +20,8 @@
 
 \setbeamertemplate{itemize item}{$\blacktriangleright\,$}
 \setbeamertemplate{itemize subitem}{$\bullet$ }
-\setlength\leftmargini{3.5em}
+% \setlength\leftmargini{3.5em}
+\setlength\leftmargini{7em} % pro a0 to vypada lepe
 
 \setbeamertemplate{block begin}{
   \vskip.75ex
@@ -55,3 +56,15 @@
   {\footim@ge};
 \fi
 }
+
+
+% custom small block
+\newenvironment{customsmallblock}[1]{%
+  \setbeamercolor{block body}{bg=blue,fg=white}
+  \setbeamercolor{block title}{bg=green,fg=red}
+  \begin{block}{#1}}{\end{block}}
+  % custom alert
+  \newenvironment{customalertblock}[1]{%
+    \setbeamercolor{block body}{fg=black,bg=jblue!10}
+    \setbeamercolor{block title}{fg=white,bg=Smak}
+    \begin{block}{#1}}{\end{block}}
