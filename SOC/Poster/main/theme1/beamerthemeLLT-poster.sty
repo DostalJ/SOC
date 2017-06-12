@@ -59,13 +59,13 @@
 }
 
 
-% custom small block
-\newenvironment{customsmallblock}[1]{%
-  \setbeamercolor{block body}{bg=blue,fg=white}
-  \setbeamercolor{block title}{bg=green,fg=red}
+% % custom small block
+% \newenvironment{customsmallblock}[1]{%
+%   \setbeamercolor{block body}{bg=blue,fg=white}
+%   \setbeamercolor{block title}{bg=green,fg=red}
+%   \begin{block}{#1}}{\end{block}}
+% custom alert
+\newenvironment{customalertblock}[1]{%
+  \setbeamercolor{block body}{fg=black,bg=jblue!10}
+  \setbeamercolor{block title}{fg=white,bg=Fany}
   \begin{block}{#1}}{\end{block}}
-  % custom alert
-  \newenvironment{customalertblock}[1]{%
-    \setbeamercolor{block body}{fg=black,bg=jblue!10}
-    \setbeamercolor{block title}{fg=white,bg=Smak}
-    \begin{block}{#1}}{\end{block}}
