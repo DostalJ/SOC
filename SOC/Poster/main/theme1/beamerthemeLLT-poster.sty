@@ -46,7 +46,7 @@
   \end{beamercolorbox}
    \begin{beamercolorbox}[wd=\paperwidth]{footline}
      \vskip1.5ex
-     \hspace{1em}\usebeamercolor{author in footline}{\bfseries\large\insertauthor}\par\vskip1ex
+     \hspace{1em}\usebeamercolor{author in footline}{\bfseries\Large\insertauthor}\par\vskip1ex
      \hspace{1em}{\small\ttfamily\bfseries\insertshortauthor}\par\vskip.8ex
      \hspace{1em}\usebeamercolor{institute in footline}{\color{fg}\small\bfseries\insertinstitute}\vskip1ex
    \end{beamercolorbox}
@@ -59,13 +59,12 @@
 }
 
 
-% % custom small block
-% \newenvironment{customsmallblock}[1]{%
-%   \setbeamercolor{block body}{bg=blue,fg=white}
-%   \setbeamercolor{block title}{bg=green,fg=red}
-%   \begin{block}{#1}}{\end{block}}
-% custom alert
+
 \newenvironment{customalertblock}[1]{%
   \setbeamercolor{block body}{fg=black,bg=jblue!10}
-  \setbeamercolor{block title}{fg=white,bg=Fany}
+  \setbeamercolor{block title}{fg=white,bg=HistogramOrange}
+  \begin{block}{#1}}{\end{block}}
+\newenvironment{blankblock}[1]{%
+  \setbeamercolor{block body}{fg=black,bg=jblue!10}
+  \setbeamercolor{block title}{fg=CorporateCobalt!50!k4,bg=LightBlue}
   \begin{block}{#1}}{\end{block}}
