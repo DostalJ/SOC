@@ -15,6 +15,7 @@
 \usepackage[libertine]{newtxmath}
 
 \usepackage{mwe}
+\usepackage{subfig}
 \usepackage{pifont} % pro pekne znacky http://ctan.org/pkg/pifont
 \newcommand{\cmark}{\ding{51}} % pekne znacky
 \newcommand{\xmark}{\ding{55}} % pekne zncky§
@@ -60,12 +61,12 @@
 % #############################################################################
 \begin{blankblock}{2. Studied groups selection}
     \begin{columns}
-        \begin{column}{.5\textwidth}
+        \begin{column}{.6\textwidth}
             \begin{itemize}
                 \item random sample from followers of the significant group
             \end{itemize}
         \end{column}
-        \begin{column}{.5\textwidth}
+        \begin{column}{.4\textwidth}
             \center
             \includegraphics[scale=0.45]{./Pics/sets.png}
         \end{column}
@@ -96,7 +97,7 @@
 \end{itemize}
 \vspace{0.3cm}
 Keyword \textbf{"Trump"}:
-\vspace{0.7cm}
+\vspace{1cm}
 \begin{itemize}\centering
     \item[\textcolor{black}{\xmark}] I had fish and chips for lunch.
     \item[\textcolor{black}{\cmark}] I'm glad Donald \textbf{Trump} is the president of the USA.
@@ -123,7 +124,7 @@ Keyword \textbf{"Trump"}:
 % #############################################################################
 % Second Column
 \begin{column}{.63\textwidth}
-
+% #############################################################################
 \begin{customalertblock}{Motivation}
     \begin{columns}
         \begin{column}{.5\textwidth}
@@ -150,10 +151,51 @@ Keyword \textbf{"Trump"}:
 \begin{block}{Measurements}
     \begin{columns}
         \column{0.5\textwidth}
-            \includegraphics[scale=0.585]{./Pics/hist-trump.png}
+            \underline{\textbf{Studied groups:}}
+            \vspace{1cm}
+            \begin{itemize}
+                \item Hillary Clinton's supporters
+                \item Donald Trump's supporters
+            \end{itemize}
         \column{0.5\textwidth}
-            \includegraphics[scale=0.585]{./Pics/hist-clinton.png}
+            \underline{\textbf{Topics:}}
+            \vspace{1cm}
+            \begin{itemize}
+                \item Hillary Clinton
+                \item Donald Trump
+            \end{itemize}
     \end{columns}
+    % \vspace{-3cm}
+    \begin{columns}
+        \column{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \captionsetup{justification=centering,margin=2cm}
+                \includegraphics[scale=0.585]{./Pics/hist-trump.png}
+                \caption*{Normalized sentiment histogram for topic \textit{"Trump"}.}
+            \end{figure}
+        \column{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \captionsetup{justification=centering,margin=2cm}
+                \includegraphics[scale=0.585]{./Pics/hist-clinton.png}
+                \caption*{Normalized sentiment histogram for topic \textit{"Clinton"}.}
+            \end{figure}
+    \end{columns}
+\end{block}
+% #############################################################################
+\begin{block}{Proposed measure}
+    We define group affected by \textit{Filter Bubble} as the group that lays in different information environment than average twitter user. The environment may differ in two ways:
+    \begin{enumerate}
+        \item the number of tweets on given topic
+        \item sentiment distribution.
+    \end{enumerate}
+    \begin{figure}
+        \centering
+        \captionsetup{justification=centering,margin=5cm}
+        \includegraphics[scale=0.585]{./Pics/metric-L2-1Q.png}
+        \caption*{Phase diagram of our measurements. Further from origin means they receive \textbf{less balanced} information.}
+    \end{figure}
 \end{block}
 % #############################################################################
 
@@ -162,9 +204,10 @@ Keyword \textbf{"Trump"}:
 
 
 
-
-
-
+\begin{customalertblock}{Conclusion}
+    We save the World.
+\end{customalertblock}
+% #############################################################################
 \end{column}
 \end{columns}
 % #############################################################################
