@@ -1,12 +1,7 @@
 \documentclass{beamer}
-%% Possible paper sizes: a0, a0b, a1, a2, a3, a4.
-%% Possible orientations: portrait, landscape
-%% Font sizes can be changed using the scale option.
 \usepackage[size=a0,orientation=portrait,scale=1.8]{beamerposter}
 \usetheme{LLT-poster}
-% \usecolortheme{ComingClean}
 \usecolortheme{Entrepreneur}
-% \usecolortheme{ConspiciousCreep}  %% VERY garish.
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -20,14 +15,9 @@
 \newcommand{\cmark}{\ding{51}} % pekne znacky
 \newcommand{\xmark}{\ding{55}} % pekne zncky§
 
-% \usebackgroundtemplate{\tikz\node[opacity=0.1]{\includegraphics[width=\paperwidth,height=\paperheight]{./Pics/world.png}};}
 
-% \title{\raisebox{\heightof{B)}-\height+7mm}{\includegraphics[height=1.3em]{img/beacon-network-short.png}}\#filterbubble}
 \title{\#filterbubble}
 \author[dostal.jakub@outlook.com]{F. Sandroni, J. Dostal}
-% Optional foot image
-% \footimage{\includegraphics[width=2.1em]{img/ga4gh.png}}
-
 
 \begin{document}
 \begin{frame}[fragile]
@@ -37,7 +27,7 @@
 % #############################################################################
 % First Column
 \begin{column}{.33\textwidth}
-
+% #############################################################################
 \begin{block}{Filter Bubble}
     \center
     \begin{large}\textbf{Living in one's own information environment.}\end{large}
@@ -126,9 +116,11 @@ Keyword \textbf{"Trump"}:
 \begin{column}{.63\textwidth}
 % #############################################################################
 \begin{customalertblock}{Motivation}
+    Our aim is to develop a new method for \textbf{detecting and measuring} \textit{Filter Bubble} effects. This would provide us a new way to \textbf{study and avoid adverse effects} of \textit{Filter Bubble}.
+    \vspace{1cm}
     \begin{columns}
         \begin{column}{.5\textwidth}
-            \begin{large}\textbf{Threats for democracy:}\end{large}
+            \underline{\textbf{Threats for democracy:}}
             \vspace{0.5cm}
             % \center
             % content \textbf{homogeneity}\\
@@ -143,7 +135,7 @@ Keyword \textbf{"Trump"}:
             \end{enumerate}
         \end{column}
         \begin{column}{.5\textwidth}
-            \begin{large}\textbf{Goals:}\end{large}
+            \underline{\textbf{Goals:}}
             \vspace{0.5cm}
             \begin{itemize}
                 \item filter bubble detection
@@ -152,7 +144,6 @@ Keyword \textbf{"Trump"}:
         \end{column}
     \end{columns}
     \vspace{1cm}
-    Content homogeneity is a huge \textbf{threat for democratic systems}. Our aim is to develop a new method for \textbf{detecting and measuring} \textit{Filter Bubble} effects. This would provide us a new way to \textbf{study and defend from negatives} of \textit{Filter Bubble}.
 \end{customalertblock}
 % #############################################################################
 \begin{block}{Measurements}
@@ -179,27 +170,29 @@ Keyword \textbf{"Trump"}:
                 \centering
                 \captionsetup{justification=centering,margin=2cm}
                 \includegraphics[scale=0.5]{./Pics/hist-trump.png}
-                \caption*{Normalized sentiment histogram for topic \textit{Donald Trump}.}
+                \caption*{Normalized sentiment histogram for tweets about \textit{Donald Trump}.}
             \end{figure}
         \column{0.5\textwidth}
             \begin{figure}
                 \centering
                 \captionsetup{justification=centering,margin=2cm}
                 \includegraphics[scale=0.5]{./Pics/hist-clinton.png}
-                \caption*{Normalized sentiment histogram for topic \textit{Hilary Clinton}.}
+                \caption*{Normalized sentiment histogram for tweets about \textit{Hilary Clinton}.}
             \end{figure}
     \end{columns}
 \end{block}
 % #############################################################################
+\vspace{-2cm}
 \begin{block}{Proposed measure}
-    We define group affected by \textit{Filter Bubble} as a group that lays in different information environment than randomly sampled group.
-    \vspace{-2cm}
+    \centering
+    \begin{large}\textbf{A group affected by \textit{Filte Bubble} is a group that finds itself in an information environment that is significantly different from the average environment.}\end{large}
+    % \vspace{-2.5cm}
     \begin{columns}
         \column{0.5\textwidth}
             \begin{figure}
                 \centering
                 \captionsetup{justification=centering,margin=1cm}
-                \includegraphics[scale=0.585]{./Pics/metric-L2-1Q.png}
+                \includegraphics[scale=0.55]{./Pics/metric-L2-1Q.png}
                 \caption*{Phase diagram of our measurements.}
             \end{figure}
         \column{0.5\textwidth}
@@ -215,18 +208,20 @@ Keyword \textbf{"Trump"}:
     \begin{columns}
         \column{0.5\textwidth}
             \begin{itemize}
-                \item $\mu_1$: distance of proportion of tweets on given topic from random sample
+                \item $\mu_1$: distance of proportion of tweets on given topic of group $G$ from random sample $T$
                 \item $\mu_1(G) = \frac{|p_T - p_G|}{p_t}$
             \end{itemize}
         \column{0.5\textwidth}
             \begin{itemize}
-                \item $\mu_2$: distance of sentiment histogram of group $G$ from random sample ($T$)
+                \item $\mu_2$: distance of sentiment histogram of group $G$ from random sample $T$
                 \item $\mu_2(G) = \sqrt{\sum_{i}{\left(S_T^i - S_G^i\right)^2}}$
             \end{itemize}
     \end{columns}
 \end{block}
 % #############################################################################
+\vspace{-1.5cm}
 \begin{customalertblock}{Conclusion}
+    \vspace{-1cm}
     \underline{\textbf{We have achieved:}}
     \vspace{1cm}
     \begin{enumerate}
