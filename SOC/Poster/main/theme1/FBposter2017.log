@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  14 JUN 2017 16:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  14 JUN 2017 22:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1683,7 +1683,7 @@ Here is how much of TeX's memory you used:
  67i,16n,102p,457b,1437s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/libertinealt.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4b.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinBiolinumTBO.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
 lic/libertine/LinLibertineT.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/zxlr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/zxlri.pfb>
-Output written on FBposter2017.pdf (1 page, 768323 bytes).
+Output written on FBposter2017.pdf (1 page, 768465 bytes).
 PDF statistics:
  103 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream
