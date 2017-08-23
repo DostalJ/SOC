@@ -1,0 +1,73 @@
+\documentclass[notheorems,12pt]{beamer}
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{enumerate,epsf,colortbl,color,colordvi}
+\usepackage{graphicx, float}
+\usepackage{subfig}
+\usetheme{metropolis}
+\metroset{numbering=none}
+\usecolortheme{beaver}
+\setbeamertemplate{itemize items}[square]
+\setbeamercolor*{enumerate item}{fg=darkred}
+
+\setbeamertemplate{theorems}[numbered]
+\setbeamercovered{transparent} % transparent text after \pause
+\setbeamercovered{again covered={\opaqueness<1->{15}}, dynamic} % makes part of the slide transparent
+
+\usepackage{pifont} % pro pekne znacky http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}} % pekne znacky
+\newcommand{\xmark}{\ding{55}} % pekne zncky
+
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\usepackage{units}
+\usepackage{physics}
+\usepackage{subfig} 	%subfloats.
+\captionsetup[subfigure]{labelformat=empty} %odstrani (a), (b),... u subfloats
+
+\usepackage{caption} %abych mohl pouzit \caption*{•}
+
+\usefonttheme[onlymath]{serif} 	%dela peknou matematiku ;)
+
+
+\nonumber
+\title[]{\#filterbubble}
+\date{}
+\author{Františka Sandroni\\
+        Jakub Dostál}
+\institute{}
+% ############################################
+% ############################################
+\begin{document}
+\maketitle
+% ############################################
+% ############################################
+\begin{frame}{Filter bubble}
+    \center
+    \vspace{-0.1cm}
+    \begin{large}\textbf{Izolace od dostatečně širokého spektra informací.}\end{large}
+    \vspace{0.8cm}
+    \begin{columns}
+    \column{5cm}
+    \begin{itemize}
+        \item sociální sítě
+        \item preferenční algoritmy
+        \item Eli Pariser (2011)
+    \end{itemize}
+    \column{6cm}
+        \begin{figure}
+            \centering
+            % \subfloat{\includegraphics[scale=0.035]{./Pics/fb.png}}\\
+            \includegraphics[scale=0.4]{./Pics/twitter.png}
+        \end{figure}
+    \end{columns}
+\end{frame}
+% ############################################
+% ############################################
+\end{document}
