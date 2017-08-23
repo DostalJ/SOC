@@ -58,11 +58,12 @@ def hist(names, legend, keyword, colors=['b', 'r', 'g', 'c', 'y', 'm'], num_bins
     plt.xlabel('Sentiment')
 
 
-    if out_name == None:
-        plt.show()
-    else:
-        path = '/Users/Jakub/MEGA/Work/SOC/SOC/Images/' + out_name
-        plt.savefig(path, dpi=500)
+    # if out_name == None:
+    #     plt.show()
+    # else:
+    #     path = '/Users/Jakub/MEGA/Work/SOC/SOC/Images/' + out_name
+    #     plt.savefig(path, dpi=500)
+    plt.show()
 
 
 
